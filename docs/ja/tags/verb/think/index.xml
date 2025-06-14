@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Verb/Think on Btklab&#39;s Experience via PowerShell on Windows</title>
-    <link>https://btklab.github.io/mainroad-btklab-clone/ja/tags/verb/think/</link>
+    <link>https://btklab.github.io/ja/tags/verb/think/</link>
     <description>Recent content in Verb/Think on Btklab&#39;s Experience via PowerShell on Windows</description>
     <generator>Hugo</generator>
     <language>ja-jp</language>
     <lastBuildDate>Mon, 17 Mar 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://btklab.github.io/mainroad-btklab-clone/ja/tags/verb/think/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://btklab.github.io/ja/tags/verb/think/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Think-Environment &#34;Directory Structure&#34;</title>
-      <link>https://btklab.github.io/mainroad-btklab-clone/ja/getting-started/think-environment-directory-structure/</link>
+      <link>https://btklab.github.io/ja/getting-started/think-environment-directory-structure/</link>
       <pubDate>Fri, 07 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://btklab.github.io/mainroad-btklab-clone/ja/getting-started/think-environment-directory-structure/</guid>
+      <guid>https://btklab.github.io/ja/getting-started/think-environment-directory-structure/</guid>
       <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;p&gt;シェルを用いた作業を行うにあたり、まずは安全で効率のよい作業場所をつくる。作業場所の候補としてユーザのホームディレクトリ直下がまず思いつくが、そこはあまり安全ではない。なぜなら、そこにはシステムが管理するディレクトリやファイルがすでにたくさんあるからだ。コマンド操作ミスによりそれらファイルを&lt;strong&gt;誤って削除&lt;/strong&gt;してしまうかもしれない。（これは&lt;kbd&gt;TAB&lt;/kbd&gt;補完を使用する場合によく起こる。）　ここでは、ホームディレクトリ下に作業用ディレクトリを作成し、そこでシェル操作を行うような環境をつくる。この構造にすることで得られる便益は以下のとおり：&lt;/p&gt;</description>
     </item>
   </channel>

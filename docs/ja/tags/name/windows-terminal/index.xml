@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Name/Windows Terminal on Btklab&#39;s Experience via PowerShell on Windows</title>
-    <link>https://btklab.github.io/mainroad-btklab-clone/ja/tags/name/windows-terminal/</link>
+    <link>https://btklab.github.io/ja/tags/name/windows-terminal/</link>
     <description>Recent content in Name/Windows Terminal on Btklab&#39;s Experience via PowerShell on Windows</description>
     <generator>Hugo</generator>
     <language>ja-jp</language>
     <lastBuildDate>Sun, 20 Apr 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://btklab.github.io/mainroad-btklab-clone/ja/tags/name/windows-terminal/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://btklab.github.io/ja/tags/name/windows-terminal/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Install-Software &#34;Windows Terminal&#34;</title>
-      <link>https://btklab.github.io/mainroad-btklab-clone/ja/getting-started/install-software-windowsterminal/</link>
+      <link>https://btklab.github.io/ja/getting-started/install-software-windowsterminal/</link>
       <pubDate>Fri, 14 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://btklab.github.io/mainroad-btklab-clone/ja/getting-started/install-software-windowsterminal/</guid>
+      <guid>https://btklab.github.io/ja/getting-started/install-software-windowsterminal/</guid>
       <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;p&gt;Windows OS上に&lt;a href=&#34;winterm&#34;&gt;Windows Terminal&lt;/a&gt;&#xD;&#xA;をインストールする。&lt;/p&gt;&#xA;&lt;h2 id=&#34;前提条件&#34;&gt;前提条件&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;✓ &lt;a href=&#34;../install-software-powershell/index.html&#34;&gt;PowerShellのインストール&lt;/a&gt;&#xD;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;✓ &lt;a href=&#34;../install-software-winget/index.html&#34;&gt;WinGet&lt;/a&gt;&#xD;&#xA;のインストール&lt;/li&gt;&#xA;&lt;li&gt;✓ 検証した環境は&lt;a href=&#34;../../getting-started/index.html&#34;&gt;こちら&lt;/a&gt;&#xD;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;インストール&#34;&gt;インストール&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;kbd&gt;START MENU&lt;/kbd&gt; → &lt;code&gt;cmd&lt;/code&gt;または&lt;code&gt;pwsh&lt;/code&gt;と入力&lt;/li&gt;&#xA;&lt;li&gt;「管理者として開く」をクリック&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;最新バージョンの確認：&lt;/p&gt;</description>
     </item>
   </channel>

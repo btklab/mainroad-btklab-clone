@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Name/GitHub on Btklab&#39;s Experience via PowerShell on Windows</title>
-    <link>https://btklab.github.io/mainroad-btklab-clone/ja/tags/name/github/</link>
+    <link>https://btklab.github.io/ja/tags/name/github/</link>
     <description>Recent content in Name/GitHub on Btklab&#39;s Experience via PowerShell on Windows</description>
     <generator>Hugo</generator>
     <language>ja-jp</language>
     <lastBuildDate>Sun, 20 Apr 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://btklab.github.io/mainroad-btklab-clone/ja/tags/name/github/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://btklab.github.io/ja/tags/name/github/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Install-Software &#34;pwsh-sketches&#34;</title>
-      <link>https://btklab.github.io/mainroad-btklab-clone/ja/getting-started/install-software-pwsh-sketches/</link>
+      <link>https://btklab.github.io/ja/getting-started/install-software-pwsh-sketches/</link>
       <pubDate>Fri, 07 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://btklab.github.io/mainroad-btklab-clone/ja/getting-started/install-software-pwsh-sketches/</guid>
+      <guid>https://btklab.github.io/ja/getting-started/install-software-pwsh-sketches/</guid>
       <description>&lt;h2 id=&#34;intro&#34;&gt;はじめに&lt;/h2&gt;&#xA;&#xD;&#xA;&lt;figure style=&#34;float:right; margin:1em 1em 0 1em;&#34; &gt;&#xD;&#xA;    &lt;a href=&#34;../../../../img/2025/2025-02-12-powershell-scripting-as-an-open-ended-craft.svg&#34; data-lightbox=&#34;image-gallery&#34; data-title=&#34;fig. Pwsh as a Craft.&#34; &gt;&#xD;&#xA;        &lt;img src=&#34;../../../../img/2025/2025-02-12-powershell-scripting-as-an-open-ended-craft.svg&#34; width=150 /&gt;&#xD;&#xA;    &lt;/a&gt;&#xD;&#xA;    &lt;figcaption&gt;&#xD;&#xA;        fig. Pwsh as a Craft.&#xD;&#xA;    &lt;/figcaption&gt; &#xD;&#xA;&lt;/figure&gt;&#xD;&#xA;&#xA;&lt;p&gt;日常のシェル操作を少しだけ便利にしたり、ちょっとしたアイディアを形にするためのぼくの自家製スクリプトセット：&amp;quot;&lt;a href=&#34;https://github.com/btklab/pwsh-sketches&#34; target=&#34;_blank&#34;&gt;pwsh-sketches&lt;/a&gt;&#xD;&#xA;&amp;ldquo;をインストールする。同スクリプトセットは&lt;a href=&#34;https://github.com/&#34; target=&#34;_blank&#34;&gt;GitHub&lt;/a&gt;&#xD;&#xA;上に設置しており、そこからバージョン管理システム「&lt;a href=&#34;https://git-scm.com/&#34; target=&#34;_blank&#34;&gt;Git&lt;/a&gt;&#xD;&#xA;」を用いてPCにインストールする。&lt;/p&gt;</description>
     </item>
   </channel>

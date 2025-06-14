@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Type/Launcher on Btklab&#39;s Experience via PowerShell on Windows</title>
-    <link>https://btklab.github.io/mainroad-btklab-clone/ja/tags/type/launcher/</link>
+    <link>https://btklab.github.io/ja/tags/type/launcher/</link>
     <description>Recent content in Type/Launcher on Btklab&#39;s Experience via PowerShell on Windows</description>
     <generator>Hugo</generator>
     <language>ja-jp</language>
     <lastBuildDate>Thu, 08 May 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://btklab.github.io/mainroad-btklab-clone/ja/tags/type/launcher/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://btklab.github.io/ja/tags/type/launcher/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Launch-Software &#34;プレーンテキストリンクを用いた汎用ランチャーの実装&#34;</title>
-      <link>https://btklab.github.io/mainroad-btklab-clone/ja/solve-the-problem/launch-software_run_anything_from_a_plain_text_link/</link>
+      <link>https://btklab.github.io/ja/solve-the-problem/launch-software_run_anything_from_a_plain_text_link/</link>
       <pubDate>Sat, 19 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://btklab.github.io/mainroad-btklab-clone/ja/solve-the-problem/launch-software_run_anything_from_a_plain_text_link/</guid>
+      <guid>https://btklab.github.io/ja/solve-the-problem/launch-software_run_anything_from_a_plain_text_link/</guid>
       <description>&lt;h2 id=&#34;intro&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Summary&lt;/strong&gt;: テキストに書かれたリンクからアプリを起動するCLI用PowerShellスクリプト「&lt;a href=&#34;https://github.com/btklab/pwsh-sketches/blob/main/src/Invoke-Link_function.ps1&#34; target=&#34;_blank&#34;&gt;Invoke-Link&lt;/a&gt;&#xD;&#xA; (Alias:&lt;code&gt;i&lt;/code&gt;)」を作った話。&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;Windowsのショートカットファイルは便利だ。よく使うアプリケーションやWebリンク、ファイルパスを登録しておけば素早くアクセスできる。ショートカットファイルはデスクトップや任意のフォルダにどこでも気軽に配置できる。&lt;/p&gt;</description>
     </item>
   </channel>

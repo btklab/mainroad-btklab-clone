@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Name/WinGet on Btklab&#39;s Experience via PowerShell on Windows</title>
-    <link>https://btklab.github.io/mainroad-btklab-clone/ja/tags/name/winget/</link>
+    <link>https://btklab.github.io/ja/tags/name/winget/</link>
     <description>Recent content in Name/WinGet on Btklab&#39;s Experience via PowerShell on Windows</description>
     <generator>Hugo</generator>
     <language>ja-jp</language>
     <lastBuildDate>Mon, 21 Apr 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://btklab.github.io/mainroad-btklab-clone/ja/tags/name/winget/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://btklab.github.io/ja/tags/name/winget/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Install-Software &#34;Graphviz&#34;</title>
-      <link>https://btklab.github.io/mainroad-btklab-clone/ja/getting-started/install-software_graphviz/</link>
+      <link>https://btklab.github.io/ja/getting-started/install-software_graphviz/</link>
       <pubDate>Sun, 20 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://btklab.github.io/mainroad-btklab-clone/ja/getting-started/install-software_graphviz/</guid>
+      <guid>https://btklab.github.io/ja/getting-started/install-software_graphviz/</guid>
       <description>&lt;h2 id=&#34;intro&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;p&gt;パッケージ管理システム「&lt;a href=&#34;https://learn.microsoft.com/ja-jp/windows/package-manager/winget/&#34; target=&#34;_blank&#34;&gt;WinGet&lt;/a&gt;&#xD;&#xA;」を用いて、Windows上にネットワーク図描画ツール「&lt;a href=&#34;https://graphviz.org/&#34; target=&#34;_blank&#34;&gt;Graphviz&lt;/a&gt;&#xD;&#xA;」をインストールする。&lt;/p&gt;&#xA;&lt;h2 id=&#34;prerequisite&#34;&gt;前提条件&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;✓ &lt;a href=&#34;../install-software-powershell/index.html&#34;&gt;PowerShellのインストール&lt;/a&gt;&#xD;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;✓ &lt;a href=&#34;../install-software-winget/index.html&#34;&gt;WinGetのインストール&lt;/a&gt;&#xD;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;✓ 検証した環境は&lt;a href=&#34;../../getting-started/index.html&#34;&gt;こちら&lt;/a&gt;&#xD;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;installation&#34;&gt;インストール&lt;/h2&gt;&#xA;&lt;p&gt;パッケージ管理ツール「&lt;a href=&#34;https://learn.microsoft.com/ja-jp/windows/package-manager/winget/&#34; target=&#34;_blank&#34;&gt;WinGet&lt;/a&gt;&#xD;&#xA;」を用いた&lt;a href=&#34;https://graphviz.org/&#34; target=&#34;_blank&#34;&gt;Graphviz&lt;/a&gt;&#xD;&#xA;のインストール方法を示す。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Install-Software &#34;PlantUML&#34;</title>
-      <link>https://btklab.github.io/mainroad-btklab-clone/ja/getting-started/install-software_plantuml/</link>
+      <link>https://btklab.github.io/ja/getting-started/install-software_plantuml/</link>
       <pubDate>Sun, 20 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://btklab.github.io/mainroad-btklab-clone/ja/getting-started/install-software_plantuml/</guid>
+      <guid>https://btklab.github.io/ja/getting-started/install-software_plantuml/</guid>
       <description>&lt;h2 id=&#34;intro&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;p&gt;Windows上にネットワーク図描画ツール「&lt;a href=&#34;https://plantuml.com/&#34; target=&#34;_blank&#34;&gt;PlantUML&lt;/a&gt;&#xD;&#xA;」をインストールする。当記事ではCLI（コマンドラインインターフェース）から実行するための環境構築について説明する。&lt;a href=&#34;https://code.visualstudio.com/&#34; target=&#34;_blank&#34;&gt;VS Code&lt;/a&gt;&#xD;&#xA;拡張機能としての&lt;a href=&#34;https://plantuml.com/&#34; target=&#34;_blank&#34;&gt;PlantUML&lt;/a&gt;&#xD;&#xA;については&lt;strong&gt;説明しない&lt;/strong&gt;。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Install-Software &#34;Python&#34;</title>
-      <link>https://btklab.github.io/mainroad-btklab-clone/ja/getting-started/install-software-python/</link>
+      <link>https://btklab.github.io/ja/getting-started/install-software-python/</link>
       <pubDate>Mon, 17 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://btklab.github.io/mainroad-btklab-clone/ja/getting-started/install-software-python/</guid>
+      <guid>https://btklab.github.io/ja/getting-started/install-software-python/</guid>
       <description>&lt;h2 id=&#34;intro&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.python.org/&#34; target=&#34;_blank&#34;&gt;Python for Windows&lt;/a&gt;&#xD;&#xA;をインストールする。&lt;a href=&#34;https://www.python.org/&#34; target=&#34;_blank&#34;&gt;Python&lt;/a&gt;&#xD;&#xA;とは、シンプルで汎用性の高いプログラミング言語。Web開発、データ分析、AIなど、幅広い分野で利用され、初心者にも扱いやすい。このサイトでは、チャートの描画、数学・科学計算、画像処理その他の用途で用いる。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Install-Software &#34;Git&#34;</title>
-      <link>https://btklab.github.io/mainroad-btklab-clone/ja/getting-started/install-software-git/</link>
+      <link>https://btklab.github.io/ja/getting-started/install-software-git/</link>
       <pubDate>Tue, 18 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://btklab.github.io/mainroad-btklab-clone/ja/getting-started/install-software-git/</guid>
+      <guid>https://btklab.github.io/ja/getting-started/install-software-git/</guid>
       <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;p&gt;パッケージ管理システム「&lt;a href=&#34;https://learn.microsoft.com/ja-jp/windows/package-manager/winget/&#34; target=&#34;_blank&#34;&gt;WinGet&lt;/a&gt;&#xD;&#xA;」を用いて、Windows OS上にバージョン管理システム「&lt;a href=&#34;https://git-scm.com/&#34; target=&#34;_blank&#34;&gt;Git&lt;/a&gt;&#xD;&#xA;」をインストールする。&lt;/p&gt;&#xA;&lt;h2 id=&#34;前提条件&#34;&gt;前提条件&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;✓ &lt;a href=&#34;../install-software-powershell/index.html&#34;&gt;PowerShellのインストール&lt;/a&gt;&#xD;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;✓ &lt;a href=&#34;../install-software-winget/index.html&#34;&gt;WinGetのインストール&lt;/a&gt;&#xD;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;✓ 検証した環境は&lt;a href=&#34;../../getting-started/index.html&#34;&gt;こちら&lt;/a&gt;&#xD;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;インストール&#34;&gt;インストール&lt;/h2&gt;&#xA;&lt;p&gt;パッケージ管理ツール「&lt;a href=&#34;https://learn.microsoft.com/ja-jp/windows/package-manager/winget/&#34; target=&#34;_blank&#34;&gt;WinGet&lt;/a&gt;&#xD;&#xA;」を用いて&amp;quot;&lt;strong&gt;Git&lt;/strong&gt;&amp;ldquo;のインストール方法を紹介する。&#xA;コマンドプロンプトもしくはPowerShellを起動し：&lt;/p&gt;</description>
     </item>
     <item>
       <title>Install-Software &#34;PowerShell&#34;</title>
-      <link>https://btklab.github.io/mainroad-btklab-clone/ja/getting-started/install-software-powershell/</link>
+      <link>https://btklab.github.io/ja/getting-started/install-software-powershell/</link>
       <pubDate>Sun, 02 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://btklab.github.io/mainroad-btklab-clone/ja/getting-started/install-software-powershell/</guid>
+      <guid>https://btklab.github.io/ja/getting-started/install-software-powershell/</guid>
       <description>&lt;h2 id=&#34;intro&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;p&gt;Windows OS上に最新版のPowerShellをインストールする。&lt;/p&gt;&#xA;&lt;h2 id=&#34;prerequisites&#34;&gt;前提条件&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;✓ &lt;a href=&#34;../install-software-winget/index.html&#34;&gt;WinGet&lt;/a&gt;&#xD;&#xA;のインストール&lt;/li&gt;&#xA;&lt;li&gt;✓ 検証した環境は&lt;a href=&#34;../../getting-started/index.html&#34;&gt;こちら&lt;/a&gt;&#xD;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;installation&#34;&gt;インストール&lt;/h2&gt;&#xA;&lt;p&gt;パッケージ管理ツール「WinGet」を用いたインストール方法を紹介する。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Install-Software &#34;WinGet&#34;</title>
-      <link>https://btklab.github.io/mainroad-btklab-clone/ja/getting-started/install-software-winget/</link>
+      <link>https://btklab.github.io/ja/getting-started/install-software-winget/</link>
       <pubDate>Sun, 02 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://btklab.github.io/mainroad-btklab-clone/ja/getting-started/install-software-winget/</guid>
+      <guid>https://btklab.github.io/ja/getting-started/install-software-winget/</guid>
       <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;p&gt;ここでは、Windowsに&lt;strong&gt;WinGet&lt;/strong&gt;をインストールする手順を示す。&lt;strong&gt;WinGet&lt;/strong&gt;は、Windows OS上で動作する、コマンドライン操作型のパッケージ管理ツール。パッケージ管理ツールのおもな仕事はソフトウェアのインストール・アンインストール・リストアップ・アップデート。&lt;/p&gt;</description>
     </item>
   </channel>
