@@ -1,0 +1,16 @@
+Copyright (c) 2025 btklab
+
+This repository contains a read-only mirror of the primary website,
+hosted here solely as a backup for emergency access in case the main domain expires.
+
+See: https://btklab.com
+
+All content in the `docs/` folder (HTML, CSS, JavaScript, images, and text)
+is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0).
+You may view and link to the content, but reproduction, alteration, or commercial use is prohibited without explicit permission.
+
+See: https://creativecommons.org/licenses/by-nc-nd/4.0/
+
+This site’s styles are based on the Mainroad Hugo theme.
+Mainroad is licensed under the MIT License: https://github.com/vimux/mainroad
+Primary site content remains © 2025 btklab.
