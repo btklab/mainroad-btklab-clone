@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Name/Python on Btklab&#39;s Experience via PowerShell on Windows</title>
-    <link>https://btklab.com/en/tags/name/python/</link>
+    <link>https://btklab.github.io/mainroad-btklab-clone/en/tags/name/python/</link>
     <description>Recent content in Name/Python on Btklab&#39;s Experience via PowerShell on Windows</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 20 Apr 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://btklab.com/en/tags/name/python/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://btklab.github.io/mainroad-btklab-clone/en/tags/name/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Install-Software &#34;Python&#34;</title>
-      <link>https://btklab.com/en/getting-started/install-software-python/</link>
+      <link>https://btklab.github.io/mainroad-btklab-clone/en/getting-started/install-software-python/</link>
       <pubDate>Mon, 17 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://btklab.com/en/getting-started/install-software-python/</guid>
+      <guid>https://btklab.github.io/mainroad-btklab-clone/en/getting-started/install-software-python/</guid>
       <description>&lt;h2 id=&#34;intro&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.python.org/&#34; target=&#34;_blank&#34;&gt;Python&lt;/a&gt;&#xD;&#xA; is a simple and versatile programming language. It is used in a wide range of fields such as web development, data analysis, and AI, and is easy for beginners to handle. This site uses it for purposes such as plotting charts, math/scientific calculations, and image processing.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Key point&lt;/strong&gt;: PowerShell&amp;rsquo;s versatility extends beyond running Python; it serves as an execution environment for a multitude of programming languages. The power of &amp;ldquo;glue languages&amp;rdquo; like PowerShell, in my view, lies in their ability to seamlessly connect and integrate diverse programming ecosystems.&lt;/p&gt;</description>
     </item>
   </channel>

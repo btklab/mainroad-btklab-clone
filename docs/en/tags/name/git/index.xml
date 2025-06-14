@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Name/Git on Btklab&#39;s Experience via PowerShell on Windows</title>
-    <link>https://btklab.com/en/tags/name/git/</link>
+    <link>https://btklab.github.io/mainroad-btklab-clone/en/tags/name/git/</link>
     <description>Recent content in Name/Git on Btklab&#39;s Experience via PowerShell on Windows</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 20 Apr 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://btklab.com/en/tags/name/git/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://btklab.github.io/mainroad-btklab-clone/en/tags/name/git/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Install-Software &#34;pwsh-sketches&#34;</title>
-      <link>https://btklab.com/en/getting-started/install-software-pwsh-sketches/</link>
+      <link>https://btklab.github.io/mainroad-btklab-clone/en/getting-started/install-software-pwsh-sketches/</link>
       <pubDate>Fri, 07 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://btklab.com/en/getting-started/install-software-pwsh-sketches/</guid>
+      <guid>https://btklab.github.io/mainroad-btklab-clone/en/getting-started/install-software-pwsh-sketches/</guid>
       <description>&lt;h2 id=&#34;intro&#34;&gt;Introduction&lt;/h2&gt;&#xA;&#xD;&#xA;&lt;figure style=&#34;float:right; margin:1em 1em 0 1em;&#34; &gt;&#xD;&#xA;    &lt;a href=&#34;../../../../img/2025/2025-02-12-powershell-scripting-as-an-open-ended-craft.svg&#34; data-lightbox=&#34;image-gallery&#34; data-title=&#34;fig. Pwsh as a Craft.&#34; &gt;&#xD;&#xA;        &lt;img src=&#34;../../../../img/2025/2025-02-12-powershell-scripting-as-an-open-ended-craft.svg&#34; width=150 /&gt;&#xD;&#xA;    &lt;/a&gt;&#xD;&#xA;    &lt;figcaption&gt;&#xD;&#xA;        fig. Pwsh as a Craft.&#xD;&#xA;    &lt;/figcaption&gt; &#xD;&#xA;&lt;/figure&gt;&#xD;&#xA;&#xA;&lt;p&gt;Install my personal script set: &amp;ldquo;&lt;a href=&#34;https://github.com/btklab/pwsh-sketches&#34; target=&#34;_blank&#34;&gt;pwsh-sketches&lt;/a&gt;&#xD;&#xA;,&amp;rdquo; which makes daily shell operations slightly more convenient and brings petit ideas to life. The script set is hosted on &lt;a href=&#34;https://github.com/&#34; target=&#34;_blank&#34;&gt;GitHub&lt;/a&gt;&#xD;&#xA; and can be installed on your PC using the version control system &lt;a href=&#34;https://git-scm.com/&#34; target=&#34;_blank&#34;&gt;Git&lt;/a&gt;&#xD;&#xA;.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Key point&lt;/strong&gt;: One of the interesting things about the shell is that you can easily craft useful tools tailored to your own work and level.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Install-Software &#34;Git&#34;</title>
-      <link>https://btklab.com/en/getting-started/install-software-git/</link>
+      <link>https://btklab.github.io/mainroad-btklab-clone/en/getting-started/install-software-git/</link>
       <pubDate>Tue, 18 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://btklab.com/en/getting-started/install-software-git/</guid>
+      <guid>https://btklab.github.io/mainroad-btklab-clone/en/getting-started/install-software-git/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Install the version control system &amp;ldquo;&lt;a href=&#34;https://git-scm.com/&#34; target=&#34;_blank&#34;&gt;Git&lt;/a&gt;&#xD;&#xA;&amp;rdquo; on Windows OS using the package management system &amp;ldquo;&lt;a href=&#34;https://learn.microsoft.com/en-us/windows/package-manager/winget/&#34; target=&#34;_blank&#34;&gt;WinGet&lt;/a&gt;&#xD;&#xA;.&amp;rdquo;&lt;/p&gt;&#xA;&lt;h2 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;✓ &lt;a href=&#34;&#34;&gt;Installation of PowerShell&lt;/a&gt;&#xD;&#xA;../install-software-powershell/index.html)&lt;/li&gt;&#xA;&lt;li&gt;✓ &lt;a href=&#34;../install-software-winget/index.html&#34;&gt;Installation of WinGet&lt;/a&gt;&#xD;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;✓ The verified environment is &lt;a href=&#34;../../getting-started/index.html&#34;&gt;here&lt;/a&gt;&#xD;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;&#xA;&lt;p&gt;Introduce how to install &amp;ldquo;&lt;strong&gt;Git&lt;/strong&gt;&amp;rdquo; using the package management tool &amp;ldquo;&lt;a href=&#34;https://learn.microsoft.com/en-us/windows/package-manager/winget/&#34; target=&#34;_blank&#34;&gt;WinGet&lt;/a&gt;&#xD;&#xA;.&amp;rdquo; Start Command Prompt or PowerShell:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;kbd&gt;START MENU&lt;/kbd&gt; → Type &lt;code&gt;cmd&lt;/code&gt; or &lt;code&gt;pwsh&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;kbd&gt;ENTER&lt;/kbd&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;and Check the latest version:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;winget search Git.Git --exact&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Name ID      Version  Source&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;--------------------------------&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Git  Git.Git 2.48.1   winget&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Install &lt;strong&gt;Git&lt;/strong&gt; by specifying the &lt;code&gt;ID&lt;/code&gt; and &lt;code&gt;Source&lt;/code&gt; as follows:&lt;/p&gt;</description>
     </item>
   </channel>
