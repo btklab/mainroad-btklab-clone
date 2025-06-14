@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Name/Windows Terminal on Btklab&#39;s Experience via PowerShell on Windows</title>
-    <link>https://btklab.github.io/mainroad-btklab-clone/en/tags/name/windows-terminal/</link>
+    <link>https://btklab.github.io/en/tags/name/windows-terminal/</link>
     <description>Recent content in Name/Windows Terminal on Btklab&#39;s Experience via PowerShell on Windows</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 20 Apr 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://btklab.github.io/mainroad-btklab-clone/en/tags/name/windows-terminal/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://btklab.github.io/en/tags/name/windows-terminal/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Install-Software &#34;Windows Terminal&#34;</title>
-      <link>https://btklab.github.io/mainroad-btklab-clone/en/getting-started/install-software-windowsterminal/</link>
+      <link>https://btklab.github.io/en/getting-started/install-software-windowsterminal/</link>
       <pubDate>Fri, 14 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://btklab.github.io/mainroad-btklab-clone/en/getting-started/install-software-windowsterminal/</guid>
+      <guid>https://btklab.github.io/en/getting-started/install-software-windowsterminal/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Install &lt;a href=&#34;winterm&#34;&gt;Windows Terminal&lt;/a&gt;&#xD;&#xA; on Windows OS.&lt;/p&gt;&#xA;&lt;h2 id=&#34;prerequisite&#34;&gt;Prerequisite&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;✓ &lt;a href=&#34;../install-software-powershell/index.html&#34;&gt;PowerShellのインストール&lt;/a&gt;&#xD;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;✓ Install &lt;a href=&#34;../install-software-winget/index.html&#34;&gt;WinGet&lt;/a&gt;&#xD;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;✓ Verified environment is &lt;a href=&#34;../../getting-started/index.html&#34;&gt;here&lt;/a&gt;&#xD;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;&#xA;&lt;p&gt;This guide introduces the installation method using the package management tool &amp;ldquo;&lt;a href=&#34;../install-software-winget/index.html&#34;&gt;WinGet&lt;/a&gt;&#xD;&#xA;.&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Launch Command Prompt or PowerShell with administrator rights:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;kbd&gt;START MENU&lt;/kbd&gt; → type &lt;code&gt;cmd&lt;/code&gt; or &lt;code&gt;pwsh&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;Click on &amp;ldquo;Run as administrator&amp;rdquo;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Check the latest version:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;winget search Microsoft.WindowsTerminal --exact&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Name                     ID                                Version       Source&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;-------------------------------------------------------------------------------&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Windows Terminal         Microsoft.WindowsTerminal         1.22.10352.0  winget&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Install Windows Terminal. Specify the confirmed &lt;code&gt;ID&lt;/code&gt; and &lt;code&gt;Source&lt;/code&gt; as follows:&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>2025-03 on Btklab&#39;s Experience via PowerShell on Windows</title>
-    <link>https://btklab.github.io/mainroad-btklab-clone/en/archives/2025-03/</link>
+    <link>https://btklab.github.io/en/archives/2025-03/</link>
     <description>Recent content in 2025-03 on Btklab&#39;s Experience via PowerShell on Windows</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 20 Apr 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://btklab.github.io/mainroad-btklab-clone/en/archives/2025-03/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://btklab.github.io/en/archives/2025-03/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Install-Software &#34;Python&#34;</title>
-      <link>https://btklab.github.io/mainroad-btklab-clone/en/getting-started/install-software-python/</link>
+      <link>https://btklab.github.io/en/getting-started/install-software-python/</link>
       <pubDate>Mon, 17 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://btklab.github.io/mainroad-btklab-clone/en/getting-started/install-software-python/</guid>
+      <guid>https://btklab.github.io/en/getting-started/install-software-python/</guid>
       <description>&lt;h2 id=&#34;intro&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.python.org/&#34; target=&#34;_blank&#34;&gt;Python&lt;/a&gt;&#xD;&#xA; is a simple and versatile programming language. It is used in a wide range of fields such as web development, data analysis, and AI, and is easy for beginners to handle. This site uses it for purposes such as plotting charts, math/scientific calculations, and image processing.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Key point&lt;/strong&gt;: PowerShell&amp;rsquo;s versatility extends beyond running Python; it serves as an execution environment for a multitude of programming languages. The power of &amp;ldquo;glue languages&amp;rdquo; like PowerShell, in my view, lies in their ability to seamlessly connect and integrate diverse programming ecosystems.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Install-Software &#34;pwsh-sketches&#34;</title>
-      <link>https://btklab.github.io/mainroad-btklab-clone/en/getting-started/install-software-pwsh-sketches/</link>
+      <link>https://btklab.github.io/en/getting-started/install-software-pwsh-sketches/</link>
       <pubDate>Fri, 07 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://btklab.github.io/mainroad-btklab-clone/en/getting-started/install-software-pwsh-sketches/</guid>
+      <guid>https://btklab.github.io/en/getting-started/install-software-pwsh-sketches/</guid>
       <description>&lt;h2 id=&#34;intro&#34;&gt;Introduction&lt;/h2&gt;&#xA;&#xD;&#xA;&lt;figure style=&#34;float:right; margin:1em 1em 0 1em;&#34; &gt;&#xD;&#xA;    &lt;a href=&#34;../../../img/2025/2025-02-12-powershell-scripting-as-an-open-ended-craft.svg&#34; data-lightbox=&#34;image-gallery&#34; data-title=&#34;fig. Pwsh as a Craft.&#34; &gt;&#xD;&#xA;        &lt;img src=&#34;../../../img/2025/2025-02-12-powershell-scripting-as-an-open-ended-craft.svg&#34; width=150 /&gt;&#xD;&#xA;    &lt;/a&gt;&#xD;&#xA;    &lt;figcaption&gt;&#xD;&#xA;        fig. Pwsh as a Craft.&#xD;&#xA;    &lt;/figcaption&gt; &#xD;&#xA;&lt;/figure&gt;&#xD;&#xA;&#xA;&lt;p&gt;Install my personal script set: &amp;ldquo;&lt;a href=&#34;https://github.com/btklab/pwsh-sketches&#34; target=&#34;_blank&#34;&gt;pwsh-sketches&lt;/a&gt;&#xD;&#xA;,&amp;rdquo; which makes daily shell operations slightly more convenient and brings petit ideas to life. The script set is hosted on &lt;a href=&#34;https://github.com/&#34; target=&#34;_blank&#34;&gt;GitHub&lt;/a&gt;&#xD;&#xA; and can be installed on your PC using the version control system &lt;a href=&#34;https://git-scm.com/&#34; target=&#34;_blank&#34;&gt;Git&lt;/a&gt;&#xD;&#xA;.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Key point&lt;/strong&gt;: One of the interesting things about the shell is that you can easily craft useful tools tailored to your own work and level.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Think-Environment &#34;Directory Structure&#34;</title>
-      <link>https://btklab.github.io/mainroad-btklab-clone/en/getting-started/think-environment-directory-structure/</link>
+      <link>https://btklab.github.io/en/getting-started/think-environment-directory-structure/</link>
       <pubDate>Fri, 07 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://btklab.github.io/mainroad-btklab-clone/en/getting-started/think-environment-directory-structure/</guid>
+      <guid>https://btklab.github.io/en/getting-started/think-environment-directory-structure/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;When working with a shell, it is important to first create a safe and efficient workspace. One might initially think of using the user&amp;rsquo;s home directory as a workspace, but this is not very safe. This is because the home directory already contains many directories and files managed by the system. There is a risk of &lt;strong&gt;accidentally deleting these files&lt;/strong&gt; due to command operation mistakes. Here, we create a working directory under the home directory and perform shell operations in that environment. The benefits of this structure are as follows:&lt;/p&gt;</description>
     </item>
   </channel>

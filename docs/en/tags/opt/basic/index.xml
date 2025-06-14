@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Opt/Basic on Btklab&#39;s Experience via PowerShell on Windows</title>
-    <link>https://btklab.github.io/mainroad-btklab-clone/en/tags/opt/basic/</link>
+    <link>https://btklab.github.io/en/tags/opt/basic/</link>
     <description>Recent content in Opt/Basic on Btklab&#39;s Experience via PowerShell on Windows</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 07 Jun 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://btklab.github.io/mainroad-btklab-clone/en/tags/opt/basic/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://btklab.github.io/en/tags/opt/basic/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Learn-Software &#34;PowerShell&#34; -Basic</title>
-      <link>https://btklab.github.io/mainroad-btklab-clone/en/getting-started/learn-software-powershell-basic/</link>
+      <link>https://btklab.github.io/en/getting-started/learn-software-powershell-basic/</link>
       <pubDate>Sun, 16 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://btklab.github.io/mainroad-btklab-clone/en/getting-started/learn-software-powershell-basic/</guid>
+      <guid>https://btklab.github.io/en/getting-started/learn-software-powershell-basic/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Learn how to control a computer using PowerShell (a command-line interface) This article covers how to type the command in PowerShell, tips, and the commands that I use frequently.&lt;/p&gt;&#xA;&lt;p&gt;All &amp;ldquo;shell&amp;rdquo; operations are performed by typing text called &amp;ldquo;the command.&amp;rdquo; Although the operation may be difficult to grasp at first, you will become proficient at it through trial and error. The command operations are the same as those used in daily GUI operations, such as creating, moving, copying, deleting, renaming, starting, and listing files and directories (folders).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Learn-Software &#34;Excel&#34; -Basic</title>
-      <link>https://btklab.github.io/mainroad-btklab-clone/en/getting-started/learn-software-excel-basic/</link>
+      <link>https://btklab.github.io/en/getting-started/learn-software-excel-basic/</link>
       <pubDate>Wed, 05 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://btklab.github.io/mainroad-btklab-clone/en/getting-started/learn-software-excel-basic/</guid>
+      <guid>https://btklab.github.io/en/getting-started/learn-software-excel-basic/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Basic knowledge of &amp;ldquo;Microsoft Excel&amp;rdquo;.&#xA;Turn your work into a puzzle with Excel functions, tables, and pivot tables.&lt;/p&gt;&#xA;&lt;h2 id=&#34;preparation&#34;&gt;Preparation&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;✓ Install &amp;ldquo;&lt;a href=&#34;https://www.microsoft.com/en-us/microsoft-365/excel&#34; target=&#34;_blank&#34;&gt;Microsoft Excel&lt;/a&gt;&#xD;&#xA;&amp;rdquo; or use the web app of Excel via cloud storage &amp;ldquo;Microsoft OneDrive&amp;rdquo;&lt;/li&gt;&#xA;&lt;li&gt;✓ The verified environment is &lt;a href=&#34;../../getting-started/index.html&#34;&gt;here&lt;/a&gt;&#xD;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;official-help&#34;&gt;Official Help&lt;/h2&gt;&#xA;&lt;p&gt;The official help for Microsoft Excel provides simple examples.&#xA;Reading the help while actually working on it will result in high-quality learning.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://support.microsoft.com/en-us/excel&#34; target=&#34;_blank&#34;&gt;Excel Help &amp;amp; Learning&lt;/a&gt;&#xD;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;shortcuts&#34;&gt;Shortcuts&lt;/h2&gt;&#xA;&lt;p&gt;Combining keyboard shortcuts feels like solving a puzzle.&#xA;The more you learn the keyboard shortcuts,&#xA;the faster your Excel operations will catch up with your thinking.&#xA;Try not to use the mouse as much as possible.&lt;/p&gt;</description>
     </item>
   </channel>
