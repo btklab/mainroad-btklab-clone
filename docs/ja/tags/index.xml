@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Btklab&#39;s Experience via PowerShell on Windows</title>
+    <link>https://btklab.com/ja/tags/</link>
+    <description>Recent content in Tags on Btklab&#39;s Experience via PowerShell on Windows</description>
+    <generator>Hugo</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Sat, 07 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://btklab.com/ja/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Name/Graphviz</title>
+      <link>https://btklab.com/ja/tags/name/graphviz/</link>
+      <pubDate>Sun, 20 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://btklab.com/ja/tags/name/graphviz/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Name/PlantUML</title>
+      <link>https://btklab.com/ja/tags/name/plantuml/</link>
+      <pubDate>Sun, 20 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://btklab.com/ja/tags/name/plantuml/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Name/WinGet</title>
+      <link>https://btklab.com/ja/tags/name/winget/</link>
+      <pubDate>Sun, 20 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://btklab.com/ja/tags/name/winget/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Noun/Software</title>
+      <link>https://btklab.com/ja/tags/noun/software/</link>
+      <pubDate>Sun, 20 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://btklab.com/ja/tags/noun/software/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Type/DataVisualization</title>
+      <link>https://btklab.com/ja/tags/type/datavisualization/</link>
+      <pubDate>Sun, 20 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://btklab.com/ja/tags/type/datavisualization/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Verb/Install</title>
+      <link>https://btklab.com/ja/tags/verb/install/</link>
+      <pubDate>Sun, 20 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://btklab.com/ja/tags/verb/install/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Name/PowerShell</title>
+      <link>https://btklab.com/ja/tags/name/powershell/</link>
+      <pubDate>Sat, 19 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://btklab.com/ja/tags/name/powershell/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Name/Pwsh-Sketches</title>
+      <link>https://btklab.com/ja/tags/name/pwsh-sketches/</link>
+      <pubDate>Sat, 19 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://btklab.com/ja/tags/name/pwsh-sketches/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Type/Launcher</title>
+      <link>https://btklab.com/ja/tags/type/launcher/</link>
+      <pubDate>Sat, 19 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://btklab.com/ja/tags/type/launcher/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Verb/Launch</title>
+      <link>https://btklab.com/ja/tags/verb/launch/</link>
+      <pubDate>Sat, 19 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://btklab.com/ja/tags/verb/launch/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

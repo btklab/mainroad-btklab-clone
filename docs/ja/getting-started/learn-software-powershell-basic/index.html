@@ -1,0 +1,1461 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Learn-Software &#34;PowerShell&#34; -Basic - Btklab&#39;s Experience via PowerShell on Windows</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="「シェル（コマンドラインインターフェイス）」の基本操作を習得する。">
+		<meta property="og:url" content="https://btklab.com/ja/getting-started/learn-software-powershell-basic/">
+  <meta property="og:site_name" content="Btklab&#39;s Experience via PowerShell on Windows">
+  <meta property="og:title" content="Learn-Software &#34;PowerShell&#34; -Basic">
+  <meta property="og:description" content="「シェル（コマンドラインインターフェイス）」の基本操作を習得する。">
+  <meta property="og:locale" content="ja_jp">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="getting-started">
+    <meta property="article:published_time" content="2025-02-16T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-06-07T00:00:00+00:00">
+    <meta property="article:tag" content="Verb/Learn">
+    <meta property="article:tag" content="Noun/Software">
+    <meta property="article:tag" content="Name/PowerShell">
+    <meta property="article:tag" content="Opt/Basic">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="../../../css/style.css">
+	
+
+	<link rel="shortcut icon" href="../../../favicon.ico">
+		
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+    <div class="container header__container">
+        
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="../../../ja/index.html" title="Btklab&#39;s Experience via PowerShell on Windows" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="../../../img/logo_an_owl_hood_boy.png">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">Btklab&#39;s Experience via PowerShell on Windows</div>
+					<div class="logo__tagline">Glue the Pieces — the Rest Takes Shape</div>
+				</div>
+		</a>
+	</div>
+        
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">メニュー</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="../../../ja/index.html">
+				
+				<span class="menu__text">Home</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../../../ja/getting-started/index.html">
+				
+				<span class="menu__text">はじめる</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../../../ja/solve-the-problem/index.html">
+				
+				<span class="menu__text">問題をとく</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../../../ja/random-thoughts/index.html">
+				
+				<span class="menu__text">ランダムな考え</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../../../ja/about/index.html">
+				
+				<span class="menu__text">免責事項など</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../../../ja/contact/index.html">
+				
+				<span class="menu__text">お問い合わせ</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../../../ja/archives/index.html">
+				
+				<span class="menu__text">アーカイブ</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../../../en/index.html">
+				
+				<span class="menu__text">English</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+    </div>
+    <link rel="stylesheet" href="https://btklab.com/lightbox2/css/lightbox.css" type="text/css" />
+    <link rel="stylesheet" href="https://btklab.com/css/custom.css" type="text/css" media="all" />
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Learn-Software &#34;PowerShell&#34; -Basic</h1>
+			<p class="post__lead">「シェル（コマンドラインインターフェイス）」の基本操作を習得する。</p>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2025-02-16T00:00:00Z">2025-02-16</time>
+	<time class="meta__text" datetime="2025-06-07T00:00:00Z">(最終更新: 2025-06-07)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text">
+                
+                <a class="meta__link" href="../../../ja/categories/getting-started/index.html" rel="category">Getting Started</a>
+    </span>
+</div>
+<div class="meta__item-translations meta__item">
+	<span class="meta__text">翻訳: <a class="meta__link" href="../../../en/getting-started/learn-software-powershell-basic/index.html">EN</a>
+	</span>
+</div></div>
+		</header>
+		
+<div class="post__toc toc">
+	<div class="toc__title">目次</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents">
+  <ul>
+    <li><a href="#はじめに">はじめに</a></li>
+    <li><a href="#前提条件">前提条件</a></li>
+    <li><a href="#コマンドを入力する">コマンドを入力する</a>
+      <ul>
+        <li><a href="#基本の操作">基本の操作</a></li>
+        <li><a href="#入力補完を用いて楽をする">入力補完を用いて楽をする</a></li>
+        <li><a href="#短縮名エイリアスで楽に入力する">短縮名（エイリアス）で楽に入力する</a></li>
+      </ul>
+    </li>
+    <li><a href="#コマンドのヘルプを読む">コマンドのヘルプを読む</a></li>
+    <li><a href="#コマンドを検索する">コマンドを検索する</a></li>
+    <li><a href="#everyday-operation">日常的なコマンド操作</a>
+      <ul>
+        <li><a href="#ls">ls (Get-ChildItem)</a></li>
+        <li><a href="#cd">cd (Set-Location)</a></li>
+        <li><a href="#pushd">pushd (Push-Location)</a></li>
+        <li><a href="#popd">popd (Pop-Location)</a></li>
+        <li><a href="#ii">ii (Invoke-Item)</a></li>
+        <li><a href="#mkdir">mkdir (New-Item)</a></li>
+        <li><a href="#ni">ni (New-Item)</a></li>
+        <li><a href="#mv">mv (Move-Item)</a></li>
+        <li><a href="#cp">cp (Copy-Item)</a></li>
+        <li><a href="#rm">rm (Remove-Item)</a></li>
+        <li><a href="#ren">ren (Rename-Item)</a></li>
+      </ul>
+    </li>
+    <li><a href="#checklist">📋 PowerShell初心者向け 学習チェックリスト</a>
+      <ul>
+        <li><a href="#ステップ1-powershellの基本を理解する">ステップ1: PowerShellの基本を理解する</a></li>
+        <li><a href="#ステップ2-テキスト処理とデータ操作">ステップ2: テキスト処理とデータ操作</a></li>
+        <li><a href="#ステップ3-実用的なスクリプトを作る">ステップ3: 実用的なスクリプトを作る</a></li>
+        <li><a href="#ステップ4-必要に応じて深掘りする">ステップ4: 必要に応じて深掘りする</a></li>
+      </ul>
+    </li>
+    <li><a href="#terms">用語</a></li>
+    <li><a href="#links">関連リンク</a></li>
+  </ul>
+</nav>
+	</div>
+</div><div class="content post__content clearfix">
+			<h2 id="はじめに">はじめに</h2>
+<p>PowerShellを用いて「シェル（コマンドラインインターフェイス）」でコンピュータを操作する方法を学ぶ。当記事で紹介するのは、PowerShellへの文字列入力の仕方とコツ、それから、ぼくが日常的によく使うコマンドだ。</p>
+<p>「シェル」の操作はすべて「コマンド」と呼ばれる文字入力で行う。操作方法は最初はとっつきにくいかもしれないが、試行錯誤するうちに慣れてくると思う。コマンド操作といってもその内容はGUIでの日常的な操作と同じで、ファイルやディレクトリ（フォルダ）の作成、移動、コピー、削除、名前の変更、起動、一覧表示などを取り扱う。</p>
+<p>付録として文末に「<a href="#checklist">PowerShell初心者向け 学習チェックリスト</a>
+」をつけた。</p>
+<h2 id="前提条件">前提条件</h2>
+<ul>
+<li>✓ <a href="../install-software-powershell/index.html">PowerShellのインストール</a>
+</li>
+<li>✓ <a href="../launch-software-powershell/index.html">PowerShellの起動</a>
+</li>
+<li>✓ (Optional) <a href="../install-software-windowsterminal/index.html">Windows Terminalのインストール</a>
+</li>
+<li>✓ 検証した環境は<a href="../../getting-started/index.html">こちら</a>
+</li>
+</ul>
+<h2 id="コマンドを入力する">コマンドを入力する</h2>
+<h3 id="基本の操作">基本の操作</h3>
+<p>シェルにコマンドを入力してコンピュータを操作する基本的な手順は以下のとおり：</p>
+<ol>
+<li><strong>シェルを開く</strong>：See → <a href="../launch-software-powershell/index.html">Launch-PowerShell</a>
+</li>
+<li><strong>コマンドを入力する</strong>： 例 <code>ls</code>と入力する</li>
+<li><strong>コマンドを実行する</strong>：コマンド入力後、<kbd>ENTER</kbd></li>
+<li><strong>コマンドの出力を確認する</strong>：
+<ul>
+<li>コマンドの実行結果が端末に出力される</li>
+<li>エラーが発生した場合はエラーメッセージが出力される</li>
+</ul>
+</li>
+</ol>
+<p>例：現在の日時を取得するコマンド&quot;<a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/get-date" target="_blank">Get-Date</a>
+&ldquo;を実行する。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>Get-Date
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>Sunday, February <span style="color:#ae81ff">16</span>, <span style="color:#ae81ff">2025</span> <span style="color:#ae81ff">4</span><span style="color:#960050;background-color:#1e0010">:</span><span style="color:#ae81ff">11</span><span style="color:#960050;background-color:#1e0010">:</span><span style="color:#ae81ff">50</span> PM
+</span></span></code></pre></div><p>例： PowerShellコマンド&rdquo;<a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/get-content" target="_blank">Get-Content</a>
+&ldquo;のヘルプをブラウザで読む。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>Get-Help Get-Content -Online
+</span></span></code></pre></div><h3 id="入力補完を用いて楽をする">入力補完を用いて楽をする</h3>
+<p>PowerShellコマンドの命名規則は一貫して「<code>&lt;動詞&gt;-&lt;名詞&gt;</code>」という構造なので直観的に分かりやすいが、長いので手動でタイプするのが面倒でもある。コマンド入力をより楽に正確におこなうために入力補完機能を積極的に活用しよう。</p>
+<ol>
+<li><strong>コマンド履歴</strong> （History）
+<ul>
+<li><kbd>↑</kbd>や<kbd>↓</kbd>キーで以前入力したコマンドを再利用することができる</li>
+<li>&ldquo;<a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/get-history" target="_blank">Get-History</a>
+&ldquo;コマンドで履歴の一覧を取得できる
+<ul>
+<li>See → <a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_history" target="_blank">about_History</a>
+</li>
+<li>履歴ファイルのパスを取得: <code>(Get-PSReadlineOption).HistorySavePath</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong><code>TAB</code>補完</strong>（<a href="https://learn.microsoft.com/ja-jp/powershell/scripting/learn/shell/tab-completion" target="_blank">Tab-Completion</a>
+）
+<ul>
+<li>コマンド（またはファイル名）を途中までタイプし<kbd>TAB</kbd>を入力</li>
+<li>複数候補がある場合、<kbd>TAB</kbd> → <kbd>TAB</kbd> → &hellip;と入力すると候補を次々と切り替える</li>
+<li>例：<code>Get-Cont</code>と入力 → <kbd>TAB</kbd> → <code>Get-Content</code>と補完される</li>
+</ul>
+</li>
+<li><strong><code>CTRL+SPACE</code>補完</strong>（<a href="https://learn.microsoft.com/ja-jp/powershell/scripting/learn/shell/tab-completion" target="_blank">MenuComplete</a>
+）
+<ul>
+<li>コマンド（またはファイル名）を途中までタイプし<kbd><kbd>CTRL</kbd>+<kbd>SPACE</kbd></kbd>を入力</li>
+<li>候補がリストされるので、矢印キーで選択して<kbd>ENTER</kbd></li>
+<li>例：<code>Get-Ch</code>と入力 → <kbd><kbd>CTRL</kbd>+<kbd>SPACE</kbd></kbd> → 候補リスト表示</li>
+</ul>
+</li>
+<li><strong>PSReadLineの予測機能</strong>（<a href="https://learn.microsoft.com/ja-jp/powershell/scripting/learn/shell/using-predictors" target="_blank">IntelliSense</a>
+）
+<ul>
+<li>コマンド（またはファイル名）を途中までタイプすると、コマンド履歴などに基づく予測候補を表示</li>
+<li>操作：
+<ul>
+<li>InlineView：デフォルト：<kbd>→</kbd>で受け入れ、<kbd>ENTER</kbd>で実行</li>
+<li>ListView：<kbd>F2</kbd>で切り替え：<kbd>↑</kbd>,<kbd>↓</kbd>で選択、<kbd>ENTER</kbd>で実行</li>
+</ul>
+</li>
+<li>設定確認：
+<ul>
+<li><code>Get-PSReadLineOption | Select-Object -Property PredictionSource</code></li>
+<li><code>None</code>以外（たとえば<code>History</code>）であれば有効な状態</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="短縮名エイリアスで楽に入力する">短縮名（エイリアス）で楽に入力する</h3>
+<p>短縮名（<a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_aliases" target="_blank">エイリアス</a>
+）が登録されているコマンドは、より短い別名で入力することができる。</p>
+<ul>
+<li>PowerShellでエイリアスを使用する方法
+<ul>
+<li>エイリアスの確認：&quot;<a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/get-alias" target="_blank">Get-Alias</a>
+&ldquo;コマンドで登録されているエイリアスを確認する</li>
+<li>エイリアスの使用：コマンド名の代わりにエイリアスを入力
+<ul>
+<li>例：<code>ls</code>は<code>Get-ChildItem</code>のエイリアス</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>以下の2つのコマンドは等価。（<code>man</code>は<code>Get-Help</code>のエイリアス。<code>cat</code>は<code>Get-Content</code>のエリアス）</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>Get-Help Get-Content
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e"># use aliases</span>
+</span></span><span style="display:flex;"><span>man cat
+</span></span></code></pre></div><h2 id="コマンドのヘルプを読む">コマンドのヘルプを読む</h2>
+<p>コマンドの概要や使い方は&rdquo;<a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/get-help" target="_blank">Get-Help</a>
+&ldquo;コマンドで知ることができる。PowerShellのコマンドはヘルプが充実しているので、読むだけでPowerShellのよい学習になる。</p>
+<ul>
+<li>&ldquo;<a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/get-help" target="_blank">Get-Help</a>
+&ldquo;の使い方
+<ul>
+<li><code>Get-Help &lt;Name&gt;</code></li>
+<li><code>Get-Help &lt;Name&gt; -Online</code>
+<ul>
+<li><code>-Online</code>オプションは、web上にある情報をブラウザで表示する</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>Get-Help Get-Content
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>NAME
+</span></span><span style="display:flex;"><span>    Get-Content
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>SYNTAX
+</span></span><span style="display:flex;"><span>    Get-Content [-Path] &lt;string[]&gt;...
+</span></span><span style="display:flex;"><span>    Get-Content -LiteralPath &lt;string[]&gt;...
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>ALIASES
+</span></span><span style="display:flex;"><span>    gc
+</span></span><span style="display:flex;"><span>    cat
+</span></span><span style="display:flex;"><span>    type
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>REMARKS
+</span></span><span style="display:flex;"><span>    Get-Help cannot find the Help files <span style="color:#66d9ef">for</span> this cmdlet on this computer.
+</span></span><span style="display:flex;"><span>     It is displaying only partial help.
+</span></span><span style="display:flex;"><span>        -- To download and install Help files <span style="color:#66d9ef">for</span> the module that include
+</span></span><span style="display:flex;"><span>    s this cmdlet, use Update-Help.
+</span></span><span style="display:flex;"><span>        -- To view the Help topic <span style="color:#66d9ef">for</span> this cmdlet online, type<span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#e6db74">&#34;Get-Help
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">     Get-Content -Online&#34;</span> or
+</span></span><span style="display:flex;"><span>           go to https<span style="color:#960050;background-color:#1e0010">:</span>//go.microsoft.com/fwlink/<span style="color:#66d9ef">?</span>LinkID=<span style="color:#ae81ff">2096490</span>.
+</span></span></code></pre></div><h2 id="コマンドを検索する">コマンドを検索する</h2>
+<p>&ldquo;<a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/get-command" target="_blank">Get-Command</a>
+&ldquo;でコマンドを検索できる。</p>
+<ul>
+<li>&ldquo;<a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/get-command" target="_blank">Get-Command</a>
+&ldquo;の使い方
+<ul>
+<li><code>Get-Command *</code>：すべての種類のコマンドを取得</li>
+<li><code>Get-Command Get-*</code>：<code>Get-</code>を含むコマンドを取得</li>
+<li><code>Get-Command *-Content</code>：<code>-Content</code>を含むコマンドを取得</li>
+</ul>
+</li>
+</ul>
+<p>PowerShellコマンドの命名規則が「<code>&lt;動詞&gt;-&lt;名詞&gt;</code>」という構造を知っておくと、コマンドを知らなくてもある程度存在を予想できる。オプション：<code>-Noun</code>や<code>-Verb</code>でそれぞれ明示的に指定して検索することもできる。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e"># &lt;名詞&gt;に「Content」を含むコマンドを検索する</span>
+</span></span><span style="display:flex;"><span>Get-Command -Noun <span style="color:#e6db74">&#34;Content&#34;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>CommandType     Name            Version
+</span></span><span style="display:flex;"><span>-----------     ----            -------
+</span></span><span style="display:flex;"><span>Cmdlet          Add-Content     <span style="color:#ae81ff">7.0</span>.<span style="color:#ae81ff">0</span><span style="color:#960050;background-color:#1e0010">…</span>
+</span></span><span style="display:flex;"><span>Cmdlet          Clear-Content   <span style="color:#ae81ff">7.0</span>.<span style="color:#ae81ff">0</span><span style="color:#960050;background-color:#1e0010">…</span>
+</span></span><span style="display:flex;"><span>Cmdlet          Get-Content     <span style="color:#ae81ff">7.0</span>.<span style="color:#ae81ff">0</span><span style="color:#960050;background-color:#1e0010">…</span>
+</span></span><span style="display:flex;"><span>Cmdlet          Set-Content     <span style="color:#ae81ff">7.0</span>.<span style="color:#ae81ff">0</span><span style="color:#960050;background-color:#1e0010">…</span>
+</span></span></code></pre></div><h2 id="everyday-operation">日常的なコマンド操作</h2>
+<p>ぼくにとっての日常的なコンピュータ操作とは、ファイルとディレクトリ（フォルダ）の操作である。その流れと対応するコマンドを以下に示す。同じことは、CLI（コマンドラインインターフェース）を用いずとも、エクスプローラとマウスクリックによる視覚的な操作でもできる。</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">操作</th>
+          <th style="text-align: left">コマンド（短縮名）</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">1. ディレクトリを移動する</td>
+          <td style="text-align: left"><a href="#cd">cd</a>
+, <a href="#pushd">pushd</a>
+, <a href="#popd">popd</a>
+</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">2. ディレクトリ内のファイルを一覧表示する</td>
+          <td style="text-align: left"><a href="#ls">ls</a>
+</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">3. ファイルのオープン・作成・移動・コピー・削除・名前変更</td>
+          <td style="text-align: left"><a href="#ii">ii</a>
+, <a href="#mkdir">mkdir</a>
+, <a href="#ni">ni</a>
+, <a href="#mv">mv</a>
+, <a href="#cp">cp</a>
+, <a href="#rm">rm</a>
+, <a href="#ren">ren</a>
+</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">4. ファイルを編集し、保存して閉じる</td>
+          <td style="text-align: left">アプリで編集・保存</td>
+      </tr>
+  </tbody>
+</table>
+<p>実際の操作例。エイリアスやTAB補完、コマンド履歴呼び出し等を用いて入力作業を省力化している：</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">操作</th>
+          <th style="text-align: left">コマンド</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">1. ディレクトリ内のファイルを一覧表示する<br />（ → 結果、めあてのファイルがなかったとする😢）</td>
+          <td style="text-align: left"><code>ls path/to/the/directory</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">2. 別のディレクトリ内のファイルを一覧表示する<br />（ → めあてのファイルを見つけたとする🙄）</td>
+          <td style="text-align: left"><code>ls path/to/the/another/directory</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">3. ディレクトリを移動する</td>
+          <td style="text-align: left"><code>pushd path/to/the/another/directory</code> <br />or<br /> <code>cd path/to/the/another/directory</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">4. めあてのファイルを開く</td>
+          <td style="text-align: left"><code>ii file.xlsx</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">5. ファイルを編集し、保存して閉じる</td>
+          <td style="text-align: left">アプリで編集・保存</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">6. もと居たディレクトリに戻る</td>
+          <td style="text-align: left"><code>popd</code> <br />or<br /> <code>cd -</code></td>
+      </tr>
+  </tbody>
+</table>
+<p>以下、コマンドを個別に説明する。より詳しい情報は<code>man &lt;command&gt; -Online</code>参照。
+とくにコマンド <a href="#ii">ii</a>
+（<a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/invoke-item" target="_blank">Invoke-Item</a>
+のエイリアス）は便利で、<code>ii &lt;file&gt;</code>とすると、拡張子に応じたアプリでファイルが開く。
+<a href="#ii">ii</a>
+コマンドに慣れてきたら、よく使うフォルダやファイルは<strong>カレントディレクトリから移動することなく</strong>操作できるようになる：</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">操作</th>
+          <th style="text-align: left">コマンド</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">1. めあてのファイル（またはディレクトリ）を開く</td>
+          <td style="text-align: left"><code>ii path/to/file.xlsx</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">2. ファイルを編集し、保存して閉じる</td>
+          <td style="text-align: left">アプリで編集・保存</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="ls">ls (Get-ChildItem)</h3>
+<p><strong>Synopsis</strong>: 現在いるディレクトリ（カレントディレクトリ）にあるファイルとフォルダをリストする。</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Param</th>
+          <th style="text-align: left">Command</th>
+          <th style="text-align: left">Note</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>Help</strong></td>
+          <td style="text-align: left"><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/get-childitem" target="_blank"><code>man ls -Online</code></a>
+</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Example</strong></td>
+          <td style="text-align: left"><code>ls</code></td>
+          <td style="text-align: left">カレントディレクトリのファイルとフォルダ情報をリスト。</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Example</strong></td>
+          <td style="text-align: left"><code>ls -Name</code></td>
+          <td style="text-align: left">カレントディレクトリのファイル名とフォルダ名のみ表示。</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Example</strong></td>
+          <td style="text-align: left"><code>ls *.txt</code></td>
+          <td style="text-align: left">名前が「<code>*.txt</code>」であるファイルをリスト。</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Example</strong></td>
+          <td style="text-align: left"><code>ls *.txt -Recurse</code></td>
+          <td style="text-align: left">名前が「<code>*.txt</code>」であるファイルをリスト。サブディレクトリも再帰的に検索。</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Example</strong></td>
+          <td style="text-align: left">Get-ChildItem | Select-Object -ExpandProperty FullName</td>
+          <td style="text-align: left">カレントディレクトリのファイルとディレクトリのフルパスを文字列として取得。</td>
+      </tr>
+  </tbody>
+</table>
+<p>→ <a href="#everyday-operation">戻る</a>
+：日常的なコマンド操作表</p>
+<h3 id="cd">cd (Set-Location)</h3>
+<p><strong>Synopsis</strong>: 指定したディレクトリに移動する。</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Param</th>
+          <th style="text-align: left">Command</th>
+          <th style="text-align: left">Note</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>Help</strong></td>
+          <td style="text-align: left"><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/set-location" target="_blank"><code>man cd -Online</code></a>
+</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Example</strong></td>
+          <td style="text-align: left"><code>cd</code>, <code>cd ~</code></td>
+          <td style="text-align: left">ホームディレクトリに移動。</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Example</strong></td>
+          <td style="text-align: left"><code>cd C:/Users/btklab/</code></td>
+          <td style="text-align: left">絶対パス指定：ユーザ「btklab」のホームディレクトリに移動。</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Example</strong></td>
+          <td style="text-align: left"><code>cd ./</code></td>
+          <td style="text-align: left">相対パス指定：カレントディレクトリのまま（移動しない）。</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Example</strong></td>
+          <td style="text-align: left"><code>cd ../</code></td>
+          <td style="text-align: left">相対パス指定：ひとつ上のディレクトリに移動。</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Example</strong></td>
+          <td style="text-align: left"><code>cd -</code></td>
+          <td style="text-align: left">ひとつ前に居たディレクトリに戻る。</td>
+      </tr>
+  </tbody>
+</table>
+<p>→ <a href="#everyday-operation">戻る</a>
+：日常的なコマンド操作表</p>
+<h3 id="pushd">pushd (Push-Location)</h3>
+<p><strong>Synopsis</strong>: 現在の場所を場所スタックの上に追加した上で指定したディレクトリに移動する。<a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/push-location" target="_blank"><code>pushd</code></a>
+したのちに<a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/pop-location" target="_blank"><code>popd</code></a>
+することで現在の場所（スタックの最上部に登録された場所）に戻ることができる。</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Param</th>
+          <th style="text-align: left">Command</th>
+          <th style="text-align: left">Note</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>Help</strong></td>
+          <td style="text-align: left"><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/push-location" target="_blank"><code>man pushd -Online</code></a>
+</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Example</strong></td>
+          <td style="text-align: left"><code>cd ~ ; pushd C:/Users/</code></td>
+          <td style="text-align: left">絶対パス指定：ホームディレクトリ → ディレクトリ「Users」に移動。</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Example</strong></td>
+          <td style="text-align: left"><code>popd</code></td>
+          <td style="text-align: left">ディレクトリ「Users」の前にいた場所（ホームディレクトリ）に戻る。</td>
+      </tr>
+  </tbody>
+</table>
+<p>→ <a href="#everyday-operation">戻る</a>
+：日常的なコマンド操作表</p>
+<h3 id="popd">popd (Pop-Location)</h3>
+<p><strong>Synopsis</strong>: 最後に<a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/push-location" target="_blank"><code>pushd</code></a>
+した場所（場所スタックの最上段）に戻る。</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Param</th>
+          <th style="text-align: left">Command</th>
+          <th style="text-align: left">Note</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>Help</strong></td>
+          <td style="text-align: left"><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/pop-location" target="_blank"><code>man popd -Online</code></a>
+</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Example</strong></td>
+          <td style="text-align: left"><code>cd ~ ; pushd C:/Users/</code></td>
+          <td style="text-align: left">絶対パス指定：ホームディレクトリ → ディレクトリ「Users」に移動。</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Example</strong></td>
+          <td style="text-align: left"><code>popd</code></td>
+          <td style="text-align: left">ディレクトリ「Users」の前にいた場所（ホームディレクトリ）に戻る。</td>
+      </tr>
+  </tbody>
+</table>
+<p>→ <a href="#everyday-operation">戻る</a>
+：日常的なコマンド操作表</p>
+<h3 id="ii">ii (Invoke-Item)</h3>
+<p><strong>Synopsis</strong>: ファイルやフォルダを関連したアプリで開く。</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Param</th>
+          <th style="text-align: left">Command</th>
+          <th style="text-align: left">Note</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>Help</strong></td>
+          <td style="text-align: left"><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/invoke-item" target="_blank"><code>man ii -Online</code></a>
+</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Example</strong></td>
+          <td style="text-align: left"><code>ii .</code></td>
+          <td style="text-align: left">エクスプローラでカレントディレクトリを開く。</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Example</strong></td>
+          <td style="text-align: left"><code>ii a.txt</code></td>
+          <td style="text-align: left">テキストエディタでファイル<code>a.txt</code>を開く。</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Example</strong></td>
+          <td style="text-align: left"><code>ii a.xlsx</code></td>
+          <td style="text-align: left">エクセルでファイル<code>a.xlsx</code>を開く 。</td>
+      </tr>
+  </tbody>
+</table>
+<dl>
+<dt>Tips:</dt>
+<dd>似たような機能をもつ「<a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/start-process" target="_blank">Start-Process</a>
+」というコマンドがある。以下はどちらもテキストエディタで<code>a.txt</code>を開く</dd>
+<dd><code>Invoke-Item &quot;C:/path/to/file.txt&quot;</code></dd>
+<dd><code>Start-Process &quot;notepad.exe&quot; &quot;C:/path/to/file.txt&quot;</code></dd>
+<dd>ファイルやフォルダを簡単に開きたい場合は、<a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/invoke-item" target="_blank">Invoke-Item</a>
+が便利</dd>
+<dd>特定のアプリケーションで特定の引数とともに起動したい場合は、<a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/start-process" target="_blank">Start-Process</a>
+が適す。</dd>
+</dl>
+<p>→ <a href="#everyday-operation">戻る</a>
+：日常的なコマンド操作表</p>
+<h3 id="mkdir">mkdir (New-Item)</h3>
+<p><strong>Synopsis</strong>:  ディレクトリ（フォルダ）を新規作成する。</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Param</th>
+          <th style="text-align: left">Command</th>
+          <th style="text-align: left">Note</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>Help</strong></td>
+          <td style="text-align: left"><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/new-item" target="_blank"><code>man mkdir -Online</code></a>
+</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Example</strong></td>
+          <td style="text-align: left"><code>mkdir &quot;newdir&quot;</code></td>
+          <td style="text-align: left">カレントディレクトリに新規ディレクトリ<code>newdir</code>を作成。</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Example</strong></td>
+          <td style="text-align: left"><code>New-Item -Path . -Name &quot;newdir&quot; -ItemType &quot;directory&quot;</code></td>
+          <td style="text-align: left">同上。</td>
+      </tr>
+  </tbody>
+</table>
+<p>→ <a href="#everyday-operation">戻る</a>
+：日常的なコマンド操作表</p>
+<h3 id="ni">ni (New-Item)</h3>
+<p><strong>Synopsis</strong>: ディレクトリやファイルを新規作成する。</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Param</th>
+          <th style="text-align: left">Command</th>
+          <th style="text-align: left">Note</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>Help</strong></td>
+          <td style="text-align: left"><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/new-item" target="_blank"><code>man ni -Online</code></a>
+</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Example</strong></td>
+          <td style="text-align: left"><code>ni -Path . -Name &quot;a.txt&quot; -ItemType &quot;file&quot;</code></td>
+          <td style="text-align: left">カレントディレクトリに空ファイル<code>a.txt</code>を新規作成。</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Example</strong></td>
+          <td style="text-align: left"><code>New-Item -Path . -Name &quot;a.txt&quot; -ItemType &quot;file&quot;</code></td>
+          <td style="text-align: left">同上。</td>
+      </tr>
+  </tbody>
+</table>
+<p>→ <a href="#everyday-operation">戻る</a>
+：日常的なコマンド操作表</p>
+<h3 id="mv">mv (Move-Item)</h3>
+<p><strong>Synopsis</strong>: ファイルやフォルダを移動する、もしくはリネームする。<code>-WhatIf</code>スイッチを追加すると、実行せずに動作だけを確認できる。</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Param</th>
+          <th style="text-align: left">Command</th>
+          <th style="text-align: left">Note</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>Help</strong></td>
+          <td style="text-align: left"><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/move-item" target="_blank"><code>man mv -Online</code></a>
+</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Example</strong></td>
+          <td style="text-align: left"><code>mv C:/a.txt E:/Temp/b.txt</code></td>
+          <td style="text-align: left">ファイルリネーム：ファイル<code>a.txt</code>を<code>C:</code>ドライブから<code>E:/Temp</code>ディレクトリに移動し、名前を<code>b.txt</code>に変更。</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Example</strong></td>
+          <td style="text-align: left"><code>mv -Path C:/a.txt -Destination E:/Temp/b.txt</code></td>
+          <td style="text-align: left">同上。</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Example</strong></td>
+          <td style="text-align: left">ls a.txt | mv -Destination E:/Temp/</td>
+          <td style="text-align: left">ファイル移動：カレントディレクトリのファイル<code>a.txt</code>を<code>E:/Temp</code>ディレクトリに<strong>移動</strong>。この場合、<code>-Destination</code>オプションを明示すること。</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="cp">cp (Copy-Item)</h3>
+<p><strong>Synopsis</strong>: ファイルやフォルダをコピーする。元のファイルは削除されない。<code>-WhatIf</code>スイッチを追加すると、実行せずに動作だけを確認できる。</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Param</th>
+          <th style="text-align: left">Command</th>
+          <th style="text-align: left">Note</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>Help</strong></td>
+          <td style="text-align: left"><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/copy-item" target="_blank"><code>man cp -Online</code></a>
+</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Example</strong></td>
+          <td style="text-align: left"><code>cp ./a.txt ../hoge</code></td>
+          <td style="text-align: left">ファイルコピー：カレントディレクトリのファイル<code>a.txt</code>を一つ上の階層<code>../</code>にあるディレクトリ<code>hoge</code>にコピー。</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Example</strong></td>
+          <td style="text-align: left"><code>cp -Path ./a.txt -Destination ../hoge</code></td>
+          <td style="text-align: left">同上。</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Example</strong></td>
+          <td style="text-align: left"><code>cp -Path &quot;C:/hoge&quot; -Destination &quot;C:/fuga&quot; -Recurse</code></td>
+          <td style="text-align: left">ディレクトリコピー：ディレクトリ<code>C/hoge</code>を中身ごとディレクトリ<code>C:/fuga</code>にコピー</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Example</strong></td>
+          <td style="text-align: left">ls a.txt | cp -Destination E:/Temp/</td>
+          <td style="text-align: left">カレントディレクトリのファイル<code>a.txt</code>を<code>E:/Temp</code>ディレクトリに<strong>コピー</strong>。この場合、<code>-Destination</code>オプションを明示すること。コピー元および先のアイテムが存在しない場合はエラーを出力。</td>
+      </tr>
+  </tbody>
+</table>
+<p>→ <a href="#everyday-operation">戻る</a>
+：日常的なコマンド操作表</p>
+<h3 id="rm">rm (Remove-Item)</h3>
+<p><strong>Synopsis</strong>: ファイルやディレクトリを削除。指定したアイテムが存在しない場合はエラーを返し処理は実行されない。削除したアイテムは「ごみ箱」には移動されず、元に戻せない点に注意する。<code>-WhatIf</code>スイッチを追加すると、実行せずに動作だけを確認できる。</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Param</th>
+          <th style="text-align: left">Command</th>
+          <th style="text-align: left">Note</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>Help</strong></td>
+          <td style="text-align: left"><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/remove-item" target="_blank"><code>man rm -Online</code></a>
+</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Example</strong></td>
+          <td style="text-align: left"><code>rm a.txt</code></td>
+          <td style="text-align: left">カレントディレクトリのファイル<code>a.txt</code>を削除。</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Example</strong></td>
+          <td style="text-align: left">ls a.txt | rm</td>
+          <td style="text-align: left">同上。</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Example</strong></td>
+          <td style="text-align: left"><code>Remove-Item -Path a.txt</code></td>
+          <td style="text-align: left">同上。</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Example</strong></td>
+          <td style="text-align: left"><code>rm *.txt</code></td>
+          <td style="text-align: left">カレントディレクトリから、拡張子が<code>.txt</code>である1つ以上のファイルを削除。</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Example</strong></td>
+          <td style="text-align: left">ls *.cache -Recurse | rm</td>
+          <td style="text-align: left">カレントディレクトリおよびサブディレクトリから、拡張子が<code>.cache</code>である1つ以上のファイルを削除。</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Example</strong></td>
+          <td style="text-align: left"><code>Remove-Item a.md -WhatIf</code></td>
+          <td style="text-align: left">ドライラン：実行せずに動作結果だけがコンソールに出力される。</td>
+      </tr>
+  </tbody>
+</table>
+<p>→ <a href="#everyday-operation">戻る</a>
+：日常的なコマンド操作表</p>
+<h3 id="ren">ren (Rename-Item)</h3>
+<p><strong>Synopsis</strong>: ファイルやフォルダのリネーム。<code>-WhatIf</code>スイッチを追加すると、実行せずに動作だけを確認できる。</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Param</th>
+          <th style="text-align: left">Command</th>
+          <th style="text-align: left">Note</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Help</td>
+          <td style="text-align: left"><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/rename-item" target="_blank"><code>man ren -Online</code></a>
+</td>
+          <td style="text-align: left"></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Example</td>
+          <td style="text-align: left"><code>ren &quot;./a.txt&quot; &quot;b.txt&quot;</code></td>
+          <td style="text-align: left">ファイルリネーム：カレントディレクトリのファイル<code>a.txt</code>を<code>B.txt</code>にリネーム。</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Example</td>
+          <td style="text-align: left"><code>ren -Path &quot;./a.txt&quot; -NewName &quot;b.txt&quot;</code></td>
+          <td style="text-align: left">同上。</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Example</td>
+          <td style="text-align: left"><code>Rename-Item -Path &quot;./a.txt&quot; -NewName &quot;b.txt&quot;</code></td>
+          <td style="text-align: left">同上。</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Example</td>
+          <td style="text-align: left">Get-ChildItem *.txt | Rename-Item -NewName { $_.Name -replace &lsquo;.txt&rsquo;,&rsquo;.log&rsquo; }</td>
+          <td style="text-align: left">複数ファイルのリネーム：カレントディレクトリにある拡張子が<code>.txt</code>であるファイルの拡張子を<code>.log</code>に一括リネーム。</td>
+      </tr>
+  </tbody>
+</table>
+<p>→ <a href="#everyday-operation">戻る</a>
+：日常的なコマンド操作表</p>
+<h2 id="checklist">📋 PowerShell初心者向け 学習チェックリスト</h2>
+<p>PowerShellで日常業務をこなせるレベルに到達するためのチェックリストおよび学習用リンク集。リンク先は主にMicrosoft社の公式サイト「<a href="https://learn.microsoft.com/ja-jp/powershell/" target="_blank">PowerShell のドキュメント - PowerShell</a>
+」。</p>
+<h3 id="ステップ1-powershellの基本を理解する">ステップ1: PowerShellの基本を理解する</h3>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Check</th>
+          <th style="text-align: left">Item</th>
+          <th style="text-align: left">Link</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><input type="checkbox" name="checkbox" value="html"></td>
+          <td style="text-align: left">PowerShellとは何かを説明できる</td>
+          <td style="text-align: left"><a href="https://learn.microsoft.com/ja-jp/powershell/scripting/learn/ps101/01-getting-started" target="_blank">Getting Started with PowerShell</a>
+</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><input type="checkbox" name="checkbox" value="html"></td>
+          <td style="text-align: left">PowerShellを起動して、コマンドを打てる</td>
+          <td style="text-align: left"><a href="https://learn.microsoft.com/ja-jp/powershell/scripting/learn/ps101/01-getting-started" target="_blank">Getting Started with PowerShell</a>
+</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><input type="checkbox" name="checkbox" value="html"></td>
+          <td style="text-align: left"><code>Get-Help</code> でコマンドレットの情報を調べられる</td>
+          <td style="text-align: left"><a href="https://learn.microsoft.com/ja-jp/powershell/scripting/learn/ps101/02-help-system" target="_blank">Using the Help System</a>
+</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><input type="checkbox" name="checkbox" value="html"></td>
+          <td style="text-align: left">パイプライン (|) を使ってコマンドをつなげられる</td>
+          <td style="text-align: left"><a href="https://learn.microsoft.com/ja-jp/powershell/scripting/learn/ps101/04-pipelines" target="_blank">Pipelines in PowerShell</a>
+</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="ステップ2-テキスト処理とデータ操作">ステップ2: テキスト処理とデータ操作</h3>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Check</th>
+          <th style="text-align: left">Item</th>
+          <th style="text-align: left">Link</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><input type="checkbox" name="checkbox" value="html"></td>
+          <td style="text-align: left">配列やリストを作成・操作できる</td>
+          <td style="text-align: left"><a href="https://learn.microsoft.com/ja-jp/powershell/scripting/learn/deep-dives/everything-about-arrays" target="_blank">Everything About Arrays</a>
+</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><input type="checkbox" name="checkbox" value="html"></td>
+          <td style="text-align: left">CSVファイルからデータをインポート・エクスポートできる</td>
+          <td style="text-align: left"><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/import-csv" target="_blank">Import-Csv</a>
+, <a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/export-csv" target="_blank">Export-Csv</a>
+, <a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/convertfrom-csv" target="_blank">ConvertFrom-Csv</a>
+, <a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/convertto-csv" target="_blank">ConvertTo-Csv</a>
+</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><input type="checkbox" name="checkbox" value="html"></td>
+          <td style="text-align: left">JSONやXMLファイルを読み書きできる</td>
+          <td style="text-align: left"><a href="https://learn.microsoft.com/ja-jp/training/modules/import-data-different-formats-for-use-scripts/" target="_blank">Import Data from Different Formats</a>
+</td>
+      </tr>
+  </tbody>
+</table>
+<h4 id="ステップ21-クオート引用符の使い方を理解する">ステップ2.1: クオート（引用符）の使い方を理解する</h4>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Check</th>
+          <th style="text-align: left">Item</th>
+          <th style="text-align: left">Link</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><input type="checkbox" name="checkbox" value="html"></td>
+          <td style="text-align: left">シングルクオートとダブルクオートの違いを理解して使い分けられる</td>
+          <td style="text-align: left"><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_quoting_rules" target="_blank">About Quoting Rules</a>
+</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><input type="checkbox" name="checkbox" value="html"></td>
+          <td style="text-align: left">バッククオートでエスケープができる</td>
+          <td style="text-align: left"><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_quoting_rules" target="_blank">About Quoting Rules</a>
+</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><input type="checkbox" name="checkbox" value="html"></td>
+          <td style="text-align: left">ヒアストリングを使って複数行文字列を扱える</td>
+          <td style="text-align: left"><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_quoting_rules" target="_blank">About Quoting Rules</a>
+</td>
+      </tr>
+  </tbody>
+</table>
+<h4 id="ステップ22-正規表現regexを使いこなす">ステップ2.2: 正規表現（Regex）を使いこなす</h4>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Check</th>
+          <th style="text-align: left">Item</th>
+          <th style="text-align: left">Link</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><input type="checkbox" name="checkbox" value="html"></td>
+          <td style="text-align: left"><code>-match</code>演算子でパターンマッチングできる</td>
+          <td style="text-align: left"><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_regular_expressions" target="_blank">About Regular Expressions</a>
+</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><input type="checkbox" name="checkbox" value="html"></td>
+          <td style="text-align: left"><code>-replace</code>演算子で文字列の一部を置き換えできる</td>
+          <td style="text-align: left"><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_regular_expressions" target="_blank">About Regular Expressions</a>
+</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><input type="checkbox" name="checkbox" value="html"></td>
+          <td style="text-align: left"><code>[regex]</code> クラスを使って複雑な検索・置換ができる</td>
+          <td style="text-align: left"><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_regular_expressions" target="_blank">About Regular Expressions</a>
+</td>
+      </tr>
+  </tbody>
+</table>
+<h4 id="ステップ23-テキストパース文字列処理parsing-text">ステップ2.3: テキストパース（文字列処理）（Parsing Text）</h4>
+<h5 id="part-1文字列クラスと基本的なテキスト検索">【Part 1】文字列クラスと基本的なテキスト検索</h5>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Check</th>
+          <th style="text-align: left">Item</th>
+          <th style="text-align: left">Link</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><input type="checkbox" name="checkbox" value="html"></td>
+          <td style="text-align: left"><code>String</code> クラスの便利なメソッドを使える</td>
+          <td style="text-align: left"><a href="https://devblogs.microsoft.com/powershell/parsing-text-with-powershell-1-3/" target="_blank">Parsing Text with PowerShell (1/3)</a>
+</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><input type="checkbox" name="checkbox" value="html"></td>
+          <td style="text-align: left">正規表現の基本を理解している</td>
+          <td style="text-align: left"><a href="https://devblogs.microsoft.com/powershell/parsing-text-with-powershell-1-3/" target="_blank">Parsing Text with PowerShell (1/3)</a>
+</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><input type="checkbox" name="checkbox" value="html"></td>
+          <td style="text-align: left"><code>Select-String</code> コマンドレットでテキスト検索できる</td>
+          <td style="text-align: left"><a href="https://devblogs.microsoft.com/powershell/parsing-text-with-powershell-1-3/" target="_blank">Parsing Text with PowerShell (1/3)</a>
+</td>
+      </tr>
+  </tbody>
+</table>
+<h5 id="part-2powershell流のパーステクニック">【Part 2】PowerShell流のパーステクニック</h5>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Check</th>
+          <th style="text-align: left">Item</th>
+          <th style="text-align: left">Link</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><input type="checkbox" name="checkbox" value="html"></td>
+          <td style="text-align: left"><code>-split</code> 演算子で文字列を分割できる</td>
+          <td style="text-align: left"><a href="https://devblogs.microsoft.com/powershell/parsing-text-with-powershell-2-3/" target="_blank">Parsing Text with PowerShell (2/3)</a>
+</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><input type="checkbox" name="checkbox" value="html"></td>
+          <td style="text-align: left"><code>-match</code> 演算子で正規表現一致を行える</td>
+          <td style="text-align: left"><a href="https://devblogs.microsoft.com/powershell/parsing-text-with-powershell-2-3/" target="_blank">Parsing Text with PowerShell (2/3)</a>
+</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><input type="checkbox" name="checkbox" value="html"></td>
+          <td style="text-align: left"><code>switch</code> ステートメントでパターンマッチングできる</td>
+          <td style="text-align: left"><a href="https://devblogs.microsoft.com/powershell/parsing-text-with-powershell-2-3/" target="_blank">Parsing Text with PowerShell (2/3)</a>
+</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><input type="checkbox" name="checkbox" value="html"></td>
+          <td style="text-align: left"><code>[regex]</code> クラスで高度な正規表現操作ができる</td>
+          <td style="text-align: left"><a href="https://devblogs.microsoft.com/powershell/parsing-text-with-powershell-2-3/" target="_blank">Parsing Text with PowerShell (2/3)</a>
+</td>
+      </tr>
+  </tbody>
+</table>
+<h5 id="part-3実践編switchを使ったパーサー作成">【Part 3】実践編：switchを使ったパーサー作成</h5>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Check</th>
+          <th style="text-align: left">Item</th>
+          <th style="text-align: left">Link</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><input type="checkbox" name="checkbox" value="html"></td>
+          <td style="text-align: left"><code>switch</code> 文を使って実践的なパーサーを作成できる</td>
+          <td style="text-align: left"><a href="https://devblogs.microsoft.com/powershell/parsing-text-with-powershell-3-3/" target="_blank">Parsing Text with PowerShell (3/3)</a>
+</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="ステップ3-実用的なスクリプトを作る">ステップ3: 実用的なスクリプトを作る</h3>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Check</th>
+          <th style="text-align: left">Item</th>
+          <th style="text-align: left">Link</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><input type="checkbox" name="checkbox" value="html"></td>
+          <td style="text-align: left">簡単な関数を作成できる</td>
+          <td style="text-align: left"><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_functions" target="_blank">About Functions</a>
+</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><input type="checkbox" name="checkbox" value="html"></td>
+          <td style="text-align: left">関数のヘルプ（コメントベースヘルプ）を作成できる</td>
+          <td style="text-align: left"><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_comment_based_help" target="_blank">About Comment Based Help</a>
+</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="ステップ4-必要に応じて深掘りする">ステップ4: 必要に応じて深掘りする</h3>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Check</th>
+          <th style="text-align: left">Item</th>
+          <th style="text-align: left">Link</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><input type="checkbox" name="checkbox" value="html"></td>
+          <td style="text-align: left">モジュール、オブジェクト操作、エラーハンドリングを理解している</td>
+          <td style="text-align: left"><a href="https://learn.microsoft.com/ja-jp/powershell/scripting/learn/more-powershell-learning" target="_blank">More PowerShell Learning Resources</a>
+</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><input type="checkbox" name="checkbox" value="html"></td>
+          <td style="text-align: left">PesterでPowerShellのテストができる</td>
+          <td style="text-align: left"><a href="https://learn.microsoft.com/ja-jp/shows/testing-powershell-with-pester/" target="_blank">Testing PowerShell with Pester</a>
+</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="terms">用語</h2>
+<dl>
+<dt><a href="https://learn.microsoft.com/ja-jp/powershell/scripting/developer/cmdlet/cmdlet-overview" target="_blank">PowerShellのコマンド</a>
+</dt>
+<dd>
+<p>PowerShellの世界では&quot;コマンド&quot;は&quot;コマンドレット&quot;と呼ばれる。コマンドレットの命名規則が<code>&lt;動詞&gt;-&lt;名詞&gt;</code>という構造であることを知っておくと、知らないコマンドの存在を（ある程度）予想できる。</p>
+</dd>
+</dl>
+<h2 id="links">関連リンク</h2>
+<ul>
+<li><strong>About</strong>
+<ul>
+<li><a href="https://learn.microsoft.com/ja-jp/powershell/scripting/learn/shell/tab-completion" target="_blank">Microsoft.Learn &ndash; シェルでのタブ補完の使用</a>
+</li>
+<li><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_aliases" target="_blank">Microsoft.Learn &ndash; about_Aliases</a>
+</li>
+<li><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_history" target="_blank">Microsoft.Learn &ndash; about_History</a>
+</li>
+</ul>
+</li>
+<li><strong>PowerShell Command</strong>
+<ul>
+<li><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/get-history" target="_blank">Microsoft.Learn &ndash; Get-History</a>
+</li>
+<li><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/get-help" target="_blank">Microsoft.Learn &ndash; Get-Help</a>
+</li>
+<li><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/get-command" target="_blank">Microsoft.Learn &ndash; Get-Command</a>
+</li>
+<li><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/get-alias" target="_blank">Microsoft.Learn &ndash; Get-Alias</a>
+</li>
+<li><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/get-date" target="_blank">Microsoft.Learn &ndash; Get-Date</a>
+</li>
+<li><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/get-content" target="_blank">Microsoft.Learn &ndash; Get-Content</a>
+</li>
+<li><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/set-location" target="_blank">Microsoft.Learn &ndash; Set-Location</a>
+</li>
+<li><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/push-location" target="_blank">Microsoft.Learn &ndash; Push-Location</a>
+</li>
+<li><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/pop-location" target="_blank">Microsoft.Learn &ndash; Pop-Location</a>
+</li>
+<li><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/invoke-item" target="_blank">Microsoft.Learn &ndash; Invoke-Item</a>
+</li>
+<li><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/new-item" target="_blank">Microsoft.Learn &ndash; New-Item</a>
+</li>
+<li><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/move-item" target="_blank">Microsoft.Learn &ndash; Move-Item</a>
+</li>
+<li><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/copy-item" target="_blank">Microsoft.Learn &ndash; Copy-Item</a>
+</li>
+<li><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/remove-item" target="_blank">Microsoft.Learn &ndash; Remove-Item</a>
+</li>
+<li><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/rename-item" target="_blank">Microsoft.Learn &ndash; Rename-Item</a>
+</li>
+<li><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.management/start-process" target="_blank">Microsoft.Learn &ndash; Start-Process</a>
+</li>
+</ul>
+</li>
+</ul>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="../../../ja/tags/verb/learn/index.html" rel="tag">Verb / Learn</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="../../../ja/tags/noun/software/index.html" rel="tag">Noun / Software</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="../../../ja/tags/name/powershell/index.html" rel="tag">Name / PowerShell</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="../../../ja/tags/opt/basic/index.html" rel="tag">Opt / Basic</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="../../../ja/getting-started/launch-software-powershell/index.html" rel="prev">
+			<span class="pager__subtitle">«&thinsp;前の投稿</span>
+			<p class="pager__title">Launch-Software &#34;PowerShell&#34;</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="../../../ja/getting-started/install-software-git/index.html" rel="next">
+			<span class="pager__subtitle">次の投稿&thinsp;»</span>
+			<p class="pager__title">Install-Software &#34;Git&#34;</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			<aside class="sidebar"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+		<input class="widget-search__field" type="search" placeholder="検索…" value="" name="q" aria-label="検索…">
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="https://btklab.com/">
+	</form>
+</div>
+<div class="widget-languages widget">
+	<h4 class="widget__title">言語</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget-languages__link widget__link" href="../../../ja/index.html">
+					<span class="widget-languages__link-btn widget__link-btn btn">JA</span>
+					<span class="widget-languages__link-text widget__link-text">Japanese</span>
+				</a>
+			</li>
+			<li class="widget__item">
+				<a class="widget-languages__link widget__link" href="../../../en/index.html">
+					<span class="widget-languages__link-btn widget__link-btn btn">EN</span>
+					<span class="widget-languages__link-text widget__link-text">English</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</div><div class="widget-archives widget">
+	<h4 class="widget__title">このサイトについて</h4>
+	<div class="widget__content">
+		<div class="authorbox clearfix">
+			<figure class="authorbox__avatar">
+				<img alt="btklab avatar" src="../../../img/logo_an_owl_hood_boy2.png" class="avatar" height="90" width="90">
+			</figure>
+			
+			<div class="authorbox__description">
+				集めて、つないで、探ってみる — PowerShellを、Python・R・Graphvizといったバラバラな技術を連携させる「グルー（接着剤）」として活用し、仕事をこなします。実行環境は主にWindows、ときどきLinux。
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="widget-social widget">
+	<h4 class="widget-social__title widget__title">ソーシャル</h4>
+	<div class="widget-social__content widget__content">
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="GitHub" rel="noopener noreferrer" href="https://github.com/btklab" target="_blank">
+				<svg class="widget-social__link-icon icon icon-github" width="24" height="24" viewBox="0 0 384 374"><path d="m192 0c-106.1 0-192 85.8-192 191.7 0 84.7 55 156.6 131.3 181.9 9.6 1.8 13.1-4.2 13.1-9.2 0-4.6-.2-16.6-.3-32.6-53.4 11.6-64.7-25.7-64.7-25.7-8.7-22.1-21.3-28-21.3-28-17.4-11.9 1.3-11.6 1.3-11.6 19.3 1.4 29.4 19.8 29.4 19.8 17.1 29.3 44.9 20.8 55.9 15.9 1.7-12.4 6.7-20.8 12.2-25.6-42.6-4.8-87.5-21.3-87.5-94.8 0-20.9 7.5-38 19.8-51.4-2-4.9-8.6-24.3 1.9-50.7 0 0 16.1-5.2 52.8 19.7 15.3-4.2 31.7-6.4 48.1-6.5 16.3.1 32.7 2.2 48.1 6.5 36.7-24.8 52.8-19.7 52.8-19.7 10.5 26.4 3.9 45.9 1.9 50.7 12.3 13.4 19.7 30.5 19.7 51.4 0 73.7-44.9 89.9-87.7 94.6 6.9 5.9 13 17.6 13 35.5 0 25.6-.2 46.3-.2 52.6 0 5.1 3.5 11.1 13.2 9.2 76.2-25.5 131.2-97.3 131.2-182 0-105.9-86-191.7-192-191.7z"/></svg>
+				<span>GitHub</span>
+			</a>
+		</div>
+		
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="RSS" href="https://btklab.com/index.xml">
+				<span>RSS</span>
+			</a>
+		</div>
+	</div>
+</div>
+<div class="widget-recent widget">
+	<h4 class="widget__title">最近の投稿</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="../../../ja/getting-started/install-software_graphviz/index.html">Install-Software &#34;Graphviz&#34;</a></li>
+			<li class="widget__item"><a class="widget__link" href="../../../ja/getting-started/install-software_plantuml/index.html">Install-Software &#34;PlantUML&#34;</a></li>
+			<li class="widget__item"><a class="widget__link" href="../../../ja/solve-the-problem/launch-software_run_anything_from_a_plain_text_link/index.html">Launch-Software &#34;プレーンテキストリンクを用いた汎用ランチャーの実装&#34;</a></li>
+			<li class="widget__item"><a class="widget__link" href="../../../ja/getting-started/install-software-python/index.html">Install-Software &#34;Python&#34;</a></li>
+			<li class="widget__item"><a class="widget__link" href="../../../ja/getting-started/install-software-pwsh-sketches/index.html">Install-Software &#34;pwsh-sketches&#34;</a></li>
+			<li class="widget__item"><a class="widget__link" href="../../../ja/getting-started/think-environment-directory-structure/index.html">Think-Environment &#34;Directory Structure&#34;</a></li>
+			<li class="widget__item"><a class="widget__link" href="../../../ja/getting-started/install-software-git/index.html">Install-Software &#34;Git&#34;</a></li>
+			<li class="widget__item"><a class="widget__link" href="../../../ja/getting-started/learn-software-powershell-basic/index.html">Learn-Software &#34;PowerShell&#34; -Basic</a></li>
+			<li class="widget__item"><a class="widget__link" href="../../../ja/getting-started/launch-software-powershell/index.html">Launch-Software &#34;PowerShell&#34;</a></li>
+			<li class="widget__item"><a class="widget__link" href="../../../ja/getting-started/install-software-windowsterminal/index.html">Install-Software &#34;Windows Terminal&#34;</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">カテゴリ</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+                
+                
+				<a class="widget__link" href="../../../ja/categories/getting-started/index.html">Getting Started</a></li>
+			<li class="widget__item">
+                
+                
+				<a class="widget__link" href="../../../ja/categories/solve-the-problem/index.html">Solve the Problem</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+    <h4 class="widget__title">タグ</h4>
+    <div class="widget__content">
+        <ul class="widget__list">
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/name/excel/index.html">Name / Excel</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">1</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/name/git/index.html">Name / Git</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">2</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/name/github/index.html">Name / GitHub</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">1</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/name/graphviz/index.html">Name / Graphviz</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">1</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/name/plantuml/index.html">Name / PlantUML</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">1</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/name/powershell/index.html">Name / PowerShell</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">5</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/name/pwsh-sketches/index.html">Name / Pwsh-Sketches</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">2</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/name/python/index.html">Name / Python</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">1</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/name/windows-terminal/index.html">Name / Windows Terminal</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">1</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/name/winget/index.html">Name / WinGet</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">6</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/noun/environment/index.html">Noun / Environment</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">1</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/noun/software/index.html">Noun / Software</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">12</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/opt/basic/index.html">Opt / Basic</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">2</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/type/datavisualization/index.html">Type / DataVisualization</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">2</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/type/launcher/index.html">Type / Launcher</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">1</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/verb/install/index.html">Verb / Install</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">8</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/verb/launch/index.html">Verb / Launch</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">2</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/verb/learn/index.html">Verb / Learn</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">2</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/verb/think/index.html">Verb / Think</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">1</span>
+                </li>
+        </ul>
+    </div>
+</div>
+<div class="widget-archives widget">
+	  <h4 class="widget__title">アーカイブ</h4>
+	  <div class="widget__content">
+		<ul class="widget__list">
+                <li class="widget__item">
+                    <a class="widget__link" href="../../../ja/archives/2025-02/index.html">2025-02</a>&nbsp;
+                    <span class="widget__counter widget__counter--bubble">7</span>
+                    </li>
+                <li class="widget__item">
+                    <a class="widget__link" href="../../../ja/archives/2025-03/index.html">2025-03</a>&nbsp;
+                    <span class="widget__counter widget__counter--bubble">3</span>
+                    </li>
+                <li class="widget__item">
+                    <a class="widget__link" href="../../../ja/archives/2025-04/index.html">2025-04</a>&nbsp;
+                    <span class="widget__counter widget__counter--bubble">3</span>
+                    </li>
+            
+            <li><a href="../../../ja/archives/index.html">&lt;&lt;</a></li>
+        </ul>
+    </div>
+</div>
+
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2025 Btklab&#39;s Experience via PowerShell on Windows.
+			<span class="footer__copyright-credits">このサイトは <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> と <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> テーマ、それから、 <a href="https://posit.co/downloads/" rel="nofollow noopener" target="_blank">RStudio IDE</a> と <a href="https://pkgs.rstudio.com/blogdown/" rel="nofollow noopener" target="_blank">blogdown</a> パッケージ を用いて生成されています。</span>
+		</div>
+	</div>
+	<script src="https://btklab.com/lightbox2/js/lightbox-plus-jquery.min.js"></script>
+</footer>
+	</div>
+<script async defer src="../../../js/menu.js"></script>
+</body>
+</html>

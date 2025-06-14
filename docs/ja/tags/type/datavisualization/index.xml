@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Type/DataVisualization on Btklab&#39;s Experience via PowerShell on Windows</title>
+    <link>https://btklab.com/ja/tags/type/datavisualization/</link>
+    <description>Recent content in Type/DataVisualization on Btklab&#39;s Experience via PowerShell on Windows</description>
+    <generator>Hugo</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Mon, 21 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://btklab.com/ja/tags/type/datavisualization/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Install-Software &#34;Graphviz&#34;</title>
+      <link>https://btklab.com/ja/getting-started/install-software_graphviz/</link>
+      <pubDate>Sun, 20 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://btklab.com/ja/getting-started/install-software_graphviz/</guid>
+      <description>&lt;h2 id=&#34;intro&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;p&gt;パッケージ管理システム「&lt;a href=&#34;https://learn.microsoft.com/ja-jp/windows/package-manager/winget/&#34; target=&#34;_blank&#34;&gt;WinGet&lt;/a&gt;&#xD;&#xA;」を用いて、Windows上にネットワーク図描画ツール「&lt;a href=&#34;https://graphviz.org/&#34; target=&#34;_blank&#34;&gt;Graphviz&lt;/a&gt;&#xD;&#xA;」をインストールする。&lt;/p&gt;&#xA;&lt;h2 id=&#34;prerequisite&#34;&gt;前提条件&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;✓ &lt;a href=&#34;../install-software-powershell/index.html&#34;&gt;PowerShellのインストール&lt;/a&gt;&#xD;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;✓ &lt;a href=&#34;../install-software-winget/index.html&#34;&gt;WinGetのインストール&lt;/a&gt;&#xD;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;✓ 検証した環境は&lt;a href=&#34;../../getting-started/index.html&#34;&gt;こちら&lt;/a&gt;&#xD;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;installation&#34;&gt;インストール&lt;/h2&gt;&#xA;&lt;p&gt;パッケージ管理ツール「&lt;a href=&#34;https://learn.microsoft.com/ja-jp/windows/package-manager/winget/&#34; target=&#34;_blank&#34;&gt;WinGet&lt;/a&gt;&#xD;&#xA;」を用いた&lt;a href=&#34;https://graphviz.org/&#34; target=&#34;_blank&#34;&gt;Graphviz&lt;/a&gt;&#xD;&#xA;のインストール方法を示す。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Install-Software &#34;PlantUML&#34;</title>
+      <link>https://btklab.com/ja/getting-started/install-software_plantuml/</link>
+      <pubDate>Sun, 20 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://btklab.com/ja/getting-started/install-software_plantuml/</guid>
+      <description>&lt;h2 id=&#34;intro&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;p&gt;Windows上にネットワーク図描画ツール「&lt;a href=&#34;https://plantuml.com/&#34; target=&#34;_blank&#34;&gt;PlantUML&lt;/a&gt;&#xD;&#xA;」をインストールする。当記事ではCLI（コマンドラインインターフェース）から実行するための環境構築について説明する。&lt;a href=&#34;https://code.visualstudio.com/&#34; target=&#34;_blank&#34;&gt;VS Code&lt;/a&gt;&#xD;&#xA;拡張機能としての&lt;a href=&#34;https://plantuml.com/&#34; target=&#34;_blank&#34;&gt;PlantUML&lt;/a&gt;&#xD;&#xA;については&lt;strong&gt;説明しない&lt;/strong&gt;。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

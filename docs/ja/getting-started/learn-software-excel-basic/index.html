@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Learn-Software &#34;Excel&#34; -Basic - Btklab&#39;s Experience via PowerShell on Windows</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="「Microsoft Excel」の基礎知識。関数、テーブル、ピボットテーブルまで。">
+		<meta property="og:url" content="https://btklab.com/ja/getting-started/learn-software-excel-basic/">
+  <meta property="og:site_name" content="Btklab&#39;s Experience via PowerShell on Windows">
+  <meta property="og:title" content="Learn-Software &#34;Excel&#34; -Basic">
+  <meta property="og:description" content="「Microsoft Excel」の基礎知識。関数、テーブル、ピボットテーブルまで。">
+  <meta property="og:locale" content="ja_jp">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="getting-started">
+    <meta property="article:published_time" content="2025-02-05T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-03-08T00:00:00+00:00">
+    <meta property="article:tag" content="Verb/Learn">
+    <meta property="article:tag" content="Noun/Software">
+    <meta property="article:tag" content="Name/Excel">
+    <meta property="article:tag" content="Opt/Basic">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="../../../css/style.css">
+	
+
+	<link rel="shortcut icon" href="../../../favicon.ico">
+		
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+    <div class="container header__container">
+        
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="../../../ja/index.html" title="Btklab&#39;s Experience via PowerShell on Windows" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="../../../img/logo_an_owl_hood_boy.png">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">Btklab&#39;s Experience via PowerShell on Windows</div>
+					<div class="logo__tagline">Glue the Pieces — the Rest Takes Shape</div>
+				</div>
+		</a>
+	</div>
+        
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">メニュー</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="../../../ja/index.html">
+				
+				<span class="menu__text">Home</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../../../ja/getting-started/index.html">
+				
+				<span class="menu__text">はじめる</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../../../ja/solve-the-problem/index.html">
+				
+				<span class="menu__text">問題をとく</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../../../ja/random-thoughts/index.html">
+				
+				<span class="menu__text">ランダムな考え</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../../../ja/about/index.html">
+				
+				<span class="menu__text">免責事項など</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../../../ja/contact/index.html">
+				
+				<span class="menu__text">お問い合わせ</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../../../ja/archives/index.html">
+				
+				<span class="menu__text">アーカイブ</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../../../en/index.html">
+				
+				<span class="menu__text">English</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+    </div>
+    <link rel="stylesheet" href="https://btklab.com/lightbox2/css/lightbox.css" type="text/css" />
+    <link rel="stylesheet" href="https://btklab.com/css/custom.css" type="text/css" media="all" />
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Learn-Software &#34;Excel&#34; -Basic</h1>
+			<p class="post__lead">「Microsoft Excel」の基礎知識。関数、テーブル、ピボットテーブルまで。</p>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2025-02-05T00:00:00Z">2025-02-05</time>
+	<time class="meta__text" datetime="2025-03-08T00:00:00Z">(最終更新: 2025-03-08)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text">
+                
+                <a class="meta__link" href="../../../ja/categories/getting-started/index.html" rel="category">Getting Started</a>
+    </span>
+</div>
+<div class="meta__item-translations meta__item">
+	<span class="meta__text">翻訳: <a class="meta__link" href="../../../en/getting-started/learn-software-excel-basic/index.html">EN</a>
+	</span>
+</div></div>
+		</header>
+		
+<div class="post__toc toc">
+	<div class="toc__title">目次</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents">
+  <ul>
+    <li><a href="#はじめに">はじめに</a></li>
+    <li><a href="#前提条件">前提条件</a></li>
+    <li><a href="#公式ヘルプ">公式ヘルプ</a></li>
+    <li><a href="#ショートカット">ショートカット</a></li>
+    <li><a href="#編集モード">編集モード</a></li>
+    <li><a href="#関数">関数</a>
+      <ul>
+        <li><a href="#関数の基本">関数の基本</a></li>
+        <li><a href="#関数別ヘルプ">関数別ヘルプ</a></li>
+      </ul>
+    </li>
+    <li><a href="#テーブル">テーブル</a></li>
+    <li><a href="#ピボットテーブル">ピボットテーブル</a></li>
+    <li><a href="#取得と変換power-query">取得と変換（Power Query）</a></li>
+    <li><a href="#マクロvba">マクロ（VBA）</a></li>
+    <li><a href="#用語">用語</a></li>
+    <li><a href="#リンク">リンク</a></li>
+  </ul>
+</nav>
+	</div>
+</div><div class="content post__content clearfix">
+			<h2 id="はじめに">はじめに</h2>
+<p>「Microsoft Excel」の基礎知識。関数、テーブル、ピボットテーブルで仕事をパズル化しよう。</p>
+<h2 id="前提条件">前提条件</h2>
+<ul>
+<li>✓ 「<a href="https://www.microsoft.com/ja-jp/microsoft-365/excel" target="_blank">Microsoft Excel</a>
+」のインストール、またはクラウドストレージ「Microsoft OneDrive」経由でのWeb版Excelの利用</li>
+<li>✓ 検証した環境は<a href="../../getting-started/index.html">こちら</a>
+</li>
+</ul>
+<h2 id="公式ヘルプ">公式ヘルプ</h2>
+<p>Microsoft Excelの公式ヘルプには、シンプルな例が示されている。実際に手を動かしながらヘルプを読むことは、それだけで質のよい学習になる。</p>
+<ul>
+<li><a href="https://support.microsoft.com/ja-jp/excel" target="_blank">Excel のヘルプとラーニング</a>
+</li>
+</ul>
+<h2 id="ショートカット">ショートカット</h2>
+<p>ショートカットの組み合わせはパズル感覚。
+キーボードショートカットを覚えるほど、エクセル操作が思考の速さに追いついてくる。
+できるだけマウスを使わないように訓練してみよう。</p>
+<ul>
+<li><a href="https://support.microsoft.com/ja-jp/office/excel-%E3%81%AE%E3%82%AD%E3%83%BC%E3%83%9C%E3%83%BC%E3%83%89-%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E3%82%AB%E3%83%83%E3%83%88-1798d9d5-842a-42b8-9c99-9b7213f0040f" target="_blank">Excel のキーボード ショートカット</a>
+</li>
+</ul>
+<h2 id="編集モード">編集モード</h2>
+<p>編集モードに自由に出入りできるようになろう。
+<kbd>F2</kbd>, <kbd>Esc</kbd>,
+<kbd><kbd>F2</kbd>+<kbd>Home</kbd>,<kbd>End</kbd>,<kbd>↑</kbd>,<kbd>↓</kbd>,<kbd>←</kbd>,<kbd>→</kbd></kbd></p>
+<ul>
+<li><a href="https://support.microsoft.com/ja-jp/office/%E3%82%BB%E3%83%AB%E3%81%AE%E5%86%85%E5%AE%B9%E3%82%92%E7%B7%A8%E9%9B%86%E3%81%99%E3%82%8B-9c8489f6-08c4-4932-a6bc-4de0a8cf86d6" target="_blank">セルの内容を編集する</a>
+</li>
+</ul>
+<h2 id="関数">関数</h2>
+<p>基本の関数は手が勝手に動くまで打ち込み練習をしよう。</p>
+<h3 id="関数の基本">関数の基本</h3>
+<ul>
+<li><a href="https://support.microsoft.com/ja-jp/office/excel-%E3%81%AE%E6%95%B0%E5%BC%8F%E3%81%AE%E6%A6%82%E8%A6%81-ecfdc708-9162-49e8-b993-c311f47ca173" target="_blank">数式の概要</a>
+</li>
+<li><a href="https://support.microsoft.com/ja-jp/office/%E6%95%B0%E5%BC%8F%E3%82%92%E5%85%A5%E5%8A%9B%E3%81%99%E3%82%8B-2e99d6c8-f681-44d4-b6e6-a8fad1a47b2a" target="_blank">数式を入力する</a>
+</li>
+<li><a href="https://support.microsoft.com/ja-jp/office/excel-%E3%81%AE%E6%95%B0%E5%BC%8F%E3%81%AB%E9%96%A2%E6%95%B0%E3%81%8A%E3%82%88%E3%81%B3%E3%83%8D%E3%82%B9%E3%83%88%E3%81%97%E3%81%9F%E9%96%A2%E6%95%B0%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%99%E3%82%8B-3f4cf298-ded7-4f91-bc80-607533b65f02" target="_blank">数式と関数</a>
+</li>
+<li><a href="https://support.microsoft.com/ja-jp/office/excel-%E9%96%A2%E6%95%B0-%E6%A9%9F%E8%83%BD%E5%88%A5-5f91f4e9-7b42-46d2-9bd1-63f26a86c0eb" target="_blank">関数（機能別）</a>
+</li>
+<li><a href="https://support.microsoft.com/ja-jp/office/%E6%95%B0%E5%BC%8F%E3%82%92%E7%A7%BB%E5%8B%95-%E3%82%B3%E3%83%94%E3%83%BC%E3%81%99%E3%82%8B-1f5cf825-9b07-41b1-8719-bf88b07450c6" target="_blank">数式を移動、コピーする（相対参照と絶対参照）</a>
+</li>
+<li><a href="https://support.microsoft.com/ja-jp/office/%E6%95%B0%E5%BC%8F%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E3%83%92%E3%83%B3%E3%83%88%E3%81%A8%E3%83%86%E3%82%AF%E3%83%8B%E3%83%83%E3%82%AF-2b93588a-e7fc-4ca5-b496-35e4141c68bd" target="_blank">数式に関するヒントとテクニック</a>
+</li>
+</ul>
+<h3 id="関数別ヘルプ">関数別ヘルプ</h3>
+<ul>
+<li><a href="https://support.microsoft.com/ja-jp/office/if-%E9%96%A2%E6%95%B0-69aed7c9-4e8a-4755-a9bc-aa8bbff73be2" target="_blank">IF関数</a>
+</li>
+<li><a href="https://support.microsoft.com/ja-jp/office/sum-%E9%96%A2%E6%95%B0-043e1c7d-7726-4e80-8f32-07b23e057f89" target="_blank">SUM関数</a>
+</li>
+<li><a href="https://support.microsoft.com/ja-jp/office/sumifs-%E9%96%A2%E6%95%B0-c9e748f5-7ea7-455d-9406-611cebce642b" target="_blank">SUMIFS関数</a>
+</li>
+<li><a href="https://support.microsoft.com/ja-jp/office/countifs-%E9%96%A2%E6%95%B0-dda3dc6e-f74e-4aee-88bc-aa8c2a866842" target="_blank">COUNTIFS関数</a>
+</li>
+<li><a href="https://support.microsoft.com/ja-jp/office/vlookup-%E9%96%A2%E6%95%B0-0bbc8083-26fe-4963-8ab8-93a18ad188a1" target="_blank">VLOOKUP関数</a>
+</li>
+<li><a href="https://support.microsoft.com/ja-jp/office/xlookup-%E9%96%A2%E6%95%B0-b7fd680e-6d10-43e6-84f9-88eae8bf5929" target="_blank">XLOOKUP関数</a>
+</li>
+</ul>
+<h2 id="テーブル">テーブル</h2>
+<ul>
+<li><a href="https://support.microsoft.com/ja-jp/office/excel-%E3%81%AE%E3%83%86%E3%83%BC%E3%83%96%E3%83%AB%E3%81%AE%E6%A6%82%E8%A6%81-7ab0bb7d-3a9e-4b56-a3c9-6c94334e492c" target="_blank">テーブルの概要</a>
+</li>
+<li><a href="https://support.microsoft.com/ja-jp/office/%E7%AF%84%E5%9B%B2%E3%81%BE%E3%81%9F%E3%81%AF%E8%A1%A8%E3%81%AE%E3%83%87%E3%83%BC%E3%82%BF%E3%82%92%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF%E3%83%BC%E5%87%A6%E7%90%86%E3%81%99%E3%82%8B-01832226-31b5-4568-8806-38c37dcc180e" target="_blank">データのフィルタ処理（オートフィルタ）</a>
+</li>
+</ul>
+<h2 id="ピボットテーブル">ピボットテーブル</h2>
+<p>ピボットテーブルで対話的にデータを変形させる。</p>
+<ul>
+<li><a href="https://support.microsoft.com/ja-jp/office/%E3%83%94%E3%83%9C%E3%83%83%E3%83%88%E3%83%86%E3%83%BC%E3%83%96%E3%83%AB%E3%81%8A%E3%82%88%E3%81%B3%E3%83%94%E3%83%9C%E3%83%83%E3%83%88%E3%82%B0%E3%83%A9%E3%83%95%E3%81%AE%E6%A6%82%E8%A6%81-527c8fa3-02c0-445a-a2db-7794676bce96" target="_blank">ピボットテーブルおよびピボットグラフの概要</a>
+</li>
+</ul>
+<h2 id="取得と変換power-query">取得と変換（Power Query）</h2>
+<p>「取得と変換」は、複数のファイルのデータを取り扱ったり、ちょっとした編集をするのに便利な機能。</p>
+<ul>
+<li><a href="https://support.microsoft.com/ja-jp/office/excel-%E3%81%AE-power-query-%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6-7104fbee-9e62-4cb9-a02e-5bfb1a6c536a" target="_blank">ExcelのPower Queryについて</a>
+</li>
+</ul>
+<h2 id="マクロvba">マクロ（VBA）</h2>
+<p>マクロ（VBA）は、ここまで紹介した機能で実現できないことをカバーするが、学習コストは高い。</p>
+<ul>
+<li><a href="https://learn.microsoft.com/ja-jp/office/vba/library-reference/concepts/getting-started-with-vba-in-office" target="_blank">Office VBAの基礎知識</a>
+</li>
+<li><a href="https://support.microsoft.com/ja-jp/office/%E3%83%9E%E3%82%AF%E3%83%AD%E8%A8%98%E9%8C%B2%E3%81%A7%E4%BD%9C%E6%A5%AD%E3%82%92%E8%87%AA%E5%8B%95%E5%8C%96%E3%81%99%E3%82%8B-974ef220-f716-4e01-b015-3ea70e64937b" target="_blank">マクロ記録で作業を自動化する</a>
+</li>
+<li><a href="https://support.microsoft.com/ja-jp/office/%E3%83%9E%E3%82%AF%E3%83%AD%E3%82%92%E5%AE%9F%E8%A1%8C%E3%81%99%E3%82%8B-5e855fd2-02d1-45f5-90a3-50e645fe3155" target="_blank">マクロを実行する</a>
+</li>
+<li><a href="https://support.microsoft.com/ja-jp/windows/%E3%83%9E%E3%83%AB%E3%82%A6%E3%82%A7%E3%82%A2%E3%81%8C-pc-%E3%82%92%E6%84%9F%E6%9F%93%E3%81%99%E3%82%8B%E3%81%97%E3%81%8F%E3%81%BF-872bf025-623d-735d-1033-ea4d456fb76b#:~:text=%E3%83%9E%E3%83%AB%E3%82%A6%E3%82%A7%E3%82%A2%E3%81%8C%E3%82%B9%E3%83%91%E3%83%A0%20%E3%83%A1%E3%83%BC%E3%83%AB%E3%80%81%E3%83%AA%E3%83%A0%E3%83%BC%E3%83%90%E3%83%96%E3%83%AB%20%E3%83%89%E3%83%A9%E3%82%A4%E3%83%96%E3%80%81%E6%BD%9C%E5%9C%A8%E7%9A%84%E3%81%AB%E6%9C%9B%E3%81%BE%E3%81%97%E3%81%8F%E3%81%AA%E3%81%84%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E3%80%81%E7%96%91%E3%82%8F%E3%81%97%E3%81%84,Web%20%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AA%E3%81%A9%E3%81%AE%E3%82%BD%E3%83%BC%E3%82%B9%E3%81%8B%E3%82%89%20PC%20%E3%81%AB%E6%84%9F%E6%9F%93%E3%81%99%E3%82%8B%E3%81%97%E3%81%8F%E3%81%BF%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E8%AA%AC%E6%98%8E%E3%81%97%E3%81%BE%E3%81%99%E3%80%82" target="_blank">マルウェアがPCを感染するしくみ</a>
+</li>
+<li><a href="https://learn.microsoft.com/ja-jp/office/vba/api/overview/excel" target="_blank">Excel VBAリファレンス</a>
+</li>
+</ul>
+<h2 id="用語">用語</h2>
+<dl>
+<dt><a href="https://www.microsoft.com/ja-jp/microsoft-365/excel" target="_blank">Microsoft Excel</a>
+</dt>
+<dd>
+<p>Microsoft Excelは日本の会社で広く使われている表計算ソフトウェア。仕事をExcelに落とし込むことができれば、仕事中にもパズルを楽しめる。</p>
+</dd>
+<dd>
+<p>スプレッドシートは日本語で「表計算」。「表」はTableを意味し、「計算」はCalculationを意味する。</p>
+</dd>
+</dl>
+<h2 id="リンク">リンク</h2>
+<ul>
+<li><a href="https://www.microsoft.com/ja-jp/microsoft-365/excel" target="_blank">Microsoft Excel</a>
+</li>
+<li><a href="https://www.youtube.com/@Microsoft365/videos" target="_blank">YouTube - Microsoft365</a>
+</li>
+</ul>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="../../../ja/tags/verb/learn/index.html" rel="tag">Verb / Learn</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="../../../ja/tags/noun/software/index.html" rel="tag">Noun / Software</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="../../../ja/tags/name/excel/index.html" rel="tag">Name / Excel</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="../../../ja/tags/opt/basic/index.html" rel="tag">Opt / Basic</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="../../../ja/getting-started/install-software-powershell/index.html" rel="prev">
+			<span class="pager__subtitle">«&thinsp;前の投稿</span>
+			<p class="pager__title">Install-Software &#34;PowerShell&#34;</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="../../../ja/getting-started/install-software-windowsterminal/index.html" rel="next">
+			<span class="pager__subtitle">次の投稿&thinsp;»</span>
+			<p class="pager__title">Install-Software &#34;Windows Terminal&#34;</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			<aside class="sidebar"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+		<input class="widget-search__field" type="search" placeholder="検索…" value="" name="q" aria-label="検索…">
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="https://btklab.com/">
+	</form>
+</div>
+<div class="widget-languages widget">
+	<h4 class="widget__title">言語</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget-languages__link widget__link" href="../../../ja/index.html">
+					<span class="widget-languages__link-btn widget__link-btn btn">JA</span>
+					<span class="widget-languages__link-text widget__link-text">Japanese</span>
+				</a>
+			</li>
+			<li class="widget__item">
+				<a class="widget-languages__link widget__link" href="../../../en/index.html">
+					<span class="widget-languages__link-btn widget__link-btn btn">EN</span>
+					<span class="widget-languages__link-text widget__link-text">English</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</div><div class="widget-archives widget">
+	<h4 class="widget__title">このサイトについて</h4>
+	<div class="widget__content">
+		<div class="authorbox clearfix">
+			<figure class="authorbox__avatar">
+				<img alt="btklab avatar" src="../../../img/logo_an_owl_hood_boy2.png" class="avatar" height="90" width="90">
+			</figure>
+			
+			<div class="authorbox__description">
+				集めて、つないで、探ってみる — PowerShellを、Python・R・Graphvizといったバラバラな技術を連携させる「グルー（接着剤）」として活用し、仕事をこなします。実行環境は主にWindows、ときどきLinux。
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="widget-social widget">
+	<h4 class="widget-social__title widget__title">ソーシャル</h4>
+	<div class="widget-social__content widget__content">
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="GitHub" rel="noopener noreferrer" href="https://github.com/btklab" target="_blank">
+				<svg class="widget-social__link-icon icon icon-github" width="24" height="24" viewBox="0 0 384 374"><path d="m192 0c-106.1 0-192 85.8-192 191.7 0 84.7 55 156.6 131.3 181.9 9.6 1.8 13.1-4.2 13.1-9.2 0-4.6-.2-16.6-.3-32.6-53.4 11.6-64.7-25.7-64.7-25.7-8.7-22.1-21.3-28-21.3-28-17.4-11.9 1.3-11.6 1.3-11.6 19.3 1.4 29.4 19.8 29.4 19.8 17.1 29.3 44.9 20.8 55.9 15.9 1.7-12.4 6.7-20.8 12.2-25.6-42.6-4.8-87.5-21.3-87.5-94.8 0-20.9 7.5-38 19.8-51.4-2-4.9-8.6-24.3 1.9-50.7 0 0 16.1-5.2 52.8 19.7 15.3-4.2 31.7-6.4 48.1-6.5 16.3.1 32.7 2.2 48.1 6.5 36.7-24.8 52.8-19.7 52.8-19.7 10.5 26.4 3.9 45.9 1.9 50.7 12.3 13.4 19.7 30.5 19.7 51.4 0 73.7-44.9 89.9-87.7 94.6 6.9 5.9 13 17.6 13 35.5 0 25.6-.2 46.3-.2 52.6 0 5.1 3.5 11.1 13.2 9.2 76.2-25.5 131.2-97.3 131.2-182 0-105.9-86-191.7-192-191.7z"/></svg>
+				<span>GitHub</span>
+			</a>
+		</div>
+		
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="RSS" href="https://btklab.com/index.xml">
+				<span>RSS</span>
+			</a>
+		</div>
+	</div>
+</div>
+<div class="widget-recent widget">
+	<h4 class="widget__title">最近の投稿</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="../../../ja/getting-started/install-software_graphviz/index.html">Install-Software &#34;Graphviz&#34;</a></li>
+			<li class="widget__item"><a class="widget__link" href="../../../ja/getting-started/install-software_plantuml/index.html">Install-Software &#34;PlantUML&#34;</a></li>
+			<li class="widget__item"><a class="widget__link" href="../../../ja/solve-the-problem/launch-software_run_anything_from_a_plain_text_link/index.html">Launch-Software &#34;プレーンテキストリンクを用いた汎用ランチャーの実装&#34;</a></li>
+			<li class="widget__item"><a class="widget__link" href="../../../ja/getting-started/install-software-python/index.html">Install-Software &#34;Python&#34;</a></li>
+			<li class="widget__item"><a class="widget__link" href="../../../ja/getting-started/install-software-pwsh-sketches/index.html">Install-Software &#34;pwsh-sketches&#34;</a></li>
+			<li class="widget__item"><a class="widget__link" href="../../../ja/getting-started/think-environment-directory-structure/index.html">Think-Environment &#34;Directory Structure&#34;</a></li>
+			<li class="widget__item"><a class="widget__link" href="../../../ja/getting-started/install-software-git/index.html">Install-Software &#34;Git&#34;</a></li>
+			<li class="widget__item"><a class="widget__link" href="../../../ja/getting-started/learn-software-powershell-basic/index.html">Learn-Software &#34;PowerShell&#34; -Basic</a></li>
+			<li class="widget__item"><a class="widget__link" href="../../../ja/getting-started/launch-software-powershell/index.html">Launch-Software &#34;PowerShell&#34;</a></li>
+			<li class="widget__item"><a class="widget__link" href="../../../ja/getting-started/install-software-windowsterminal/index.html">Install-Software &#34;Windows Terminal&#34;</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">カテゴリ</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+                
+                
+				<a class="widget__link" href="../../../ja/categories/getting-started/index.html">Getting Started</a></li>
+			<li class="widget__item">
+                
+                
+				<a class="widget__link" href="../../../ja/categories/solve-the-problem/index.html">Solve the Problem</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+    <h4 class="widget__title">タグ</h4>
+    <div class="widget__content">
+        <ul class="widget__list">
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/name/excel/index.html">Name / Excel</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">1</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/name/git/index.html">Name / Git</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">2</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/name/github/index.html">Name / GitHub</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">1</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/name/graphviz/index.html">Name / Graphviz</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">1</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/name/plantuml/index.html">Name / PlantUML</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">1</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/name/powershell/index.html">Name / PowerShell</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">5</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/name/pwsh-sketches/index.html">Name / Pwsh-Sketches</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">2</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/name/python/index.html">Name / Python</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">1</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/name/windows-terminal/index.html">Name / Windows Terminal</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">1</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/name/winget/index.html">Name / WinGet</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">6</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/noun/environment/index.html">Noun / Environment</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">1</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/noun/software/index.html">Noun / Software</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">12</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/opt/basic/index.html">Opt / Basic</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">2</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/type/datavisualization/index.html">Type / DataVisualization</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">2</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/type/launcher/index.html">Type / Launcher</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">1</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/verb/install/index.html">Verb / Install</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">8</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/verb/launch/index.html">Verb / Launch</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">2</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/verb/learn/index.html">Verb / Learn</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">2</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/verb/think/index.html">Verb / Think</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">1</span>
+                </li>
+        </ul>
+    </div>
+</div>
+<div class="widget-archives widget">
+	  <h4 class="widget__title">アーカイブ</h4>
+	  <div class="widget__content">
+		<ul class="widget__list">
+                <li class="widget__item">
+                    <a class="widget__link" href="../../../ja/archives/2025-02/index.html">2025-02</a>&nbsp;
+                    <span class="widget__counter widget__counter--bubble">7</span>
+                    </li>
+                <li class="widget__item">
+                    <a class="widget__link" href="../../../ja/archives/2025-03/index.html">2025-03</a>&nbsp;
+                    <span class="widget__counter widget__counter--bubble">3</span>
+                    </li>
+                <li class="widget__item">
+                    <a class="widget__link" href="../../../ja/archives/2025-04/index.html">2025-04</a>&nbsp;
+                    <span class="widget__counter widget__counter--bubble">3</span>
+                    </li>
+            
+            <li><a href="../../../ja/archives/index.html">&lt;&lt;</a></li>
+        </ul>
+    </div>
+</div>
+
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2025 Btklab&#39;s Experience via PowerShell on Windows.
+			<span class="footer__copyright-credits">このサイトは <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> と <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> テーマ、それから、 <a href="https://posit.co/downloads/" rel="nofollow noopener" target="_blank">RStudio IDE</a> と <a href="https://pkgs.rstudio.com/blogdown/" rel="nofollow noopener" target="_blank">blogdown</a> パッケージ を用いて生成されています。</span>
+		</div>
+	</div>
+	<script src="https://btklab.com/lightbox2/js/lightbox-plus-jquery.min.js"></script>
+</footer>
+	</div>
+<script async defer src="../../../js/menu.js"></script>
+</body>
+</html>
