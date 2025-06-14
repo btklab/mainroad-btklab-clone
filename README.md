@@ -1,8 +1,11 @@
 # mainroad-btklab-clone
 
-This repository contains a read-only mirror of the primary website: https://btklab.com/
+This repository contains a read-only mirror of the primary website.
 
-## Getting Started
+- **Primary website**: <https://btklab.com/>
+- **Archive website**: <https://btklab.github.io/mainroad-btklab-clone/en/>
+
+## Local Development
 
 After cloning, please open the following file in your browser on the local environment.
 
