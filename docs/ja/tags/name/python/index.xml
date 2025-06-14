@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Name/Python on Btklab&#39;s Experience via PowerShell on Windows</title>
-    <link>https://btklab.com/ja/tags/name/python/</link>
+    <link>https://btklab.github.io/mainroad-btklab-clone/ja/tags/name/python/</link>
     <description>Recent content in Name/Python on Btklab&#39;s Experience via PowerShell on Windows</description>
     <generator>Hugo</generator>
     <language>ja-jp</language>
     <lastBuildDate>Sun, 20 Apr 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://btklab.com/ja/tags/name/python/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://btklab.github.io/mainroad-btklab-clone/ja/tags/name/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Install-Software &#34;Python&#34;</title>
-      <link>https://btklab.com/ja/getting-started/install-software-python/</link>
+      <link>https://btklab.github.io/mainroad-btklab-clone/ja/getting-started/install-software-python/</link>
       <pubDate>Mon, 17 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://btklab.com/ja/getting-started/install-software-python/</guid>
+      <guid>https://btklab.github.io/mainroad-btklab-clone/ja/getting-started/install-software-python/</guid>
       <description>&lt;h2 id=&#34;intro&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.python.org/&#34; target=&#34;_blank&#34;&gt;Python for Windows&lt;/a&gt;&#xD;&#xA;をインストールする。&lt;a href=&#34;https://www.python.org/&#34; target=&#34;_blank&#34;&gt;Python&lt;/a&gt;&#xD;&#xA;とは、シンプルで汎用性の高いプログラミング言語。Web開発、データ分析、AIなど、幅広い分野で利用され、初心者にも扱いやすい。このサイトでは、チャートの描画、数学・科学計算、画像処理その他の用途で用いる。&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Type/Launcher on Btklab&#39;s Experience via PowerShell on Windows</title>
-    <link>https://btklab.com/en/tags/type/launcher/</link>
+    <link>https://btklab.github.io/mainroad-btklab-clone/en/tags/type/launcher/</link>
     <description>Recent content in Type/Launcher on Btklab&#39;s Experience via PowerShell on Windows</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 08 May 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://btklab.com/en/tags/type/launcher/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://btklab.github.io/mainroad-btklab-clone/en/tags/type/launcher/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Launch-Software &#34;Run Anything from a Plain Text Link&#34;</title>
-      <link>https://btklab.com/en/solve-the-problem/launch-software_run_anything_from_a_plain_text_link/</link>
+      <link>https://btklab.github.io/mainroad-btklab-clone/en/solve-the-problem/launch-software_run_anything_from_a_plain_text_link/</link>
       <pubDate>Sat, 19 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://btklab.com/en/solve-the-problem/launch-software_run_anything_from_a_plain_text_link/</guid>
+      <guid>https://btklab.github.io/mainroad-btklab-clone/en/solve-the-problem/launch-software_run_anything_from_a_plain_text_link/</guid>
       <description>&lt;h2 id=&#34;intro&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Summary&lt;/strong&gt;: This is the article of developing &amp;ldquo;&lt;a href=&#34;https://github.com/btklab/pwsh-sketches/blob/main/src/Invoke-Link_function.ps1&#34; target=&#34;_blank&#34;&gt;Invoke-Link&lt;/a&gt;&#xD;&#xA; (Alias:&lt;code&gt;i&lt;/code&gt;),&amp;rdquo; a PowerShell script for CLI that launches applications from links written in a text file.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;Windows shortcut files are convenient. By registering frequently used applications, web links, and file paths, you gain quick access to them. You can casually place these shortcut files on your desktop or in any folder.&lt;/p&gt;&#xA;&lt;p&gt;However, I&amp;rsquo;ve found some usability issues with these shortcut files. For instance, creating them can be a bit of a hassle. We can&amp;rsquo;t register multiple links in a single shortcut to launch them simultaneously. Moreover, because shortcut files (&lt;code&gt;.lnk&lt;/code&gt;) are binary, tracking changes using version control systems like Git becomes difficult.&lt;/p&gt;</description>
     </item>
   </channel>
