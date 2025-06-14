@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Install-Software &#34;WinGet&#34; - Btklab&#39;s Experience via PowerShell on Windows</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="Install the package manager &#34;WinGet&#34; on Windows.">
+		<meta property="og:url" content="https://btklab.com/en/getting-started/install-software-winget/">
+  <meta property="og:site_name" content="Btklab&#39;s Experience via PowerShell on Windows">
+  <meta property="og:title" content="Install-Software &#34;WinGet&#34;">
+  <meta property="og:description" content="Install the package manager &#34;WinGet&#34; on Windows.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="getting-started">
+    <meta property="article:published_time" content="2025-02-02T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-04-19T00:00:00+00:00">
+    <meta property="article:tag" content="Verb/Install">
+    <meta property="article:tag" content="Noun/Software">
+    <meta property="article:tag" content="Name/WinGet">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="../../../css/style.css">
+	
+
+	<link rel="shortcut icon" href="../../../favicon.ico">
+		
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+    <div class="container header__container">
+        
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="../../../en/index.html" title="Btklab&#39;s Experience via PowerShell on Windows" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="../../../img/logo_an_owl_hood_boy.png">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">Btklab&#39;s Experience via PowerShell on Windows</div>
+					<div class="logo__tagline">Glue the Pieces — the Rest Takes Shape</div>
+				</div>
+		</a>
+	</div>
+        
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="../../../en/index.html">
+				
+				<span class="menu__text">Home</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../../../en/getting-started/index.html">
+				
+				<span class="menu__text">GETTING STARTED</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../../../en/solve-the-problem/index.html">
+				
+				<span class="menu__text">SOLVE THE PROBLEM</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../../../en/random-thoughts/index.html">
+				
+				<span class="menu__text">RANDOM THOUGHTS</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../../../en/about/index.html">
+				
+				<span class="menu__text">About</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../../../en/contact/index.html">
+				
+				<span class="menu__text">Contact</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../../../en/archives/index.html">
+				
+				<span class="menu__text">Archives</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../../../ja/index.html">
+				
+				<span class="menu__text">Japanese</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+    </div>
+    <link rel="stylesheet" href="https://btklab.com/lightbox2/css/lightbox.css" type="text/css" />
+    <link rel="stylesheet" href="https://btklab.com/css/custom.css" type="text/css" media="all" />
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Install-Software &#34;WinGet&#34;</h1>
+			<p class="post__lead">Install the package manager &#34;WinGet&#34; on Windows.</p>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2025-02-02T00:00:00Z">2025-02-02</time>
+	<time class="meta__text" datetime="2025-04-19T00:00:00Z">(Last Modified: 2025-04-19)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text">
+                
+                <a class="meta__link" href="../../../en/categories/getting-started/index.html" rel="category">Getting Started</a>
+    </span>
+</div>
+<div class="meta__item-translations meta__item">
+	<span class="meta__text">Translations: <a class="meta__link" href="../../../ja/getting-started/install-software-winget/index.html">JA</a>
+	</span>
+</div></div>
+		</header>
+		
+<div class="post__toc toc">
+	<div class="toc__title">Page content</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#prerequisite">Prerequisite</a></li>
+    <li><a href="#installation">Installation</a>
+      <ul>
+        <li><a href="#1-download-directly-from-the-web-site">1. Download directly from the web site</a></li>
+        <li><a href="#2-using-powershell">2. Using PowerShell</a></li>
+      </ul>
+    </li>
+    <li><a href="#confirmation">Confirmation</a></li>
+    <li><a href="#terms">Terms</a></li>
+    <li><a href="#links">Links</a></li>
+  </ul>
+</nav>
+	</div>
+</div><div class="content post__content clearfix">
+			<h2 id="introduction">Introduction</h2>
+<p>Here, I will demonstrate the steps to install <strong>WinGet</strong> on Windows. <strong>WinGet</strong> is a command-line package management tool that operates on the Windows OS. The main tasks of a package management tool are software installation, uninstallation, listing, and updates.</p>
+<p><strong>WinGet</strong> operations are performed by entering commands (strings) in the shell, not by clicking icons with a mouse. Since it&rsquo;s not a visual operation, it might seem a bit daunting at first. However, the advantages of processing with string inputs include being able to explain through copy &amp; paste of strings and not needing to search and visit the distribution source site during installation or updates.</p>
+<h2 id="prerequisite">Prerequisite</h2>
+<ul>
+<li>✓ None</li>
+<li>✓ The confirmed environment is <a href="../../getting-started/index.html">here</a>
+</li>
+</ul>
+<h2 id="installation">Installation</h2>
+<p>There are two methods to install <strong>WinGet</strong>.</p>
+<h3 id="1-download-directly-from-the-web-site">1. Download directly from the web site</h3>
+<p>Download &amp; Install <code>Microsoft.DesktopAppInstaller</code>.</p>
+<ol>
+<li>Visit <a href="https://github.com/microsoft/winget-cli/releases/latest" target="_blank">Latest Release of Windows Package Manager · microsoft/winget-cli</a>
+</li>
+<li>Scroll to &ldquo;Assets&rdquo;</li>
+<li>Download <code>Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle</code></li>
+<li>Install</li>
+</ol>
+<h3 id="2-using-powershell">2. Using PowerShell</h3>
+<p>Open PowerShell as Administrator and execute the following command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> Install-WinGet {
+</span></span><span style="display:flex;"><span>    Invoke-WebRequest -Uri https<span style="color:#960050;background-color:#1e0010">:</span>//aka.ms/getwinget -OutFile Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle
+</span></span><span style="display:flex;"><span>    Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.DesktopAppInstaller_8wekyb3d8bbwe
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>Install-WinGet
+</span></span></code></pre></div><ul>
+<li>Reference: <a href="https://learn.microsoft.com/en-us/windows/package-manager/winget/" target="_blank">Install and manage applications using WinGet - learn.microsoft.com</a>
+</li>
+</ul>
+<h2 id="confirmation">Confirmation</h2>
+<ol>
+<li>Open a new PowerShell or command prompt
+<ul>
+<li><kbd><kbd>WIN</kbd>+<kbd>R</kbd></kbd> → type <code>cmd</code> or <code>powershell</code> or <code>pwsh</code></li>
+</ul>
+</li>
+<li>type command: <code>winget --version</code> and if the version is output, the installation is complete</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>winget --version
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>v1.9.25200
+</span></span></code></pre></div><h2 id="terms">Terms</h2>
+<dl>
+<dt><a href="https://learn.microsoft.com/en-us/windows/package-manager/winget/" target="_blank">WinGet</a>
+</dt>
+<dd>
+<p>A command-line package management tool that operates on the Windows OS. The main tasks of a package management tool are software installation, updates, and dependency resolution. The same tasks can be accomplished by accessing the software distribution source site and downloading.</p>
+</dd>
+<dt><a href="https://learn.microsoft.com/en-us/powershell/module/appx/add-appxpackage" target="_blank">Add-AppxPackage (Appx)</a>
+</dt>
+<dd>
+<p>A PowerShell command. The main task of this command is to add the application package (<code>.msix</code>, <code>.appx</code>) specified as an argument to the user account.</p>
+</dd>
+<dt><a href="https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/invoke-webrequest" target="_blank">Invoke-WebRequest</a>
+</dt>
+<dd>
+<p>A PowerShell command. The main task of this command is to download files from websites on the Internet.</p>
+</dd>
+</dl>
+<h2 id="links">Links</h2>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/windows/package-manager/winget/" target="_blank">Install and manage applications using WinGet - learn.microsoft.com</a>
+</li>
+<li><a href="https://github.com/microsoft/winget-cli" target="_blank">GitHub - microsoft/winget-cli</a>
+</li>
+</ul>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="../../../en/tags/verb/install/index.html" rel="tag">Verb / Install</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="../../../en/tags/noun/software/index.html" rel="tag">Noun / Software</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="../../../en/tags/name/winget/index.html" rel="tag">Name / WinGet</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="../../../en/getting-started/install-software-powershell/index.html" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">Install-Software &#34;PowerShell&#34;</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			<aside class="sidebar"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+		<input class="widget-search__field" type="search" placeholder="Search…" value="" name="q" aria-label="Search…">
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="https://btklab.com/">
+	</form>
+</div>
+<div class="widget-languages widget">
+	<h4 class="widget__title">Languages</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget-languages__link widget__link" href="../../../ja/index.html">
+					<span class="widget-languages__link-btn widget__link-btn btn">JA</span>
+					<span class="widget-languages__link-text widget__link-text">Japanese</span>
+				</a>
+			</li>
+			<li class="widget__item">
+				<a class="widget-languages__link widget__link" href="../../../en/index.html">
+					<span class="widget-languages__link-btn widget__link-btn btn">EN</span>
+					<span class="widget-languages__link-text widget__link-text">English</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</div><div class="widget-archives widget">
+	<h4 class="widget__title">Author</h4>
+	<div class="widget__content">
+		<div class="authorbox clearfix">
+			<figure class="authorbox__avatar">
+				<img alt="btklab avatar" src="../../../img/logo_an_owl_hood_boy2.png" class="avatar" height="90" width="90">
+			</figure>
+			
+			<div class="authorbox__description">
+				Gather, Connect, Experiment — I use PowerShell as the glue to connect various technologies like Python, R, Graphviz, etc., and handle my work, mainly on Windows, sometimes on Linux.
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="widget-social widget">
+	<h4 class="widget-social__title widget__title">Social</h4>
+	<div class="widget-social__content widget__content">
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="GitHub" rel="noopener noreferrer" href="https://github.com/btklab" target="_blank">
+				<svg class="widget-social__link-icon icon icon-github" width="24" height="24" viewBox="0 0 384 374"><path d="m192 0c-106.1 0-192 85.8-192 191.7 0 84.7 55 156.6 131.3 181.9 9.6 1.8 13.1-4.2 13.1-9.2 0-4.6-.2-16.6-.3-32.6-53.4 11.6-64.7-25.7-64.7-25.7-8.7-22.1-21.3-28-21.3-28-17.4-11.9 1.3-11.6 1.3-11.6 19.3 1.4 29.4 19.8 29.4 19.8 17.1 29.3 44.9 20.8 55.9 15.9 1.7-12.4 6.7-20.8 12.2-25.6-42.6-4.8-87.5-21.3-87.5-94.8 0-20.9 7.5-38 19.8-51.4-2-4.9-8.6-24.3 1.9-50.7 0 0 16.1-5.2 52.8 19.7 15.3-4.2 31.7-6.4 48.1-6.5 16.3.1 32.7 2.2 48.1 6.5 36.7-24.8 52.8-19.7 52.8-19.7 10.5 26.4 3.9 45.9 1.9 50.7 12.3 13.4 19.7 30.5 19.7 51.4 0 73.7-44.9 89.9-87.7 94.6 6.9 5.9 13 17.6 13 35.5 0 25.6-.2 46.3-.2 52.6 0 5.1 3.5 11.1 13.2 9.2 76.2-25.5 131.2-97.3 131.2-182 0-105.9-86-191.7-192-191.7z"/></svg>
+				<span>GitHub</span>
+			</a>
+		</div>
+		
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="RSS" href="https://btklab.com/index.xml">
+				<span>RSS</span>
+			</a>
+		</div>
+	</div>
+</div>
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="../../../en/getting-started/install-software_graphviz/index.html">Install-Software &#34;Graphviz&#34;</a></li>
+			<li class="widget__item"><a class="widget__link" href="../../../en/getting-started/install-software_plantuml/index.html">Install-Software &#34;PlantUML&#34;</a></li>
+			<li class="widget__item"><a class="widget__link" href="../../../en/solve-the-problem/launch-software_run_anything_from_a_plain_text_link/index.html">Launch-Software &#34;Run Anything from a Plain Text Link&#34;</a></li>
+			<li class="widget__item"><a class="widget__link" href="../../../en/getting-started/install-software-python/index.html">Install-Software &#34;Python&#34;</a></li>
+			<li class="widget__item"><a class="widget__link" href="../../../en/getting-started/install-software-pwsh-sketches/index.html">Install-Software &#34;pwsh-sketches&#34;</a></li>
+			<li class="widget__item"><a class="widget__link" href="../../../en/getting-started/think-environment-directory-structure/index.html">Think-Environment &#34;Directory Structure&#34;</a></li>
+			<li class="widget__item"><a class="widget__link" href="../../../en/getting-started/install-software-git/index.html">Install-Software &#34;Git&#34;</a></li>
+			<li class="widget__item"><a class="widget__link" href="../../../en/getting-started/learn-software-powershell-basic/index.html">Learn-Software &#34;PowerShell&#34; -Basic</a></li>
+			<li class="widget__item"><a class="widget__link" href="../../../en/getting-started/launch-software-powershell/index.html">Launch-Software &#34;PowerShell&#34;</a></li>
+			<li class="widget__item"><a class="widget__link" href="../../../en/getting-started/install-software-windowsterminal/index.html">Install-Software &#34;Windows Terminal&#34;</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+                
+                
+				<a class="widget__link" href="../../../en/categories/getting-started/index.html">Getting Started</a></li>
+			<li class="widget__item">
+                
+                
+				<a class="widget__link" href="../../../en/categories/solve-the-problem/index.html">Solve the Problem</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+    <h4 class="widget__title">Tags</h4>
+    <div class="widget__content">
+        <ul class="widget__list">
+            <li class="widget__item">
+                <a class="widget__link" href="../../../en/tags/name/excel/index.html">Name / Excel</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">1</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../en/tags/name/git/index.html">Name / Git</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">2</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../en/tags/name/github/index.html">Name / GitHub</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">1</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../en/tags/name/graphviz/index.html">Name / Graphviz</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">1</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../en/tags/name/plantuml/index.html">Name / PlantUML</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">1</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../en/tags/name/powershell/index.html">Name / PowerShell</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">5</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../en/tags/name/pwsh-sketches/index.html">Name / Pwsh-Sketches</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">2</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../en/tags/name/python/index.html">Name / Python</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">1</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../en/tags/name/windows-terminal/index.html">Name / Windows Terminal</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">1</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../en/tags/name/winget/index.html">Name / WinGet</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">6</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../en/tags/noun/environment/index.html">Noun / Environment</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">1</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../en/tags/noun/software/index.html">Noun / Software</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">12</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../en/tags/opt/basic/index.html">Opt / Basic</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">2</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../en/tags/type/datavisualization/index.html">Type / DataVisualization</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">2</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../en/tags/type/launcher/index.html">Type / Launcher</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">1</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../en/tags/verb/install/index.html">Verb / Install</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">8</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../en/tags/verb/launch/index.html">Verb / Launch</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">2</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../en/tags/verb/learn/index.html">Verb / Learn</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">2</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../en/tags/verb/think/index.html">Verb / Think</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">1</span>
+                </li>
+        </ul>
+    </div>
+</div>
+<div class="widget-archives widget">
+	  <h4 class="widget__title">Archives</h4>
+	  <div class="widget__content">
+		<ul class="widget__list">
+                <li class="widget__item">
+                    <a class="widget__link" href="../../../en/archives/2025-02/index.html">2025-02</a>&nbsp;
+                    <span class="widget__counter widget__counter--bubble">7</span>
+                    </li>
+                <li class="widget__item">
+                    <a class="widget__link" href="../../../en/archives/2025-03/index.html">2025-03</a>&nbsp;
+                    <span class="widget__counter widget__counter--bubble">3</span>
+                    </li>
+                <li class="widget__item">
+                    <a class="widget__link" href="../../../en/archives/2025-04/index.html">2025-04</a>&nbsp;
+                    <span class="widget__counter widget__counter--bubble">3</span>
+                    </li>
+            
+            <li><a href="../../../en/archives/index.html">&lt;&lt;</a></li>
+        </ul>
+    </div>
+</div>
+
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2025 Btklab&#39;s Experience via PowerShell on Windows.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme, <a href="https://posit.co/downloads/" rel="nofollow noopener" target="_blank">RStudio IDE</a> and <a href="https://pkgs.rstudio.com/blogdown/" rel="nofollow noopener" target="_blank">blogdown</a> package.</span>
+		</div>
+	</div>
+	<script src="https://btklab.com/lightbox2/js/lightbox-plus-jquery.min.js"></script>
+</footer>
+	</div>
+<script async defer src="../../../js/menu.js"></script>
+</body>
+</html>

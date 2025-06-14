@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Verb/Think on Btklab&#39;s Experience via PowerShell on Windows</title>
+    <link>https://btklab.com/en/tags/verb/think/</link>
+    <description>Recent content in Verb/Think on Btklab&#39;s Experience via PowerShell on Windows</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 17 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://btklab.com/en/tags/verb/think/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Think-Environment &#34;Directory Structure&#34;</title>
+      <link>https://btklab.com/en/getting-started/think-environment-directory-structure/</link>
+      <pubDate>Fri, 07 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://btklab.com/en/getting-started/think-environment-directory-structure/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;When working with a shell, it is important to first create a safe and efficient workspace. One might initially think of using the user&amp;rsquo;s home directory as a workspace, but this is not very safe. This is because the home directory already contains many directories and files managed by the system. There is a risk of &lt;strong&gt;accidentally deleting these files&lt;/strong&gt; due to command operation mistakes. Here, we create a working directory under the home directory and perform shell operations in that environment. The benefits of this structure are as follows:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

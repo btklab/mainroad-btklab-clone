@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Launch-Software &#34;Run Anything from a Plain Text Link&#34; - Btklab&#39;s Experience via PowerShell on Windows</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="Launch applications from links written in a text file.">
+		<meta property="og:url" content="https://btklab.com/en/solve-the-problem/launch-software_run_anything_from_a_plain_text_link/">
+  <meta property="og:site_name" content="Btklab&#39;s Experience via PowerShell on Windows">
+  <meta property="og:title" content="Launch-Software &#34;Run Anything from a Plain Text Link&#34;">
+  <meta property="og:description" content="Launch applications from links written in a text file.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="solve-the-problem">
+    <meta property="article:published_time" content="2025-04-19T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-05-08T00:00:00+00:00">
+    <meta property="article:tag" content="Noun/Software">
+    <meta property="article:tag" content="Name/PowerShell">
+    <meta property="article:tag" content="Name/Pwsh-Sketches">
+    <meta property="article:tag" content="Verb/Launch">
+    <meta property="article:tag" content="Type/Launcher">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="../../../css/style.css">
+	
+
+	<link rel="shortcut icon" href="../../../favicon.ico">
+		
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+    <div class="container header__container">
+        
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="../../../en/index.html" title="Btklab&#39;s Experience via PowerShell on Windows" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="../../../img/logo_an_owl_hood_boy.png">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">Btklab&#39;s Experience via PowerShell on Windows</div>
+					<div class="logo__tagline">Glue the Pieces — the Rest Takes Shape</div>
+				</div>
+		</a>
+	</div>
+        
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="../../../en/index.html">
+				
+				<span class="menu__text">Home</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../../../en/getting-started/index.html">
+				
+				<span class="menu__text">GETTING STARTED</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../../../en/solve-the-problem/index.html">
+				
+				<span class="menu__text">SOLVE THE PROBLEM</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../../../en/random-thoughts/index.html">
+				
+				<span class="menu__text">RANDOM THOUGHTS</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../../../en/about/index.html">
+				
+				<span class="menu__text">About</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../../../en/contact/index.html">
+				
+				<span class="menu__text">Contact</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../../../en/archives/index.html">
+				
+				<span class="menu__text">Archives</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../../../ja/index.html">
+				
+				<span class="menu__text">Japanese</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+    </div>
+    <link rel="stylesheet" href="https://btklab.com/lightbox2/css/lightbox.css" type="text/css" />
+    <link rel="stylesheet" href="https://btklab.com/css/custom.css" type="text/css" media="all" />
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Launch-Software &#34;Run Anything from a Plain Text Link&#34;</h1>
+			<p class="post__lead">Launch applications from links written in a text file.</p>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2025-04-19T00:00:00Z">2025-04-19</time>
+	<time class="meta__text" datetime="2025-05-08T00:00:00Z">(Last Modified: 2025-05-08)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text">
+                
+                <a class="meta__link" href="../../../en/categories/solve-the-problem/index.html" rel="category">Solve the Problem</a>
+    </span>
+</div>
+<div class="meta__item-translations meta__item">
+	<span class="meta__text">Translations: <a class="meta__link" href="../../../ja/solve-the-problem/launch-software_run_anything_from_a_plain_text_link/index.html">JA</a>
+	</span>
+</div></div>
+		</header>
+		
+<div class="post__toc toc">
+	<div class="toc__title">Page content</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents">
+  <ul>
+    <li><a href="#intro">Introduction</a></li>
+    <li><a href="#prerequisites">Prerequisites</a></li>
+    <li><a href="#solve-the-problem">Solving the Problem</a>
+      <ul>
+        <li><a href="#understanding-the-problem">1. Understanding the Problem</a></li>
+        <li><a href="#devising-a-plan">2. Devising a Plan</a></li>
+        <li><a href="#carrying-out-the-plan">3. Carrying Out the Plan</a></li>
+        <li><a href="#looking-back">4. Looking Back</a></li>
+      </ul>
+    </li>
+    <li><a href="#terms">Terms</a></li>
+    <li><a href="#links">Related Links</a></li>
+  </ul>
+</nav>
+	</div>
+</div><div class="content post__content clearfix">
+			<h2 id="intro">Introduction</h2>
+<blockquote>
+<p><strong>Summary</strong>: This is the article of developing &ldquo;<a href="https://github.com/btklab/pwsh-sketches/blob/main/src/Invoke-Link_function.ps1" target="_blank">Invoke-Link</a>
+ (Alias:<code>i</code>),&rdquo; a PowerShell script for CLI that launches applications from links written in a text file.</p></blockquote>
+<p>Windows shortcut files are convenient. By registering frequently used applications, web links, and file paths, you gain quick access to them. You can casually place these shortcut files on your desktop or in any folder.</p>
+<p>However, I&rsquo;ve found some usability issues with these shortcut files. For instance, creating them can be a bit of a hassle. We can&rsquo;t register multiple links in a single shortcut to launch them simultaneously. Moreover, because shortcut files (<code>.lnk</code>) are binary, tracking changes using version control systems like Git becomes difficult.</p>
+<p>Ideally, I wanted to write links in a simple text file and execute them directly. With this in mind, I developed the PowerShell script &ldquo;<a href="https://github.com/btklab/pwsh-sketches/blob/main/src/Invoke-Link_function.ps1" target="_blank">Invoke-Link</a>
+ (Alias:<code>i</code>)&rdquo;. While it&rsquo;s a small improvement, it can be a subtle yet helpful way to minimize those brief interruptions in your workflow or train of thought caused by momentarily wondering, &ldquo;Now, where did I save that file?&rdquo;</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>✓ A custom script: <a href="../../getting-started/install-software-pwsh-sketches/index.html">Installing pwsh-sketches</a>
+</li>
+<li>✓ The tested environment can be found <a href="../../getting-started/index.html">here</a>
+</li>
+</ul>
+<h2 id="solve-the-problem">Solving the Problem</h2>
+<h3 id="understanding-the-problem">1. Understanding the Problem</h3>
+<p>Let&rsquo;s summarize the issues regarding Windows shortcut files (<code>.lnk</code>):</p>
+<p><strong>Benefits/Advantages</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Category　</th>
+          <th style="text-align: left">Benefits</th>
+          <th style="text-align: left">Approach</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>Launching &amp; Placement</strong></td>
+          <td style="text-align: left">- Quickly launch applications and files.<br>- Can be placed anywhere.<br>- Can be launched without leaving the current directory (by using a dedicated links folder).</td>
+          <td style="text-align: left">Leverage the existing advantages while integrating text file management to maintain immediate execution.</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>Disadvantages/Issues</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Category</th>
+          <th style="text-align: left">Issue</th>
+          <th style="text-align: left">Approach</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>Creation Effort</strong></td>
+          <td style="text-align: left">Creating <code>.lnk</code> files is cumbersome.</td>
+          <td style="text-align: left">Transition to a text file format to simplify the creation of links.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Managing Multiple Links</strong></td>
+          <td style="text-align: left">A single shortcut file cannot register multiple links; it is not possible to launch multiple links at once.</td>
+          <td style="text-align: left">Record multiple links in one text file and implement a mechanism for batch launching.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Version Control</strong></td>
+          <td style="text-align: left">Being in binary format, managing differences in Git or other version control systems is challenging.</td>
+          <td style="text-align: left">Shift to text-based management to facilitate tracking and sharing differences in version control systems.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Platform Dependency</strong></td>
+          <td style="text-align: left"><code>.lnk</code> files are dependent on the Windows OS.</td>
+          <td style="text-align: left">Transition to a text file format to achieve platform-independent link management.</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="devising-a-plan">2. Devising a Plan</h3>
+<p>Below is the implementation plan for managing and executing links using a text file:</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Challenge</th>
+          <th style="text-align: left">Proposed Plan</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>Maintaining Quick Launch &amp; Convenience</strong></td>
+          <td style="text-align: left">Build a system that preserves the benefits of shortcut files, allowing you to launch applications and files without leaving your current directory.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Adopting a Text File Format</strong></td>
+          <td style="text-align: left">Manage link information using text files instead of binary formats, making version control (e.g., with Git) much easier.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Batch Management of Multiple Links</strong></td>
+          <td style="text-align: left">Provide a mechanism to record multiple links in a single text file and launch them collectively as needed.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Eliminating Platform Dependency &amp; Enhancing Portability</strong></td>
+          <td style="text-align: left">Move away from OS-dependent shortcuts to achieve cross-platform link management using a text-based approach.</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="carrying-out-the-plan">3. Carrying Out the Plan</h3>
+<h4 id="installation">Installation</h4>
+<p>Install the PowerShell script &ldquo;<a href="https://github.com/btklab/pwsh-sketches/blob/main/src/Invoke-Link_function.ps1" target="_blank">Invoke-Link</a>
+ (Alias:<code>i</code>)&rdquo; as follows:</p>
+<ol>
+<li><a href="../../getting-started/install-software-pwsh-sketches/index.html">Install pwsh-sketches</a>
+</li>
+<li>Dot-source the function:
+<ul>
+<li><code>. path/to/the/pwsh-sketches/src/Invoke-Link_function.ps1</code></li>
+</ul>
+</li>
+<li>Test:
+<ul>
+<li><code>man i</code> or</li>
+<li><code>man Invoke-Link</code></li>
+</ul>
+</li>
+</ol>
+<h4 id="execution">Execution</h4>
+<p>Let’s try using &ldquo;<a href="https://github.com/btklab/pwsh-sketches/blob/main/src/Invoke-Link_function.ps1" target="_blank">Invoke-Link</a>
+&rdquo;. First, launch a web link in your default browser.</p>
+<p>Create a text file named <code>btklab.txt</code> and add the following two lines:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>https://btklab.com
+</span></span><span style="display:flex;"><span>https://github.com/btklab
+</span></span></code></pre></div><p>Execute the links listed in the text file with the following command. By default, only the first link in the file (<a href="https://btklab.com" target="_blank">https://btklab.com</a>
+) will open in the default browser.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>i btklab.txt
+</span></span></code></pre></div><p>Using the <code>-Doc</code> option launches the subsequent link (<a href="https://github.com/btklab" target="_blank">https://github.com/btklab</a>
+).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>i btklab.txt -Doc
+</span></span></code></pre></div><p>When the <code>-All</code> (<code>-a</code>) option is specified, all links in the text file will open in the default browser.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>i btklab.txt -All
+</span></span></code></pre></div><p>In addition to web links, you can specify full paths to files or directories. Double quotes around the path are optional. Create a text file named <code>pub-documents.txt</code> and write the following:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>&#34;C:/Users/Public/Documents&#34;
+</span></span></code></pre></div><p>The following command will open the directory specified by the path in File Explorer.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>i pub-documents.txt
+</span></span></code></pre></div><p>Applications are launched based on the input type:</p>
+<ul>
+<li>Web links open in the &ldquo;<strong>Default Browser</strong>&rdquo;</li>
+<li>Directories open in &ldquo;<strong>File Explorer</strong>&rdquo;</li>
+<li>Files open with their <strong>Default Applications</strong> based on file extension</li>
+</ul>
+<p>Additionally, if a Windows shortcut file (<code>.lnk</code> file) is specified as an argument, that shortcut file will be launched. This enables you to mix text file links and Windows shortcut files in your link collection folder, and launch them uniformly using the <a href="https://github.com/btklab/pwsh-sketches/blob/main/src/Invoke-Link_function.ps1" target="_blank">Invoke-Link</a>
+ command.</p>
+<h3 id="looking-back">4. Looking Back</h3>
+<p>The planned requirements have largely been met. The <a href="https://github.com/btklab/pwsh-sketches/blob/main/src/Invoke-Link_function.ps1" target="_blank">Invoke-Link</a>
+ command is convenient for my daily tasks and has become one of my most frequently used commands.</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Challenge</th>
+          <th style="text-align: left">Result</th>
+          <th style="text-align: left">Evaluation</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>Maintaining Quick Launch &amp; Convenience</strong></td>
+          <td style="text-align: left">Applications and files can be launched without leaving the current directory.</td>
+          <td style="text-align: left">✅</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Adopting a Text File Format</strong></td>
+          <td style="text-align: left">Link information is managed using a text file, making version control with Git possible</td>
+          <td style="text-align: left">✅</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Batch Management of Multiple Links</strong></td>
+          <td style="text-align: left">Multiple links can be recorded in a single text file and launched collectively as needed.</td>
+          <td style="text-align: left">✅</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Eliminating Platform Dependency &amp; Enhancing Portability</strong></td>
+          <td style="text-align: left">Combining text files with PowerShell achieves cross-platform operation.</td>
+          <td style="text-align: left">✅</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="terms">Terms</h2>
+<p>Here are some technical terms to deepen your understanding of efficiency through the use of links and shortcuts:</p>
+<dl>
+<dt><a href="https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_aliases" target="_blank">Aliases</a>
+</dt>
+<dd>
+<p>A mechanism in PowerShell and other shells for assigning short names (aliases) to frequently used commands or scripts. The alias &ldquo;<code>i</code>&rdquo; was set for this script because it is expected to be typed frequently in everyday use.</p>
+</dd>
+<dt>Command Line Interface (CLI)</dt>
+<dd>
+<p>A text-based way to interact with a computer. Unlike a Graphical User Interface (GUI), which relies on mouse clicks on icons, the CLI involves typing commands on a keyboard to perform actions such as opening files and running programs. This blog will focus on CLI methods.</p>
+</dd>
+<dt>Symbolic Link</dt>
+<dd>
+<p>Windows shortcut files (<code>.lnk</code>) are a type of symbolic link. They create a reference (pointer) in the operating system’s file system to a particular file or directory.</p>
+</dd>
+<dt>Workflow Automation</dt>
+<dd>
+<p>The concept of automating routine manual tasks using scripts or automation tools. By leveraging links, shortcuts, and aliases, operations like launching applications and accessing files are automated and accelerated, directly contributing to overall work efficiency.</p>
+</dd>
+<dt><a href="https://github.com/btklab/pwsh-sketches" target="_blank">pwsh-sketches</a>
+ &ndash; Experimental repository of PowerShell scripts for CLI.</dt>
+<dd>
+<p><a href="https://github.com/btklab/pwsh-sketches/blob/main/src/Invoke-Link_function.ps1" target="_blank">Invoke-Link</a>
+ &ndash; The PowerShell script that allows you to launch applications from links written in a text file. It&rsquo;s one of my most frequently used commands within <a href="https://github.com/btklab/pwsh-sketches" target="_blank">pwsh-sketches</a>
+.</p>
+</dd>
+</dl>
+<h2 id="links">Related Links</h2>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_aliases" target="_blank">Microsoft.Learn &ndash; about_Aliases</a>
+</li>
+</ul>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="../../../en/tags/noun/software/index.html" rel="tag">Noun / Software</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="../../../en/tags/name/powershell/index.html" rel="tag">Name / PowerShell</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="../../../en/tags/name/pwsh-sketches/index.html" rel="tag">Name / pwsh-sketches</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="../../../en/tags/verb/launch/index.html" rel="tag">Verb / Launch</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="../../../en/tags/type/launcher/index.html" rel="tag">Type / Launcher</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+
+
+
+			</div>
+			<aside class="sidebar"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+		<input class="widget-search__field" type="search" placeholder="Search…" value="" name="q" aria-label="Search…">
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="https://btklab.com/">
+	</form>
+</div>
+<div class="widget-languages widget">
+	<h4 class="widget__title">Languages</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget-languages__link widget__link" href="../../../ja/index.html">
+					<span class="widget-languages__link-btn widget__link-btn btn">JA</span>
+					<span class="widget-languages__link-text widget__link-text">Japanese</span>
+				</a>
+			</li>
+			<li class="widget__item">
+				<a class="widget-languages__link widget__link" href="../../../en/index.html">
+					<span class="widget-languages__link-btn widget__link-btn btn">EN</span>
+					<span class="widget-languages__link-text widget__link-text">English</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</div><div class="widget-archives widget">
+	<h4 class="widget__title">Author</h4>
+	<div class="widget__content">
+		<div class="authorbox clearfix">
+			<figure class="authorbox__avatar">
+				<img alt="btklab avatar" src="../../../img/logo_an_owl_hood_boy2.png" class="avatar" height="90" width="90">
+			</figure>
+			
+			<div class="authorbox__description">
+				Gather, Connect, Experiment — I use PowerShell as the glue to connect various technologies like Python, R, Graphviz, etc., and handle my work, mainly on Windows, sometimes on Linux.
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="widget-social widget">
+	<h4 class="widget-social__title widget__title">Social</h4>
+	<div class="widget-social__content widget__content">
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="GitHub" rel="noopener noreferrer" href="https://github.com/btklab" target="_blank">
+				<svg class="widget-social__link-icon icon icon-github" width="24" height="24" viewBox="0 0 384 374"><path d="m192 0c-106.1 0-192 85.8-192 191.7 0 84.7 55 156.6 131.3 181.9 9.6 1.8 13.1-4.2 13.1-9.2 0-4.6-.2-16.6-.3-32.6-53.4 11.6-64.7-25.7-64.7-25.7-8.7-22.1-21.3-28-21.3-28-17.4-11.9 1.3-11.6 1.3-11.6 19.3 1.4 29.4 19.8 29.4 19.8 17.1 29.3 44.9 20.8 55.9 15.9 1.7-12.4 6.7-20.8 12.2-25.6-42.6-4.8-87.5-21.3-87.5-94.8 0-20.9 7.5-38 19.8-51.4-2-4.9-8.6-24.3 1.9-50.7 0 0 16.1-5.2 52.8 19.7 15.3-4.2 31.7-6.4 48.1-6.5 16.3.1 32.7 2.2 48.1 6.5 36.7-24.8 52.8-19.7 52.8-19.7 10.5 26.4 3.9 45.9 1.9 50.7 12.3 13.4 19.7 30.5 19.7 51.4 0 73.7-44.9 89.9-87.7 94.6 6.9 5.9 13 17.6 13 35.5 0 25.6-.2 46.3-.2 52.6 0 5.1 3.5 11.1 13.2 9.2 76.2-25.5 131.2-97.3 131.2-182 0-105.9-86-191.7-192-191.7z"/></svg>
+				<span>GitHub</span>
+			</a>
+		</div>
+		
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="RSS" href="https://btklab.com/index.xml">
+				<span>RSS</span>
+			</a>
+		</div>
+	</div>
+</div>
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="../../../en/getting-started/install-software_graphviz/index.html">Install-Software &#34;Graphviz&#34;</a></li>
+			<li class="widget__item"><a class="widget__link" href="../../../en/getting-started/install-software_plantuml/index.html">Install-Software &#34;PlantUML&#34;</a></li>
+			<li class="widget__item"><a class="widget__link" href="../../../en/solve-the-problem/launch-software_run_anything_from_a_plain_text_link/index.html">Launch-Software &#34;Run Anything from a Plain Text Link&#34;</a></li>
+			<li class="widget__item"><a class="widget__link" href="../../../en/getting-started/install-software-python/index.html">Install-Software &#34;Python&#34;</a></li>
+			<li class="widget__item"><a class="widget__link" href="../../../en/getting-started/install-software-pwsh-sketches/index.html">Install-Software &#34;pwsh-sketches&#34;</a></li>
+			<li class="widget__item"><a class="widget__link" href="../../../en/getting-started/think-environment-directory-structure/index.html">Think-Environment &#34;Directory Structure&#34;</a></li>
+			<li class="widget__item"><a class="widget__link" href="../../../en/getting-started/install-software-git/index.html">Install-Software &#34;Git&#34;</a></li>
+			<li class="widget__item"><a class="widget__link" href="../../../en/getting-started/learn-software-powershell-basic/index.html">Learn-Software &#34;PowerShell&#34; -Basic</a></li>
+			<li class="widget__item"><a class="widget__link" href="../../../en/getting-started/launch-software-powershell/index.html">Launch-Software &#34;PowerShell&#34;</a></li>
+			<li class="widget__item"><a class="widget__link" href="../../../en/getting-started/install-software-windowsterminal/index.html">Install-Software &#34;Windows Terminal&#34;</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+                
+                
+				<a class="widget__link" href="../../../en/categories/getting-started/index.html">Getting Started</a></li>
+			<li class="widget__item">
+                
+                
+				<a class="widget__link" href="../../../en/categories/solve-the-problem/index.html">Solve the Problem</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+    <h4 class="widget__title">Tags</h4>
+    <div class="widget__content">
+        <ul class="widget__list">
+            <li class="widget__item">
+                <a class="widget__link" href="../../../en/tags/name/excel/index.html">Name / Excel</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">1</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../en/tags/name/git/index.html">Name / Git</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">2</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../en/tags/name/github/index.html">Name / GitHub</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">1</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../en/tags/name/graphviz/index.html">Name / Graphviz</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">1</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../en/tags/name/plantuml/index.html">Name / PlantUML</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">1</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../en/tags/name/powershell/index.html">Name / PowerShell</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">5</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../en/tags/name/pwsh-sketches/index.html">Name / Pwsh-Sketches</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">2</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../en/tags/name/python/index.html">Name / Python</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">1</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../en/tags/name/windows-terminal/index.html">Name / Windows Terminal</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">1</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../en/tags/name/winget/index.html">Name / WinGet</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">6</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../en/tags/noun/environment/index.html">Noun / Environment</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">1</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../en/tags/noun/software/index.html">Noun / Software</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">12</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../en/tags/opt/basic/index.html">Opt / Basic</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">2</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../en/tags/type/datavisualization/index.html">Type / DataVisualization</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">2</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../en/tags/type/launcher/index.html">Type / Launcher</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">1</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../en/tags/verb/install/index.html">Verb / Install</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">8</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../en/tags/verb/launch/index.html">Verb / Launch</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">2</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../en/tags/verb/learn/index.html">Verb / Learn</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">2</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../en/tags/verb/think/index.html">Verb / Think</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">1</span>
+                </li>
+        </ul>
+    </div>
+</div>
+<div class="widget-archives widget">
+	  <h4 class="widget__title">Archives</h4>
+	  <div class="widget__content">
+		<ul class="widget__list">
+                <li class="widget__item">
+                    <a class="widget__link" href="../../../en/archives/2025-02/index.html">2025-02</a>&nbsp;
+                    <span class="widget__counter widget__counter--bubble">7</span>
+                    </li>
+                <li class="widget__item">
+                    <a class="widget__link" href="../../../en/archives/2025-03/index.html">2025-03</a>&nbsp;
+                    <span class="widget__counter widget__counter--bubble">3</span>
+                    </li>
+                <li class="widget__item">
+                    <a class="widget__link" href="../../../en/archives/2025-04/index.html">2025-04</a>&nbsp;
+                    <span class="widget__counter widget__counter--bubble">3</span>
+                    </li>
+            
+            <li><a href="../../../en/archives/index.html">&lt;&lt;</a></li>
+        </ul>
+    </div>
+</div>
+
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2025 Btklab&#39;s Experience via PowerShell on Windows.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme, <a href="https://posit.co/downloads/" rel="nofollow noopener" target="_blank">RStudio IDE</a> and <a href="https://pkgs.rstudio.com/blogdown/" rel="nofollow noopener" target="_blank">blogdown</a> package.</span>
+		</div>
+	</div>
+	<script src="https://btklab.com/lightbox2/js/lightbox-plus-jquery.min.js"></script>
+</footer>
+	</div>
+<script async defer src="../../../js/menu.js"></script>
+</body>
+</html>

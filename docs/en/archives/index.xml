@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Archives on Btklab&#39;s Experience via PowerShell on Windows</title>
+    <link>https://btklab.com/en/archives/</link>
+    <description>Recent content in Archives on Btklab&#39;s Experience via PowerShell on Windows</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 07 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://btklab.com/en/archives/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2025-04</title>
+      <link>https://btklab.com/en/archives/2025-04/</link>
+      <pubDate>Sun, 20 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://btklab.com/en/archives/2025-04/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>2025-03</title>
+      <link>https://btklab.com/en/archives/2025-03/</link>
+      <pubDate>Mon, 17 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://btklab.com/en/archives/2025-03/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>2025-02</title>
+      <link>https://btklab.com/en/archives/2025-02/</link>
+      <pubDate>Tue, 18 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>https://btklab.com/en/archives/2025-02/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Name/GitHub on Btklab&#39;s Experience via PowerShell on Windows</title>
+    <link>https://btklab.com/en/tags/name/github/</link>
+    <description>Recent content in Name/GitHub on Btklab&#39;s Experience via PowerShell on Windows</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 20 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://btklab.com/en/tags/name/github/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Install-Software &#34;pwsh-sketches&#34;</title>
+      <link>https://btklab.com/en/getting-started/install-software-pwsh-sketches/</link>
+      <pubDate>Fri, 07 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://btklab.com/en/getting-started/install-software-pwsh-sketches/</guid>
+      <description>&lt;h2 id=&#34;intro&#34;&gt;Introduction&lt;/h2&gt;&#xA;&#xD;&#xA;&lt;figure style=&#34;float:right; margin:1em 1em 0 1em;&#34; &gt;&#xD;&#xA;    &lt;a href=&#34;../../../../img/2025/2025-02-12-powershell-scripting-as-an-open-ended-craft.svg&#34; data-lightbox=&#34;image-gallery&#34; data-title=&#34;fig. Pwsh as a Craft.&#34; &gt;&#xD;&#xA;        &lt;img src=&#34;../../../../img/2025/2025-02-12-powershell-scripting-as-an-open-ended-craft.svg&#34; width=150 /&gt;&#xD;&#xA;    &lt;/a&gt;&#xD;&#xA;    &lt;figcaption&gt;&#xD;&#xA;        fig. Pwsh as a Craft.&#xD;&#xA;    &lt;/figcaption&gt; &#xD;&#xA;&lt;/figure&gt;&#xD;&#xA;&#xA;&lt;p&gt;Install my personal script set: &amp;ldquo;&lt;a href=&#34;https://github.com/btklab/pwsh-sketches&#34; target=&#34;_blank&#34;&gt;pwsh-sketches&lt;/a&gt;&#xD;&#xA;,&amp;rdquo; which makes daily shell operations slightly more convenient and brings petit ideas to life. The script set is hosted on &lt;a href=&#34;https://github.com/&#34; target=&#34;_blank&#34;&gt;GitHub&lt;/a&gt;&#xD;&#xA; and can be installed on your PC using the version control system &lt;a href=&#34;https://git-scm.com/&#34; target=&#34;_blank&#34;&gt;Git&lt;/a&gt;&#xD;&#xA;.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Key point&lt;/strong&gt;: One of the interesting things about the shell is that you can easily craft useful tools tailored to your own work and level.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

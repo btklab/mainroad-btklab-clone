@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Install-Software &#34;pwsh-sketches&#34; - Btklab&#39;s Experience via PowerShell on Windows</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="自家製スクリプト&#34;pwsh-sketches&#34;をGitHub経由でインストール。">
+		<meta property="og:url" content="https://btklab.com/ja/getting-started/install-software-pwsh-sketches/">
+  <meta property="og:site_name" content="Btklab&#39;s Experience via PowerShell on Windows">
+  <meta property="og:title" content="Install-Software &#34;pwsh-sketches&#34;">
+  <meta property="og:description" content="自家製スクリプト&#34;pwsh-sketches&#34;をGitHub経由でインストール。">
+  <meta property="og:locale" content="ja_jp">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="getting-started">
+    <meta property="article:published_time" content="2025-03-07T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-04-20T00:00:00+00:00">
+    <meta property="article:tag" content="Verb/Install">
+    <meta property="article:tag" content="Noun/Software">
+    <meta property="article:tag" content="Name/PowerShell">
+    <meta property="article:tag" content="Name/Pwsh-Sketches">
+    <meta property="article:tag" content="Name/Git">
+    <meta property="article:tag" content="Name/GitHub">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="../../../css/style.css">
+	
+
+	<link rel="shortcut icon" href="../../../favicon.ico">
+		
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+    <div class="container header__container">
+        
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="../../../ja/index.html" title="Btklab&#39;s Experience via PowerShell on Windows" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="../../../img/logo_an_owl_hood_boy.png">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">Btklab&#39;s Experience via PowerShell on Windows</div>
+					<div class="logo__tagline">Glue the Pieces — the Rest Takes Shape</div>
+				</div>
+		</a>
+	</div>
+        
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">メニュー</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="../../../ja/index.html">
+				
+				<span class="menu__text">Home</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../../../ja/getting-started/index.html">
+				
+				<span class="menu__text">はじめる</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../../../ja/solve-the-problem/index.html">
+				
+				<span class="menu__text">問題をとく</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../../../ja/random-thoughts/index.html">
+				
+				<span class="menu__text">ランダムな考え</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../../../ja/about/index.html">
+				
+				<span class="menu__text">免責事項など</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../../../ja/contact/index.html">
+				
+				<span class="menu__text">お問い合わせ</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../../../ja/archives/index.html">
+				
+				<span class="menu__text">アーカイブ</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../../../en/index.html">
+				
+				<span class="menu__text">English</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+    </div>
+    <link rel="stylesheet" href="https://btklab.com/lightbox2/css/lightbox.css" type="text/css" />
+    <link rel="stylesheet" href="https://btklab.com/css/custom.css" type="text/css" media="all" />
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Install-Software &#34;pwsh-sketches&#34;</h1>
+			<p class="post__lead">自家製スクリプト&#34;pwsh-sketches&#34;をGitHub経由でインストール。</p>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2025-03-07T00:00:00Z">2025-03-07</time>
+	<time class="meta__text" datetime="2025-04-20T00:00:00Z">(最終更新: 2025-04-20)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text">
+                
+                <a class="meta__link" href="../../../ja/categories/getting-started/index.html" rel="category">Getting Started</a>
+    </span>
+</div>
+<div class="meta__item-translations meta__item">
+	<span class="meta__text">翻訳: <a class="meta__link" href="../../../en/getting-started/install-software-pwsh-sketches/index.html">EN</a>
+	</span>
+</div></div>
+		</header>
+		
+<div class="post__toc toc">
+	<div class="toc__title">目次</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents">
+  <ul>
+    <li><a href="#intro">はじめに</a></li>
+    <li><a href="#disclaimer">免責事項</a></li>
+    <li><a href="#license">ライセンス（著作権について）</a></li>
+    <li><a href="#prerequisites">前提条件</a></li>
+    <li><a href="#clone-repository">リポジトリのクローン</a></li>
+    <li><a href="#install-minimum">インストール：最小</a></li>
+    <li><a href="#install-bulk">インストール：一括</a></li>
+    <li><a href="#terms">用語</a></li>
+    <li><a href="#links">リンク</a></li>
+  </ul>
+</nav>
+	</div>
+</div><div class="content post__content clearfix">
+			<h2 id="intro">はじめに</h2>
+
+<figure style="float:right; margin:1em 1em 0 1em;" >
+    <a href="../../../img/2025/2025-02-12-powershell-scripting-as-an-open-ended-craft.svg" data-lightbox="image-gallery" data-title="fig. Pwsh as a Craft." >
+        <img src="../../../img/2025/2025-02-12-powershell-scripting-as-an-open-ended-craft.svg" width=150 />
+    </a>
+    <figcaption>
+        fig. Pwsh as a Craft.
+    </figcaption> 
+</figure>
+
+<p>日常のシェル操作を少しだけ便利にしたり、ちょっとしたアイディアを形にするためのぼくの自家製スクリプトセット：&quot;<a href="https://github.com/btklab/pwsh-sketches" target="_blank">pwsh-sketches</a>
+&ldquo;をインストールする。同スクリプトセットは<a href="https://github.com/" target="_blank">GitHub</a>
+上に設置しており、そこからバージョン管理システム「<a href="https://git-scm.com/" target="_blank">Git</a>
+」を用いてPCにインストールする。</p>
+<blockquote>
+<p><strong>Key point</strong>: シェルの面白い点のひとつは、自分の作業やレベルに合った便利ツールを簡単に工作（クラフト）できるところ。</p></blockquote>
+<h2 id="disclaimer">免責事項</h2>
+<p>&ldquo;<a href="https://github.com/btklab/pwsh-sketches" target="_blank">pwsh-sketches</a>
+&ldquo;は、プロトタイピングやアイデア探求のための実験的なPowerShellスクリプトセット。それらスクリプトは筆者が実際に動作確認したものではあるが、本番での使用を意図したものではなく、不安定であったり、不完全であったりする点に注意する。</p>
+<h2 id="license">ライセンス（著作権について）</h2>
+<p><a href="https://github.com/btklab/pwsh-sketches" target="_blank">pwsh-sketches</a>
+は<a href="https://opensource.org/license/mit" target="_blank">MITライセンス</a>
+のもと、<a href="https://github.com/" target="_blank">GitHub</a>
+上で公開している。当ライセンスのもと、自由に改変して使ってよい。改変したものを公開する場合、著作権表示（たとえば<code>Copyright &lt;初回バージョンの公開年&gt; &lt;著作権者の名前&gt;</code>）をソースコードの先頭やプロジェクトの<code>Readme.md</code>に記載する：</p>
+<blockquote>
+<p><strong>pwsh-sketches</strong>: Copyright 2025 btklab under The MIT License</p>
+<ul>
+<li>The MIT License: <a href="https://opensource.org/license/mit" target="_blank">https://opensource.org/license/mit</a>
+</li>
+<li>btklab/pwsh-sketches: <a href="https://github.com/btklab/pwsh-sketches" target="_blank">https://github.com/btklab/pwsh-sketches</a>
+</li>
+</ul>
+<footer>-- <cite>The MIT Licenseの著作権表示例</cite></footer></blockquote>
+<h2 id="prerequisites">前提条件</h2>
+<ul>
+<li>✓ <a href="../install-software-powershell/index.html">PowerShellのインストール</a>
+</li>
+<li>✓ <a href="../install-software-git/index.html">Gitのインストール</a>
+</li>
+<li>✓ (Optional) <a href="../think-environment-directory-structure/index.html">作成：作業ディレクトリ</a>
+</li>
+<li>✓ (Optional) <a href="../learn-software-powershell-basic/index.html">学習：PowerShellの基礎</a>
+</li>
+<li>✓ 検証した環境は<a href="../../getting-started/index.html">こちら</a>
+</li>
+</ul>
+<h2 id="clone-repository">リポジトリのクローン</h2>
+<ol>
+<li><a href="../launch-software-powershell/index.html">PowerShellを起動する</a>
+</li>
+<li>スクリプトを置くディレクトリを作り移動する
+<ul>
+<li>例： <a href="../think-environment-directory-structure/index.html">作業ディレクトリの作成</a>
+で作成した<code>bin</code>ディレクトリ
+<ul>
+<li><code>mkdir ~/cms/bin</code></li>
+<li><code>pushd ~/cms/bin</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>GitHubからスクリプトをクローンする
+<ul>
+<li>例：
+<ul>
+<li><code>git clone https://github.com/btklab/pwsh-sketches.git</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>インストール完了</li>
+</ol>
+<p>↓ インストール後のディレクトリ構造（例）</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>home
+</span></span><span style="display:flex;"><span>└─cms
+</span></span><span style="display:flex;"><span>  ├─bin
+</span></span><span style="display:flex;"><span>  │  └─pwsh-sketches  &lt;-- GitHubからクローンしたリポジトリ
+</span></span><span style="display:flex;"><span>  │
+</span></span><span style="display:flex;"><span>  └─drafts
+</span></span></code></pre></div><h2 id="install-minimum">インストール：最小</h2>
+<blockquote>
+<p><strong>Key point</strong>: 最小インストールすれば、好きな関数だけを（<strong>ドットソースで</strong>）読み込むことができる。</p></blockquote>
+<p>クローンしたリポジトリに移動してファイルとフォルダが格納されていることを確認する。
+まずクローンしたリポジトリに移動する。<code>cd</code>か<code>pushd</code>コマンドを使う：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>pushd ~/cms/bin/pwsh-sketches
+</span></span></code></pre></div><p>ちなみにパスの入力は<strong>TAB補完</strong>を使うと素早く正確に行える。
+複数候補がある場合は<kbd>TAB</kbd>, <kbd>TAB</kbd>, &hellip;で候補が順次表示される：</p>
+<ul>
+<li><code>~/cm</code><kbd>&lt;TAB&gt;</kbd>、で<code>~/cms/</code>と入力され、</li>
+<li><code>~/cms/bi</code><kbd>&lt;TAB&gt;</kbd>、で<code>~/cms/bin/</code>と入力され、</li>
+<li><code>~/cms/bin/pw</code><kbd>&lt;TAB&gt;</kbd>を押すと残りが補完される</li>
+</ul>
+<p>次に、<code>ls</code>コマンドでリポジトリのファイルやフォルダが正しくクローンされているかをみる：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e">## at ~/cms/bin/pwsh-sketches</span>
+</span></span><span style="display:flex;"><span>ls
+</span></span></code></pre></div><p>出力：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>    Directory<span style="color:#960050;background-color:#1e0010">:</span> C:/Users/btklab/cms/bin/pwsh-sketches
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Mode         LastWriteTime  Length Name
+</span></span><span style="display:flex;"><span>----         -------------  ------ ----
+</span></span><span style="display:flex;"><span>d-r--  <span style="color:#ae81ff">2024</span>/<span style="color:#ae81ff">04</span>/<span style="color:#ae81ff">27</span>    <span style="color:#ae81ff">10</span><span style="color:#960050;background-color:#1e0010">:</span><span style="color:#ae81ff">00</span>         .github
+</span></span><span style="display:flex;"><span>d-r--  <span style="color:#ae81ff">2024</span>/<span style="color:#ae81ff">10</span>/<span style="color:#ae81ff">31</span>    <span style="color:#ae81ff">14</span><span style="color:#960050;background-color:#1e0010">:</span><span style="color:#ae81ff">43</span>         examples
+</span></span><span style="display:flex;"><span>d-r--  <span style="color:#ae81ff">2024</span>/<span style="color:#ae81ff">04</span>/<span style="color:#ae81ff">27</span>    <span style="color:#ae81ff">10</span><span style="color:#960050;background-color:#1e0010">:</span><span style="color:#ae81ff">00</span>         img
+</span></span><span style="display:flex;"><span>d-r--  <span style="color:#ae81ff">2025</span>/<span style="color:#ae81ff">03</span>/<span style="color:#ae81ff">02</span>    <span style="color:#ae81ff">22</span><span style="color:#960050;background-color:#1e0010">:</span><span style="color:#ae81ff">31</span>         src
+</span></span><span style="display:flex;"><span>d-r--  <span style="color:#ae81ff">2024</span>/<span style="color:#ae81ff">04</span>/<span style="color:#ae81ff">27</span>    <span style="color:#ae81ff">10</span><span style="color:#960050;background-color:#1e0010">:</span><span style="color:#ae81ff">00</span>         tests
+</span></span><span style="display:flex;"><span>-a---  <span style="color:#ae81ff">2023</span>/<span style="color:#ae81ff">10</span>/<span style="color:#ae81ff">18</span>     <span style="color:#ae81ff">6</span><span style="color:#960050;background-color:#1e0010">:</span><span style="color:#ae81ff">57</span>     <span style="color:#ae81ff">107</span> .gitignore
+</span></span><span style="display:flex;"><span>-a---  <span style="color:#ae81ff">2025</span>/<span style="color:#ae81ff">03</span>/<span style="color:#ae81ff">06</span>     <span style="color:#ae81ff">1</span><span style="color:#960050;background-color:#1e0010">:</span><span style="color:#ae81ff">01</span>    <span style="color:#ae81ff">7595</span> CHANGELOG.md
+</span></span><span style="display:flex;"><span>-a---  <span style="color:#ae81ff">2024</span>/<span style="color:#ae81ff">08</span>/<span style="color:#ae81ff">06</span>    <span style="color:#ae81ff">16</span><span style="color:#960050;background-color:#1e0010">:</span><span style="color:#ae81ff">54</span>     <span style="color:#ae81ff">106</span> examples.md
+</span></span><span style="display:flex;"><span>-a---  <span style="color:#ae81ff">2023</span>/<span style="color:#ae81ff">01</span>/<span style="color:#ae81ff">04</span>    <span style="color:#ae81ff">11</span><span style="color:#960050;background-color:#1e0010">:</span><span style="color:#ae81ff">50</span>    <span style="color:#ae81ff">1084</span> LICENSE
+</span></span><span style="display:flex;"><span>-a---  <span style="color:#ae81ff">2023</span>/<span style="color:#ae81ff">12</span>/<span style="color:#ae81ff">05</span>     <span style="color:#ae81ff">7</span><span style="color:#960050;background-color:#1e0010">:</span><span style="color:#ae81ff">39</span>    <span style="color:#ae81ff">2357</span> operator-extra.ps1
+</span></span><span style="display:flex;"><span>-a---  <span style="color:#ae81ff">2025</span>/<span style="color:#ae81ff">02</span>/<span style="color:#ae81ff">15</span>    <span style="color:#ae81ff">10</span><span style="color:#960050;background-color:#1e0010">:</span><span style="color:#ae81ff">33</span>     <span style="color:#ae81ff">378</span> operator-minimum.ps1
+</span></span><span style="display:flex;"><span>-a---  <span style="color:#ae81ff">2025</span>/<span style="color:#ae81ff">03</span>/<span style="color:#ae81ff">02</span>    <span style="color:#ae81ff">22</span><span style="color:#960050;background-color:#1e0010">:</span><span style="color:#ae81ff">49</span>    <span style="color:#ae81ff">7580</span> operator.ps1
+</span></span><span style="display:flex;"><span>-a---  <span style="color:#ae81ff">2025</span>/<span style="color:#ae81ff">03</span>/<span style="color:#ae81ff">02</span>    <span style="color:#ae81ff">22</span><span style="color:#960050;background-color:#1e0010">:</span><span style="color:#ae81ff">50</span>  <span style="color:#ae81ff">387678</span> README.md
+</span></span></code></pre></div><p>もとのディレクトリに戻る</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>popd
+</span></span></code></pre></div><p>ためしにひとつコマンドを実行してみる。
+その前に注意点：</p>
+<ul>
+<li><code>pwsh-sketches</code>は基本的に1ファイル1関数の集合体である
+<ul>
+<li>PowerShellのモジュールではない</li>
+<li>他の関数と依存関係にある関数もいくつか存在する</li>
+</ul>
+</li>
+<li><code>pwsh-sketches</code>の読み込みはドットソースを用いてスクリプトファイルを直接指定する
+<ul>
+<li>たとえば、<code>. operator.ps1</code>などとする</li>
+<li><code>Import-Module</code>コマンドは用いない</li>
+</ul>
+</li>
+<li>ウィンドウを閉じると読み込んだ関数は初期化される
+<ul>
+<li><strong>PowerShellを起動するたびに関数の再読み込みが必要</strong></li>
+<li>この作業が面倒な場合は、スクリプトをプロファイルに追加して自動読み込みする、モジュール化するなどの方法がある</li>
+</ul>
+</li>
+</ul>
+<p>ではまず、文字コードを<strong>UTF-8</strong>に変更する：</p>
+<ul>
+<li>この操作はPowerShell 6以降は不要（デフォルト値がすでにUTF-8）であるとは思う</li>
+<li>ぼくはPowerShellを他のプログラミング言語との<strong>グルー言語</strong>（糊付け言語）として用いているので、どの文字コードを使うかは使用する言語すべてで明示して統一するようにしている</li>
+<li>ただし、もし君が使用しているPowerShellがWindows PowerShell (PowerShell 5)である場合、この操作は必要</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e"># リポジトリに移動する</span>
+</span></span><span style="display:flex;"><span>pushd ~/cms/bin/pwsh-sketches
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 文字コードをUTF-8に変更するソースをドットで読み込む</span>
+</span></span><span style="display:flex;"><span>. ./operator-minimum.ps1
+</span></span></code></pre></div><p><code>operator-minimum.ps1</code>の中身は以下のとおり：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e"># for windows only</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> ($IsWindows){
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">## set encode to utf8</span>
+</span></span><span style="display:flex;"><span>    chcp <span style="color:#ae81ff">65001</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">#$OutputEncoding = [System.Text.Encoding]::UTF8</span>
+</span></span><span style="display:flex;"><span>    [<span style="color:#66d9ef">System.Console</span>]::OutputEncoding = [<span style="color:#66d9ef">System.Text.Encoding</span>]::GetEncoding(<span style="color:#e6db74">&#34;utf-8&#34;</span>)
+</span></span><span style="display:flex;"><span>    [<span style="color:#66d9ef">System.Console</span>]::InputEncoding  = [<span style="color:#66d9ef">System.Text.Encoding</span>]::GetEncoding(<span style="color:#e6db74">&#34;utf-8&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># compartible with multi byte code</span>
+</span></span><span style="display:flex;"><span>    $env:LESSCHARSET = <span style="color:#e6db74">&#34;utf-8&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>次に、利用する関数ファイルを、<strong>ドットソース</strong>で読み込む：</p>
+<ul>
+<li>「ドットソースで読み込む」とは、ドット（<code>.</code>）と空白の後にファイル名を指定する方法のこと</li>
+<li>これにより関数ファイルの中身を<strong>現在のセッション（現在のスコープ）でのみ使用できる</strong>ようになる</li>
+<li>「現在のセッションのみで使用できる」の意味は、現在のセッションから抜け出る（≒<code>exit</code>で抜ける、別の新しいセッションをはじめる、など）までは使用できる、という意味</li>
+<li>永続的ではなく一時的な読み込み</li>
+<li>この方法は、毎回PowerShellを起動するたびに必要な関数をドットソースで読み込まねばならない、と考えた場合は面倒であるといえる</li>
+<li>一方、Windowを閉じれば読み込みはクリアされる、と考えた場合は、不要な関数が溜まってきて動作が遅くなるという状態を制御できる、ともいえる</li>
+</ul>
+<p>試しにやってみよう。以下は、<a href="https://github.com/btklab/pwsh-sketches/blob/main/src/grep_function.ps1" target="_blank">grep</a>
+というコマンドをドットソースで読み込む例：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e">## Case.1 pwsh-sketchesのルートディレクトリから実行する場合</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## 注意：ファイル名の前にドット（.）と空白がある！</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## at ~/cms/bin/pwsh-sketches</span>
+</span></span><span style="display:flex;"><span>. ./src/grep_function.ps1
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e">## Case.2 他のディレクトリから実行する場合</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## 注意：ファイル名の前にドット（.）と空白がある！</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## at ~</span>
+</span></span><span style="display:flex;"><span>. ~/cms/bin/pwsh-sketches/src/grep_function.ps1
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e">## Case.3 作業ディレクトリ&#34;drafts&#34;から実行する場合</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## 相対パスで指定する</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## at ~/cms/drafts</span>
+</span></span><span style="display:flex;"><span>. ../bin/pwsh-sketches/src/grep_function.ps1
+</span></span></code></pre></div><p><strong>Note</strong>：&ldquo;Case.3&quot;で想定する作業ディレクトリ<code>drafts</code>と<code>pwsh-sketches</code>の位置関係を以下に示す。余談だが、相対パスにおける<code>../</code>は「今いる場所からひとつ上の階層のディレクトリ」（親ディレクトリ）を意味する。そして、<code>../../</code>は、「今いる場所からふたつ上の階層のディレクトリ」である。</p>
+<ul>
+<li>from <a href="../think-environment-directory-structure/index.html">作成：作業ディレクトリ</a>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>home
+</span></span><span style="display:flex;"><span>└─cms
+</span></span><span style="display:flex;"><span>  ├─bin
+</span></span><span style="display:flex;"><span>  │  └─pwsh-sketches &lt;-- Repository cloned from GitHub
+</span></span><span style="display:flex;"><span>  │     └─src
+</span></span><span style="display:flex;"><span>  │        └─grep_function.ps1
+</span></span><span style="display:flex;"><span>  │
+</span></span><span style="display:flex;"><span>  └─drafts &lt;-- Working directory
+</span></span><span style="display:flex;"><span>     └─here_you_are
+</span></span></code></pre></div><p><code>grep</code>コマンドは、パイプラインを通ってきた「テキスト」（テキストオブジェクト）の各行に対して、指定したパターン（正規表現）にマッチする行のみを返すフィルタコマンド。簡単にいうと、<code>grep</code>は「テキストの中から特定の文字列を検索する」コマンドである。</p>
+<p>早速使ってみよう。まず<code>grep</code>コマンドへの入力として、<code>22</code>から<code>26</code>までの数字を列挙する（参考:<a href="https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_operators#range-operator-" target="_blank">Microsoft.Learn &ndash; 範囲演算子 <code>..</code> from <code>about_Operators</code></a>
+）：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#ae81ff">22</span>.<span style="color:#ae81ff">.26</span>
+</span></span></code></pre></div><p>出力：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#ae81ff">22</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">23</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">24</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">25</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">26</span>
+</span></span></code></pre></div><p>この出力をパイプライン（<code>|</code>）を用いて<code>grep</code>コマンドに渡す：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#ae81ff">22</span>.<span style="color:#ae81ff">.26</span> | grep <span style="color:#ae81ff">3</span>
+</span></span></code></pre></div><p>出力。<code>3</code>を含む行のみが出力される：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#ae81ff">23</span>
+</span></span></code></pre></div><blockquote>
+<p><strong>Key point</strong>: <code>pwsh-sketches</code>における<code>grep</code>関数は、PowerShellコマンドレット&rdquo;<a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/select-string" target="_blank">Select-String</a>
+&ldquo;のラッパーコマンド。オプションの挙動はLinuxにおける&rdquo;<a href="https://www.gnu.org/software/grep/" target="_blank">grep</a>
+&ldquo;コマンドを元にしたもの。</p></blockquote>
+<p>なお、<code>grep</code>コマンドのヘルプは以下のように取得する：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>Get-Help grep
+</span></span></code></pre></div><p><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/get-help" target="_blank">Get-Help</a>
+コマンドの別名<code>man</code>を用いてもよい：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>man grep
+</span></span></code></pre></div><h2 id="install-bulk">インストール：一括</h2>
+<blockquote>
+<p><strong>Key point</strong>: 一括インストールすれば、すべての関数をいちどに読み込める。個別の関数名を意識する必要はなくなるが、最小インストールよりも読み込みに時間がかかる。</p></blockquote>
+<p><code>pwsh-sketches</code>の関数ファイルは、前セクションのようにひとつずつ読み込んでもよいが、<strong>一度にぜんぶ読み込む</strong>こともできる。以下は、<code>pwsh-sketches</code>の関数ファイルをリポジトリのルートにある<code>operator.ps1</code>を用いて一度に読み込む例である。このケースも、読み込んだ関数群は現在のセッションを閉じる（＝ウィンドウを閉じる、<code>exit</code>コマンドを実行する、新規のセッションを開始する）などで初期化される。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e">## Case.1 pwsh-sketchesのルートディレクトリから実行する場合</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## 注意：ファイル名の前にドット（.）と空白がある！</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## at ~/cms/bin/pwsh-sketches</span>
+</span></span><span style="display:flex;"><span>. ./operator.ps1
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e">## Case.2 他のディレクトリから実行する場合</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## 注意：ファイル名の前にドット（.）と空白がある！</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## at ~</span>
+</span></span><span style="display:flex;"><span>. ~/cms/bin/pwsh-sketches/operator.ps1
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e">## Case.3 作業ディレクトリ&#34;drafts&#34;から実行する場合</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## 相対パスで指定する</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## at ~/cms/drafts</span>
+</span></span><span style="display:flex;"><span>. ../bin/pwsh-sketches/operator.ps1
+</span></span></code></pre></div><p><strong>Note</strong>：一度書いたが、改めて&quot;Case.3&quot;で想定する作業ディレクトリ<code>drafts</code>と<code>pwsh-sketches</code>の位置関係を以下に示す。また、これも前に書いたが、相対パスにおける<code>../</code>は「今いる場所からひとつ上の階層のディレクトリ」（親ディレクトリ）を意味し、<code>../../</code>は、「今いる場所からふたつ上の階層のディレクトリ」を意味するのだった。</p>
+<ul>
+<li>from <a href="../think-environment-directory-structure/index.html">作成：作業ディレクトリ</a>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>home
+</span></span><span style="display:flex;"><span>└─cms
+</span></span><span style="display:flex;"><span>  ├─bin
+</span></span><span style="display:flex;"><span>  │  └─pwsh-sketches  &lt;-- Repository cloned from GitHub
+</span></span><span style="display:flex;"><span>  │     └─operator.ps1
+</span></span><span style="display:flex;"><span>  │
+</span></span><span style="display:flex;"><span>  └─drafts &lt;-- Working directory
+</span></span><span style="display:flex;"><span>     └─here_you_are
+</span></span></code></pre></div><p><strong>Note</strong>：<code>pwsh-sketches</code>の関数の中には別名（エイリアス）が設定されているものもある。<code>operator.ps1</code>を読み込むと、そのエイリアスも同時に読み込まれるのだが、もしすでに同名のエイリアスが存在している場合、<code>operator.ps1</code>の読み込み途中にエラーメッセージが表示される。その場合は、<code>pwsh-sketches</code>の関数ファイルを特定しエイリアスの名前を変更するか、エイリアスを削除するなどの対応が必要である。</p>
+<p><code>pwsh-sketches</code>のインストールを確認する。<code>pwsh-sketches</code>で読み込んだ関数をリストアップするコマンド<code>man2</code>を実行してみる：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>man2
+</span></span></code></pre></div><p>出力：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>Add-ForEach              Get-Last              Unique-Object  getfirst    pwsync
+</span></span><span style="display:flex;"><span>Add-ID                   Get-OGP               Unzip-Archive  getlast     retu
+</span></span><span style="display:flex;"><span>Add-LineBreakEndOfFile   Get-Ticket            addb           grep        rev2
+</span></span><span style="display:flex;"><span>Add-LineBreak            GetValueFrom-Key      addl           gyo         rev
+</span></span><span style="display:flex;"><span>Add-Quartile             Grep-Block            addr           han         say
+</span></span><span style="display:flex;"><span>Add-Stats                GroupBy-Object        addt           head        sed-i
+</span></span><span style="display:flex;"><span>Apply-Function           Inkscape-Converter    cat2           image2md    sed
+</span></span><span style="display:flex;"><span>Auto-Clip                Invoke-Link           catcsv         jl          self
+</span></span><span style="display:flex;"><span>Cast-Date                Join-Line2            chead          json2txt    seq2pu
+</span></span><span style="display:flex;"><span>Cast-Decimal             Join2-Object          clip2file      juni        sleepy
+</span></span><span style="display:flex;"><span>Cast-Double              Measure-Quartile      clip2hyperlink keta        sm2
+</span></span><span style="display:flex;"><span>Cast-Integer             Measure-Stats         clip2img       kinsoku     summary
+</span></span><span style="display:flex;"><span>ClipImageFrom-File       Measure-Summary       clip2normalize lcalc2      table2md
+</span></span><span style="display:flex;"><span>ConvImage                Override-Yaml         clip2push      lcalc       tac
+</span></span><span style="display:flex;"><span>Decode-Uri               Plot-BarChart         clip2shortcut  linkcheck   tail-f
+</span></span><span style="display:flex;"><span>Decrease-Indent          PullOut-String        conv           linkextract tail
+</span></span><span style="display:flex;"><span>Delete-Field             Rename-Normalize      count          list2table  tarr
+</span></span><span style="display:flex;"><span>Detect-XrsAnomaly        Replace-ForEach       csv2sqlite     logi2dot    tateyoko
+</span></span><span style="display:flex;"><span>Drop-NA                  Replace-NA            csv2txt        logi2pu     teatimer
+</span></span><span style="display:flex;"><span>Edit-Function            Select-Field          ctail2         man2        tenki
+</span></span><span style="display:flex;"><span>Edit-Property            Set-DotEnv            ctail          map2        tex2pdf
+</span></span><span style="display:flex;"><span>Encode-Uri               Set-Lang              decil          math2tex    toml2psobject
+</span></span><span style="display:flex;"><span>Execute-Lang             Set-NowTime2Clipboard delf           mdfocus     uniq
+</span></span><span style="display:flex;"><span>Execute-RMarkdown        Shorten-PropertyName  dot2gviz       mdgrep      vbStrConv
+</span></span><span style="display:flex;"><span>Execute-TinyTex          Shutdown-ComputerAFM  filehame       mind2dot    watercss
+</span></span><span style="display:flex;"><span>ForEach-Block            Sleep-ComputerAFM     fillretu       mind2pu     wrap
+</span></span><span style="display:flex;"><span>ForEach-Step             Sleep-Computer        flat           movw        yarr
+</span></span><span style="display:flex;"><span>Get-AppShortcut          Sort-Block            flow2pu        pawk        ycalc
+</span></span><span style="display:flex;"><span>Get-ClipboardAlternative Tee-Clip              fpath          percentile  ysort
+</span></span><span style="display:flex;"><span>Get-DateAlternative      Test-isAsciiLine      fval           pu2java     zen
+</span></span><span style="display:flex;"><span>Get-First                Transpose-Property    fwatch         push2loc
+</span></span><span style="display:flex;"><span>Get-Histogram            Trim-EmptyLine        gantt2pu       pwmake
+</span></span></code></pre></div><h2 id="terms">用語</h2>
+<dl>
+<dt><a href="https://github.com/btklab/pwsh-sketches" target="_blank">pwsh-sketches</a>
+</dt>
+<dd>
+<p>日常のシェル操作を少しだけ便利にしたり、ちょっとしたアイディアを形にするための自家製スクリプトセット。<a href="https://github.com/" target="_blank">GitHub</a>
+に置いて公開している。使用に際しての注意点は、このリポジトリにおいてあるソースコードは、ソースコードの見本としてではなく、コマンド実装のいちアイディアとして見てほしい、という点。このスクリプトセットはぼくがアイディアを具現化して自分で使うために「できるだけ素早く試作品として」実装したものだ。コードは保守管理しにくく、バグも多分に含んでいるということを念頭において利用してほしい。</p>
+</dd>
+<dd>
+<p><strong>My</strong>は日本語で「<strong>個人的な・私的な</strong>」（こじんてきな・してきな）という。この記事では「<strong>自家製の</strong>」（じかせいの）あるいは「<strong>自家醸造の</strong>」（じかじょうぞうの）という意味で用いている。<code>pwsh-sketches</code>はつまり「自分で使うために自分でつくったスクリプトセット」という意味だ。</p>
+</dd>
+<dt><a href="https://github.com/btklab/pwsh-sketches/blob/main/src/grep_function.ps1" target="_blank">grep &ndash; pwsh-sketches</a>
+</dt>
+<dd>
+<p><a href="https://github.com/btklab/pwsh-sketches" target="_blank">pwsh-sketches</a>
+に同梱されている文字列検索用のフィルタコマンド（関数）。</p>
+</dd>
+<dd>
+<p>パイプラインを通ってきた「テキスト」（テキストオブジェクト）の各行に対して、指定した文字列を含む行のみを返す。</p>
+</dd>
+<dd>
+<p>実装は<a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/select-string" target="_blank">Select-String</a>
+のラッパースクリプト。</p>
+</dd>
+<dd>
+<p>指定する文字列は単純な文字列ではなく、<a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_regular_expressions" target="_blank">正規表現</a>
+である点に注意する。いくつかの記号、たとえば<code>.</code>、<code>*</code>、<code>+</code>、<code>?</code>、<code>^</code>、<code>$</code>、<code>[]</code>、<code>{}</code>、<code>()</code>、<code>|</code>、<code>\</code>、などは正規表現のメタ文字として特別な意味を持つ。</p>
+</dd>
+<dd>
+<p>正規表現ではなく単純な文字列で検索したい場合は、<code>-SimpleMatch</code>パラメータを指定する。</p>
+</dd>
+</dl>
+<h2 id="links">リンク</h2>
+<ul>
+<li><a href="https://learn.microsoft.com/ja-jp/powershell/scripting/learn/glossary#dot-source" target="_blank">Microsoft.Learn &ndash; ドットソース from PowerShell用語集</a>
+</li>
+<li><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_scopes" target="_blank">Microsoft.Learn &ndash; <code>about_Scopes</code></a>
+</li>
+<li><a href="https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_operators#range-operator-" target="_blank">Microsoft.Learn &ndash; 範囲演算子 <code>..</code> from <code>about_Operators</code></a>
+</li>
+<li><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/get-help" target="_blank">Microsoft.Learn &ndash; Get-Help</a>
+</li>
+<li><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/select-string" target="_blank">Microsoft.Learn &ndash; Select-String</a>
+</li>
+<li><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_regular_expressions" target="_blank">Microsoft.Learn &ndash; <code>about_Regular_Expressions</code></a>
+</li>
+</ul>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="../../../ja/tags/verb/install/index.html" rel="tag">Verb / Install</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="../../../ja/tags/noun/software/index.html" rel="tag">Noun / Software</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="../../../ja/tags/name/powershell/index.html" rel="tag">Name / PowerShell</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="../../../ja/tags/name/pwsh-sketches/index.html" rel="tag">Name / pwsh-sketches</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="../../../ja/tags/name/git/index.html" rel="tag">Name / Git</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="../../../ja/tags/name/github/index.html" rel="tag">Name / GitHub</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="../../../ja/getting-started/think-environment-directory-structure/index.html" rel="prev">
+			<span class="pager__subtitle">«&thinsp;前の投稿</span>
+			<p class="pager__title">Think-Environment &#34;Directory Structure&#34;</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="../../../ja/getting-started/install-software-python/index.html" rel="next">
+			<span class="pager__subtitle">次の投稿&thinsp;»</span>
+			<p class="pager__title">Install-Software &#34;Python&#34;</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			<aside class="sidebar"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+		<input class="widget-search__field" type="search" placeholder="検索…" value="" name="q" aria-label="検索…">
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="https://btklab.com/">
+	</form>
+</div>
+<div class="widget-languages widget">
+	<h4 class="widget__title">言語</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget-languages__link widget__link" href="../../../ja/index.html">
+					<span class="widget-languages__link-btn widget__link-btn btn">JA</span>
+					<span class="widget-languages__link-text widget__link-text">Japanese</span>
+				</a>
+			</li>
+			<li class="widget__item">
+				<a class="widget-languages__link widget__link" href="../../../en/index.html">
+					<span class="widget-languages__link-btn widget__link-btn btn">EN</span>
+					<span class="widget-languages__link-text widget__link-text">English</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</div><div class="widget-archives widget">
+	<h4 class="widget__title">このサイトについて</h4>
+	<div class="widget__content">
+		<div class="authorbox clearfix">
+			<figure class="authorbox__avatar">
+				<img alt="btklab avatar" src="../../../img/logo_an_owl_hood_boy2.png" class="avatar" height="90" width="90">
+			</figure>
+			
+			<div class="authorbox__description">
+				集めて、つないで、探ってみる — PowerShellを、Python・R・Graphvizといったバラバラな技術を連携させる「グルー（接着剤）」として活用し、仕事をこなします。実行環境は主にWindows、ときどきLinux。
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="widget-social widget">
+	<h4 class="widget-social__title widget__title">ソーシャル</h4>
+	<div class="widget-social__content widget__content">
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="GitHub" rel="noopener noreferrer" href="https://github.com/btklab" target="_blank">
+				<svg class="widget-social__link-icon icon icon-github" width="24" height="24" viewBox="0 0 384 374"><path d="m192 0c-106.1 0-192 85.8-192 191.7 0 84.7 55 156.6 131.3 181.9 9.6 1.8 13.1-4.2 13.1-9.2 0-4.6-.2-16.6-.3-32.6-53.4 11.6-64.7-25.7-64.7-25.7-8.7-22.1-21.3-28-21.3-28-17.4-11.9 1.3-11.6 1.3-11.6 19.3 1.4 29.4 19.8 29.4 19.8 17.1 29.3 44.9 20.8 55.9 15.9 1.7-12.4 6.7-20.8 12.2-25.6-42.6-4.8-87.5-21.3-87.5-94.8 0-20.9 7.5-38 19.8-51.4-2-4.9-8.6-24.3 1.9-50.7 0 0 16.1-5.2 52.8 19.7 15.3-4.2 31.7-6.4 48.1-6.5 16.3.1 32.7 2.2 48.1 6.5 36.7-24.8 52.8-19.7 52.8-19.7 10.5 26.4 3.9 45.9 1.9 50.7 12.3 13.4 19.7 30.5 19.7 51.4 0 73.7-44.9 89.9-87.7 94.6 6.9 5.9 13 17.6 13 35.5 0 25.6-.2 46.3-.2 52.6 0 5.1 3.5 11.1 13.2 9.2 76.2-25.5 131.2-97.3 131.2-182 0-105.9-86-191.7-192-191.7z"/></svg>
+				<span>GitHub</span>
+			</a>
+		</div>
+		
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="RSS" href="https://btklab.com/index.xml">
+				<span>RSS</span>
+			</a>
+		</div>
+	</div>
+</div>
+<div class="widget-recent widget">
+	<h4 class="widget__title">最近の投稿</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="../../../ja/getting-started/install-software_graphviz/index.html">Install-Software &#34;Graphviz&#34;</a></li>
+			<li class="widget__item"><a class="widget__link" href="../../../ja/getting-started/install-software_plantuml/index.html">Install-Software &#34;PlantUML&#34;</a></li>
+			<li class="widget__item"><a class="widget__link" href="../../../ja/solve-the-problem/launch-software_run_anything_from_a_plain_text_link/index.html">Launch-Software &#34;プレーンテキストリンクを用いた汎用ランチャーの実装&#34;</a></li>
+			<li class="widget__item"><a class="widget__link" href="../../../ja/getting-started/install-software-python/index.html">Install-Software &#34;Python&#34;</a></li>
+			<li class="widget__item"><a class="widget__link" href="../../../ja/getting-started/install-software-pwsh-sketches/index.html">Install-Software &#34;pwsh-sketches&#34;</a></li>
+			<li class="widget__item"><a class="widget__link" href="../../../ja/getting-started/think-environment-directory-structure/index.html">Think-Environment &#34;Directory Structure&#34;</a></li>
+			<li class="widget__item"><a class="widget__link" href="../../../ja/getting-started/install-software-git/index.html">Install-Software &#34;Git&#34;</a></li>
+			<li class="widget__item"><a class="widget__link" href="../../../ja/getting-started/learn-software-powershell-basic/index.html">Learn-Software &#34;PowerShell&#34; -Basic</a></li>
+			<li class="widget__item"><a class="widget__link" href="../../../ja/getting-started/launch-software-powershell/index.html">Launch-Software &#34;PowerShell&#34;</a></li>
+			<li class="widget__item"><a class="widget__link" href="../../../ja/getting-started/install-software-windowsterminal/index.html">Install-Software &#34;Windows Terminal&#34;</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">カテゴリ</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+                
+                
+				<a class="widget__link" href="../../../ja/categories/getting-started/index.html">Getting Started</a></li>
+			<li class="widget__item">
+                
+                
+				<a class="widget__link" href="../../../ja/categories/solve-the-problem/index.html">Solve the Problem</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+    <h4 class="widget__title">タグ</h4>
+    <div class="widget__content">
+        <ul class="widget__list">
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/name/excel/index.html">Name / Excel</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">1</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/name/git/index.html">Name / Git</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">2</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/name/github/index.html">Name / GitHub</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">1</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/name/graphviz/index.html">Name / Graphviz</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">1</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/name/plantuml/index.html">Name / PlantUML</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">1</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/name/powershell/index.html">Name / PowerShell</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">5</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/name/pwsh-sketches/index.html">Name / Pwsh-Sketches</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">2</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/name/python/index.html">Name / Python</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">1</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/name/windows-terminal/index.html">Name / Windows Terminal</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">1</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/name/winget/index.html">Name / WinGet</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">6</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/noun/environment/index.html">Noun / Environment</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">1</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/noun/software/index.html">Noun / Software</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">12</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/opt/basic/index.html">Opt / Basic</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">2</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/type/datavisualization/index.html">Type / DataVisualization</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">2</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/type/launcher/index.html">Type / Launcher</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">1</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/verb/install/index.html">Verb / Install</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">8</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/verb/launch/index.html">Verb / Launch</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">2</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/verb/learn/index.html">Verb / Learn</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">2</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/verb/think/index.html">Verb / Think</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">1</span>
+                </li>
+        </ul>
+    </div>
+</div>
+<div class="widget-archives widget">
+	  <h4 class="widget__title">アーカイブ</h4>
+	  <div class="widget__content">
+		<ul class="widget__list">
+                <li class="widget__item">
+                    <a class="widget__link" href="../../../ja/archives/2025-02/index.html">2025-02</a>&nbsp;
+                    <span class="widget__counter widget__counter--bubble">7</span>
+                    </li>
+                <li class="widget__item">
+                    <a class="widget__link" href="../../../ja/archives/2025-03/index.html">2025-03</a>&nbsp;
+                    <span class="widget__counter widget__counter--bubble">3</span>
+                    </li>
+                <li class="widget__item">
+                    <a class="widget__link" href="../../../ja/archives/2025-04/index.html">2025-04</a>&nbsp;
+                    <span class="widget__counter widget__counter--bubble">3</span>
+                    </li>
+            
+            <li><a href="../../../ja/archives/index.html">&lt;&lt;</a></li>
+        </ul>
+    </div>
+</div>
+
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2025 Btklab&#39;s Experience via PowerShell on Windows.
+			<span class="footer__copyright-credits">このサイトは <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> と <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> テーマ、それから、 <a href="https://posit.co/downloads/" rel="nofollow noopener" target="_blank">RStudio IDE</a> と <a href="https://pkgs.rstudio.com/blogdown/" rel="nofollow noopener" target="_blank">blogdown</a> パッケージ を用いて生成されています。</span>
+		</div>
+	</div>
+	<script src="https://btklab.com/lightbox2/js/lightbox-plus-jquery.min.js"></script>
+</footer>
+	</div>
+<script async defer src="../../../js/menu.js"></script>
+</body>
+</html>

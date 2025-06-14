@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Btklab&#39;s Experience via PowerShell on Btklab&#39;s Experience via PowerShell on Windows</title>
+    <link>https://btklab.com/ja/</link>
+    <description>Recent content in Btklab&#39;s Experience via PowerShell on Btklab&#39;s Experience via PowerShell on Windows</description>
+    <generator>Hugo</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Sat, 07 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://btklab.com/ja/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Install-Software &#34;Graphviz&#34;</title>
+      <link>https://btklab.com/ja/getting-started/install-software_graphviz/</link>
+      <pubDate>Sun, 20 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://btklab.com/ja/getting-started/install-software_graphviz/</guid>
+      <description>&lt;h2 id=&#34;intro&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;p&gt;パッケージ管理システム「&lt;a href=&#34;https://learn.microsoft.com/ja-jp/windows/package-manager/winget/&#34; target=&#34;_blank&#34;&gt;WinGet&lt;/a&gt;&#xD;&#xA;」を用いて、Windows上にネットワーク図描画ツール「&lt;a href=&#34;https://graphviz.org/&#34; target=&#34;_blank&#34;&gt;Graphviz&lt;/a&gt;&#xD;&#xA;」をインストールする。&lt;/p&gt;&#xA;&lt;h2 id=&#34;prerequisite&#34;&gt;前提条件&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;✓ &lt;a href=&#34;../install-software-powershell/index.html&#34;&gt;PowerShellのインストール&lt;/a&gt;&#xD;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;✓ &lt;a href=&#34;../install-software-winget/index.html&#34;&gt;WinGetのインストール&lt;/a&gt;&#xD;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;✓ 検証した環境は&lt;a href=&#34;../../getting-started/index.html&#34;&gt;こちら&lt;/a&gt;&#xD;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;installation&#34;&gt;インストール&lt;/h2&gt;&#xA;&lt;p&gt;パッケージ管理ツール「&lt;a href=&#34;https://learn.microsoft.com/ja-jp/windows/package-manager/winget/&#34; target=&#34;_blank&#34;&gt;WinGet&lt;/a&gt;&#xD;&#xA;」を用いた&lt;a href=&#34;https://graphviz.org/&#34; target=&#34;_blank&#34;&gt;Graphviz&lt;/a&gt;&#xD;&#xA;のインストール方法を示す。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Install-Software &#34;PlantUML&#34;</title>
+      <link>https://btklab.com/ja/getting-started/install-software_plantuml/</link>
+      <pubDate>Sun, 20 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://btklab.com/ja/getting-started/install-software_plantuml/</guid>
+      <description>&lt;h2 id=&#34;intro&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;p&gt;Windows上にネットワーク図描画ツール「&lt;a href=&#34;https://plantuml.com/&#34; target=&#34;_blank&#34;&gt;PlantUML&lt;/a&gt;&#xD;&#xA;」をインストールする。当記事ではCLI（コマンドラインインターフェース）から実行するための環境構築について説明する。&lt;a href=&#34;https://code.visualstudio.com/&#34; target=&#34;_blank&#34;&gt;VS Code&lt;/a&gt;&#xD;&#xA;拡張機能としての&lt;a href=&#34;https://plantuml.com/&#34; target=&#34;_blank&#34;&gt;PlantUML&lt;/a&gt;&#xD;&#xA;については&lt;strong&gt;説明しない&lt;/strong&gt;。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Launch-Software &#34;プレーンテキストリンクを用いた汎用ランチャーの実装&#34;</title>
+      <link>https://btklab.com/ja/solve-the-problem/launch-software_run_anything_from_a_plain_text_link/</link>
+      <pubDate>Sat, 19 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://btklab.com/ja/solve-the-problem/launch-software_run_anything_from_a_plain_text_link/</guid>
+      <description>&lt;h2 id=&#34;intro&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Summary&lt;/strong&gt;: テキストに書かれたリンクからアプリを起動するCLI用PowerShellスクリプト「&lt;a href=&#34;https://github.com/btklab/pwsh-sketches/blob/main/src/Invoke-Link_function.ps1&#34; target=&#34;_blank&#34;&gt;Invoke-Link&lt;/a&gt;&#xD;&#xA; (Alias:&lt;code&gt;i&lt;/code&gt;)」を作った話。&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;Windowsのショートカットファイルは便利だ。よく使うアプリケーションやWebリンク、ファイルパスを登録しておけば素早くアクセスできる。ショートカットファイルはデスクトップや任意のフォルダにどこでも気軽に配置できる。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Install-Software &#34;Python&#34;</title>
+      <link>https://btklab.com/ja/getting-started/install-software-python/</link>
+      <pubDate>Mon, 17 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://btklab.com/ja/getting-started/install-software-python/</guid>
+      <description>&lt;h2 id=&#34;intro&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.python.org/&#34; target=&#34;_blank&#34;&gt;Python for Windows&lt;/a&gt;&#xD;&#xA;をインストールする。&lt;a href=&#34;https://www.python.org/&#34; target=&#34;_blank&#34;&gt;Python&lt;/a&gt;&#xD;&#xA;とは、シンプルで汎用性の高いプログラミング言語。Web開発、データ分析、AIなど、幅広い分野で利用され、初心者にも扱いやすい。このサイトでは、チャートの描画、数学・科学計算、画像処理その他の用途で用いる。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Install-Software &#34;pwsh-sketches&#34;</title>
+      <link>https://btklab.com/ja/getting-started/install-software-pwsh-sketches/</link>
+      <pubDate>Fri, 07 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://btklab.com/ja/getting-started/install-software-pwsh-sketches/</guid>
+      <description>&lt;h2 id=&#34;intro&#34;&gt;はじめに&lt;/h2&gt;&#xA;&#xD;&#xA;&lt;figure style=&#34;float:right; margin:1em 1em 0 1em;&#34; &gt;&#xD;&#xA;    &lt;a href=&#34;../img/2025/2025-02-12-powershell-scripting-as-an-open-ended-craft.svg&#34; data-lightbox=&#34;image-gallery&#34; data-title=&#34;fig. Pwsh as a Craft.&#34; &gt;&#xD;&#xA;        &lt;img src=&#34;../img/2025/2025-02-12-powershell-scripting-as-an-open-ended-craft.svg&#34; width=150 /&gt;&#xD;&#xA;    &lt;/a&gt;&#xD;&#xA;    &lt;figcaption&gt;&#xD;&#xA;        fig. Pwsh as a Craft.&#xD;&#xA;    &lt;/figcaption&gt; &#xD;&#xA;&lt;/figure&gt;&#xD;&#xA;&#xA;&lt;p&gt;日常のシェル操作を少しだけ便利にしたり、ちょっとしたアイディアを形にするためのぼくの自家製スクリプトセット：&amp;quot;&lt;a href=&#34;https://github.com/btklab/pwsh-sketches&#34; target=&#34;_blank&#34;&gt;pwsh-sketches&lt;/a&gt;&#xD;&#xA;&amp;ldquo;をインストールする。同スクリプトセットは&lt;a href=&#34;https://github.com/&#34; target=&#34;_blank&#34;&gt;GitHub&lt;/a&gt;&#xD;&#xA;上に設置しており、そこからバージョン管理システム「&lt;a href=&#34;https://git-scm.com/&#34; target=&#34;_blank&#34;&gt;Git&lt;/a&gt;&#xD;&#xA;」を用いてPCにインストールする。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Think-Environment &#34;Directory Structure&#34;</title>
+      <link>https://btklab.com/ja/getting-started/think-environment-directory-structure/</link>
+      <pubDate>Fri, 07 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://btklab.com/ja/getting-started/think-environment-directory-structure/</guid>
+      <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;p&gt;シェルを用いた作業を行うにあたり、まずは安全で効率のよい作業場所をつくる。作業場所の候補としてユーザのホームディレクトリ直下がまず思いつくが、そこはあまり安全ではない。なぜなら、そこにはシステムが管理するディレクトリやファイルがすでにたくさんあるからだ。コマンド操作ミスによりそれらファイルを&lt;strong&gt;誤って削除&lt;/strong&gt;してしまうかもしれない。（これは&lt;kbd&gt;TAB&lt;/kbd&gt;補完を使用する場合によく起こる。）　ここでは、ホームディレクトリ下に作業用ディレクトリを作成し、そこでシェル操作を行うような環境をつくる。この構造にすることで得られる便益は以下のとおり：&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Install-Software &#34;Git&#34;</title>
+      <link>https://btklab.com/ja/getting-started/install-software-git/</link>
+      <pubDate>Tue, 18 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>https://btklab.com/ja/getting-started/install-software-git/</guid>
+      <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;p&gt;パッケージ管理システム「&lt;a href=&#34;https://learn.microsoft.com/ja-jp/windows/package-manager/winget/&#34; target=&#34;_blank&#34;&gt;WinGet&lt;/a&gt;&#xD;&#xA;」を用いて、Windows OS上にバージョン管理システム「&lt;a href=&#34;https://git-scm.com/&#34; target=&#34;_blank&#34;&gt;Git&lt;/a&gt;&#xD;&#xA;」をインストールする。&lt;/p&gt;&#xA;&lt;h2 id=&#34;前提条件&#34;&gt;前提条件&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;✓ &lt;a href=&#34;../install-software-powershell/index.html&#34;&gt;PowerShellのインストール&lt;/a&gt;&#xD;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;✓ &lt;a href=&#34;../install-software-winget/index.html&#34;&gt;WinGetのインストール&lt;/a&gt;&#xD;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;✓ 検証した環境は&lt;a href=&#34;../../getting-started/index.html&#34;&gt;こちら&lt;/a&gt;&#xD;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;インストール&#34;&gt;インストール&lt;/h2&gt;&#xA;&lt;p&gt;パッケージ管理ツール「&lt;a href=&#34;https://learn.microsoft.com/ja-jp/windows/package-manager/winget/&#34; target=&#34;_blank&#34;&gt;WinGet&lt;/a&gt;&#xD;&#xA;」を用いて&amp;quot;&lt;strong&gt;Git&lt;/strong&gt;&amp;ldquo;のインストール方法を紹介する。&#xA;コマンドプロンプトもしくはPowerShellを起動し：&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Learn-Software &#34;PowerShell&#34; -Basic</title>
+      <link>https://btklab.com/ja/getting-started/learn-software-powershell-basic/</link>
+      <pubDate>Sun, 16 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>https://btklab.com/ja/getting-started/learn-software-powershell-basic/</guid>
+      <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;p&gt;PowerShellを用いて「シェル（コマンドラインインターフェイス）」でコンピュータを操作する方法を学ぶ。当記事で紹介するのは、PowerShellへの文字列入力の仕方とコツ、それから、ぼくが日常的によく使うコマンドだ。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Launch-Software &#34;PowerShell&#34;</title>
+      <link>https://btklab.com/ja/getting-started/launch-software-powershell/</link>
+      <pubDate>Sat, 15 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>https://btklab.com/ja/getting-started/launch-software-powershell/</guid>
+      <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;p&gt;PowerShellを起動してコマンド入力が可能な状態にする。標準ユーザとして起動する場合と、管理者として起動する場合の方法を示す。&#xA;当記事では「スタートメニューから開く」ケースを紹介するが、開き方は他にもある。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Install-Software &#34;Windows Terminal&#34;</title>
+      <link>https://btklab.com/ja/getting-started/install-software-windowsterminal/</link>
+      <pubDate>Fri, 14 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>https://btklab.com/ja/getting-started/install-software-windowsterminal/</guid>
+      <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;p&gt;Windows OS上に&lt;a href=&#34;winterm&#34;&gt;Windows Terminal&lt;/a&gt;&#xD;&#xA;をインストールする。&lt;/p&gt;&#xA;&lt;h2 id=&#34;前提条件&#34;&gt;前提条件&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;✓ &lt;a href=&#34;../install-software-powershell/index.html&#34;&gt;PowerShellのインストール&lt;/a&gt;&#xD;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;✓ &lt;a href=&#34;../install-software-winget/index.html&#34;&gt;WinGet&lt;/a&gt;&#xD;&#xA;のインストール&lt;/li&gt;&#xA;&lt;li&gt;✓ 検証した環境は&lt;a href=&#34;../../getting-started/index.html&#34;&gt;こちら&lt;/a&gt;&#xD;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;インストール&#34;&gt;インストール&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;kbd&gt;START MENU&lt;/kbd&gt; → &lt;code&gt;cmd&lt;/code&gt;または&lt;code&gt;pwsh&lt;/code&gt;と入力&lt;/li&gt;&#xA;&lt;li&gt;「管理者として開く」をクリック&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;最新バージョンの確認：&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
