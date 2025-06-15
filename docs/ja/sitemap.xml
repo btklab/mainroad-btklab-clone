@@ -54,8 +54,18 @@
                 href="https://btklab.github.io/ja/categories/"
                 />
   </url><url>
-    <loc>https://btklab.github.io/ja/solve-the-problem/launch-software_invoke_gitbash_via_powershell/</loc>
+    <loc>https://btklab.github.io/ja/solve-the-problem/launch-software_execute_git_bash_commands_on_windows/</loc>
     <lastmod>2025-06-16T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://btklab.github.io/en/solve-the-problem/launch-software_execute_git_bash_commands_on_windows/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja-jp"
+                href="https://btklab.github.io/ja/solve-the-problem/launch-software_execute_git_bash_commands_on_windows/"
+                />
   </url><url>
     <loc>https://btklab.github.io/ja/tags/name/git/</loc>
     <lastmod>2025-06-16T00:00:00+00:00</lastmod>
@@ -315,19 +325,6 @@
                 rel="alternate"
                 hreflang="ja-jp"
                 href="https://btklab.github.io/ja/tags/verb/install/"
-                />
-  </url><url>
-    <loc>https://btklab.github.io/ja/solve-the-problem/launch-software_execute_git_bash_commands_on_windows/</loc>
-    <lastmod>2025-06-15T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="https://btklab.github.io/en/solve-the-problem/launch-software_execute_git_bash_commands_on_windows/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja-jp"
-                href="https://btklab.github.io/ja/solve-the-problem/launch-software_execute_git_bash_commands_on_windows/"
                 />
   </url><url>
     <loc>https://btklab.github.io/ja/solve-the-problem/launch-software_run_anything_from_a_plain_text_link/</loc>
