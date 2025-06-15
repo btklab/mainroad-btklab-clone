@@ -10,17 +10,10 @@
     <atom:link href="https://btklab.github.io/ja/tags/name/pwsh-sketches/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Launch-Software &#34;Windows上でLinuxコマンドを実行する&#34;</title>
-      <link>https://btklab.github.io/ja/solve-the-problem/launch-software_invoke_gitbash_via_powershell/</link>
-      <pubDate>Sun, 15 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>https://btklab.github.io/ja/solve-the-problem/launch-software_invoke_gitbash_via_powershell/</guid>
-      <description>&lt;h2 id=&#34;intro&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Summary&lt;/strong&gt;: PowerShell上でGit Bashのコマンド群（&lt;code&gt;diff&lt;/code&gt;, &lt;code&gt;sed&lt;/code&gt;, &lt;code&gt;grep&lt;/code&gt;, &lt;code&gt;awk&lt;/code&gt;, &lt;code&gt;xxd&lt;/code&gt;, &lt;code&gt;file&lt;/code&gt;など）を実行するためのPowerShellスクリプト「&lt;a href=&#34;https://github.com/btklab/pwsh-sketches/blob/main/src/Invoke-GitBash_function.ps1&#34; target=&#34;_blank&#34;&gt;Invoke-GitBash&lt;/a&gt;&#xD;&#xA;」(Alias: &lt;code&gt;gitbash&lt;/code&gt;)を紹介する。Windows環境でLinuxコマンドを気軽に利用したい、というニーズに応えてくれるだろう。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Launch-Software &#34;プレーンテキストリンクを用いた汎用ランチャーの実装&#34;</title>
       <link>https://btklab.github.io/ja/solve-the-problem/launch-software_execute_git_bash_commands_on_windows/</link>
-      <pubDate>Sat, 19 Apr 2025 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 15 Jun 2025 00:00:00 +0000</pubDate>
       <guid>https://btklab.github.io/ja/solve-the-problem/launch-software_execute_git_bash_commands_on_windows/</guid>
-      <description>&lt;h2 id=&#34;intro&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Summary&lt;/strong&gt;: テキストに書かれたリンクからアプリを起動するCLI用PowerShellスクリプト「&lt;a href=&#34;https://github.com/btklab/pwsh-sketches/blob/main/src/Invoke-Link_function.ps1&#34; target=&#34;_blank&#34;&gt;Invoke-Link&lt;/a&gt;&#xD;&#xA; (Alias:&lt;code&gt;i&lt;/code&gt;)」を作った話。&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;Windowsのショートカットファイルは便利だ。よく使うアプリケーションやWebリンク、ファイルパスを登録しておけば素早くアクセスできる。ショートカットファイルはデスクトップや任意のフォルダにどこでも気軽に配置できる。&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;intro&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Summary&lt;/strong&gt;: PowerShell上でGit Bashのコマンド群（&lt;code&gt;diff&lt;/code&gt;, &lt;code&gt;sed&lt;/code&gt;, &lt;code&gt;grep&lt;/code&gt;, &lt;code&gt;awk&lt;/code&gt;, &lt;code&gt;xxd&lt;/code&gt;, &lt;code&gt;file&lt;/code&gt;など）を実行するためのPowerShellスクリプト「&lt;a href=&#34;https://github.com/btklab/pwsh-sketches/blob/main/src/Invoke-GitBash_function.ps1&#34; target=&#34;_blank&#34;&gt;Invoke-GitBash&lt;/a&gt;&#xD;&#xA;」(Alias: &lt;code&gt;gitbash&lt;/code&gt;)を紹介する。Windows環境でLinuxコマンドを気軽に利用したい、というニーズに応えてくれるだろう。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Launch-Software &#34;プレーンテキストリンクを用いた汎用ランチャーの実装&#34;</title>
