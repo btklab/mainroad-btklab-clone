@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Launch-Software &#34;プレーンテキストリンクを用いた汎用ランチャーの実装&#34; - Btklab&#39;s Experience via PowerShell on Windows</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="テキストファイルに書かれたリンクからアプリケーションを起動する。">
+		<meta property="og:url" content="https://btklab.github.io/ja/solve-the-problem/launch-software_execute_git_bash_commands_on_windows/">
+  <meta property="og:site_name" content="Btklab&#39;s Experience via PowerShell on Windows">
+  <meta property="og:title" content="Launch-Software &#34;プレーンテキストリンクを用いた汎用ランチャーの実装&#34;">
+  <meta property="og:description" content="テキストファイルに書かれたリンクからアプリケーションを起動する。">
+  <meta property="og:locale" content="ja_jp">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="solve-the-problem">
+    <meta property="article:published_time" content="2025-04-19T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-06-15T00:00:00+00:00">
+    <meta property="article:tag" content="Noun/Software">
+    <meta property="article:tag" content="Name/PowerShell">
+    <meta property="article:tag" content="Name/Pwsh-Sketches">
+    <meta property="article:tag" content="Verb/Launch">
+    <meta property="article:tag" content="Type/Launcher">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="../../../css/style.css">
+	
+
+	<link rel="shortcut icon" href="../../../favicon.ico">
+		
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+    <div class="container header__container">
+        
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="../../../ja/index.html" title="Btklab&#39;s Experience via PowerShell on Windows" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="../../../img/logo_an_owl_hood_boy.png">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">Btklab&#39;s Experience via PowerShell on Windows</div>
+					<div class="logo__tagline">Glue the Pieces — the Rest Takes Shape</div>
+				</div>
+		</a>
+	</div>
+        
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">メニュー</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="../../../ja/index.html">
+				
+				<span class="menu__text">Home</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../../../ja/getting-started/index.html">
+				
+				<span class="menu__text">はじめる</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../../../ja/solve-the-problem/index.html">
+				
+				<span class="menu__text">問題をとく</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../../../ja/random-thoughts/index.html">
+				
+				<span class="menu__text">ランダムな考え</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../../../ja/about/index.html">
+				
+				<span class="menu__text">免責事項など</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../../../ja/contact/index.html">
+				
+				<span class="menu__text">お問い合わせ</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../../../ja/archives/index.html">
+				
+				<span class="menu__text">アーカイブ</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="../../../en/index.html">
+				
+				<span class="menu__text">English</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+    </div>
+    <link rel="stylesheet" href="https://btklab.github.io/lightbox2/css/lightbox.css" type="text/css" />
+    <link rel="stylesheet" href="https://btklab.github.io/css/custom.css" type="text/css" media="all" />
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Launch-Software &#34;プレーンテキストリンクを用いた汎用ランチャーの実装&#34;</h1>
+			<p class="post__lead">テキストファイルに書かれたリンクからアプリケーションを起動する。</p>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2025-04-19T00:00:00Z">2025-04-19</time>
+	<time class="meta__text" datetime="2025-06-15T00:00:00Z">(最終更新: 2025-06-15)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text">
+                
+                <a class="meta__link" href="../../../ja/categories/solve-the-problem/index.html" rel="category">Solve the Problem</a>
+    </span>
+</div>
+<div class="meta__item-translations meta__item">
+	<span class="meta__text">翻訳: <a class="meta__link" href="../../../en/solve-the-problem/launch-software_execute_git_bash_commands_on_windows/index.html">EN</a>
+	</span>
+</div></div>
+		</header>
+		
+<div class="post__toc toc">
+	<div class="toc__title">目次</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents">
+  <ul>
+    <li><a href="#intro">はじめに</a></li>
+    <li><a href="#prerequisites">前提条件</a></li>
+    <li><a href="#solve-the-problem">問題をとく</a>
+      <ul>
+        <li><a href="#understanding-the-problem">1. 問題を理解する</a></li>
+        <li><a href="#devising-a-plan">2. 計画をたてる</a></li>
+        <li><a href="#carrying-out-the-plan">3. 計画を実行する</a></li>
+        <li><a href="#looking-back">4. ふりかえり</a></li>
+      </ul>
+    </li>
+    <li><a href="#terms">用語</a></li>
+    <li><a href="#links">関連リンク</a></li>
+  </ul>
+</nav>
+	</div>
+</div><div class="content post__content clearfix">
+			<h2 id="intro">はじめに</h2>
+<blockquote>
+<p><strong>Summary</strong>: テキストに書かれたリンクからアプリを起動するCLI用PowerShellスクリプト「<a href="https://github.com/btklab/pwsh-sketches/blob/main/src/Invoke-Link_function.ps1" target="_blank">Invoke-Link</a>
+ (Alias:<code>i</code>)」を作った話。</p></blockquote>
+<p>Windowsのショートカットファイルは便利だ。よく使うアプリケーションやWebリンク、ファイルパスを登録しておけば素早くアクセスできる。ショートカットファイルはデスクトップや任意のフォルダにどこでも気軽に配置できる。</p>
+<p>このショートカットファイルの使い勝手に関して、いくつかの不満がある。たとえばショートカットファイルを作成するのは少し面倒だ。それと、一度に複数のリンクを登録できない。ショートカットファイル（<code>.lnk</code>）はバイナリファイルなので、Gitなどのバージョン管理システムで差分を管理しづらい。</p>
+<p>できれば、テキストファイルにリンクを書いて、そのままそれを実行できるようにしたい。そんな考えからPowerShellスクリプト「<a href="https://github.com/btklab/pwsh-sketches/blob/main/src/Invoke-Link_function.ps1" target="_blank">Invoke-Link</a>
+　(Alias:<code>i</code>)」を書いてみた。小さな工夫だが、「どこにファイルを置いたっけ？」と一瞬迷うことによる作業や思考の流れの中断を低減するちょっとした助けになるかもしれない。</p>
+<h2 id="prerequisites">前提条件</h2>
+<ul>
+<li>✓ 自家製スクリプト：<a href="../../getting-started/install-software-pwsh-sketches/index.html">pwsh-sketchesのインストール</a>
+</li>
+<li>✓ 検証した環境は<a href="../../getting-started/index.html">こちら</a>
+</li>
+</ul>
+<h2 id="solve-the-problem">問題をとく</h2>
+<h3 id="understanding-the-problem">1. 問題を理解する</h3>
+<p>問題を整理する。
+Windowsのショートカットファイル（<code>.lnk</code>）について：</p>
+<p><strong>利点・便利な点</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">分類</th>
+          <th style="text-align: left">利点</th>
+          <th style="text-align: left">対応方針</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>起動と配置</strong></td>
+          <td style="text-align: left">・素早くアプリやファイルを起動できる<br>・好きな場所に配置可能<br>・カレントディレクトリから移動せずに起動可能</td>
+          <td style="text-align: left">現行の利点を活かしつつ、テキストファイル管理との連携で即時実行を維持する</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>不満・問題点</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">分類</th>
+          <th style="text-align: left">不満・問題点</th>
+          <th style="text-align: left">対応方針</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>作成の手間</strong></td>
+          <td style="text-align: left"><code>.lnk</code>ファイルの作成が手間</td>
+          <td style="text-align: left">テキストファイル形式に移行し、リンク作成の簡素化を図る</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>複数リンクの管理</strong></td>
+          <td style="text-align: left">1つのショートカットファイルに複数リンクを登録できず、一度に複数リンクを起動できない</td>
+          <td style="text-align: left">テキストファイルに複数リンクを記述し、一括起動が可能な仕組みを導入する</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>バージョン管理</strong></td>
+          <td style="text-align: left">バイナリ形式のため、Gitでの差分管理が困難</td>
+          <td style="text-align: left">テキストベースの管理に切り替え、Gitなどのバージョン管理システムでの差分把握や共有を容易にする</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>環境依存性</strong></td>
+          <td style="text-align: left"><code>.lnk</code>ファイルはWindows OSに依存する</td>
+          <td style="text-align: left">テキストファイル形式に移行し、OSに依存しないリンク管理を実現する</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="devising-a-plan">2. 計画をたてる</h3>
+<p>以下に、テキストファイルでリンクを管理・実行するためのスクリプトの実装方針を示す：</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">課題　</th>
+          <th style="text-align: left">対策計画　</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>起動の迅速さと利便性の維持</strong></td>
+          <td style="text-align: left">ショートカットファイルの利点を保持し、カレントディレクトリから移動せずにアプリやファイルを起動可能な仕組みを構築する</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>テキストファイル形式の採用</strong></td>
+          <td style="text-align: left">バイナリ形式ではなくテキストファイルでリンク情報を管理し、Gitでの差分管理やバージョン管理を容易にする</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>複数リンクの一括管理</strong></td>
+          <td style="text-align: left">1つのテキストファイルに複数のリンクを記載し、必要に応じてまとめて起動できる仕組みを提供する</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>環境依存性の排除と移植性の向上</strong></td>
+          <td style="text-align: left">OS依存のショートカットから脱却し、クロスプラットフォームで運用できるテキストベースのリンク管理を実現する</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="carrying-out-the-plan">3. 計画を実行する</h3>
+<h4 id="installation">インストール</h4>
+<p>PowerShellスクリプト：「<a href="https://github.com/btklab/pwsh-sketches/blob/main/src/Invoke-Link_function.ps1" target="_blank">Invoke-Link</a>
+ (Alias:<code>i</code>)」をインストールする。</p>
+<ol>
+<li><a href="../../getting-started/install-software-pwsh-sketches/index.html">pwsh-sketchesのインストール</a>
+</li>
+<li>ドットソースで関数を読み込み
+<ul>
+<li><code>. path/to/the/pwsh-sketches/src/Invoke-Link_function.ps1</code></li>
+</ul>
+</li>
+<li>テスト
+<ul>
+<li><code>man i</code> or</li>
+<li><code>man Invoke-Link</code></li>
+</ul>
+</li>
+</ol>
+<h4 id="execution">実行</h4>
+<p>それでは、「<a href="https://github.com/btklab/pwsh-sketches/blob/main/src/Invoke-Link_function.ps1" target="_blank">Invoke-Link</a>
+」を実際に使ってみよう。
+まず最初にWebリンクを既定のブラウザで起動してみる。</p>
+<p>テキストファイル<code>btklab.txt</code>を作成し、以下の2行を記述する。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>https://btklab.com
+</span></span><span style="display:flex;"><span>https://github.com/btklab
+</span></span></code></pre></div><p>以下のコマンドで、テキストファイルに記載されたリンクを実行する。
+この場合はテキストの一番最初に書かれたリンク（<a href="https://btklab.com" target="_blank">https://btklab.com</a>
+）のみ「既定のブラウザ」で開く。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>i btklab.txt
+</span></span></code></pre></div><p><code>-Doc</code>オプションで、2番目以降のリンク（<a href="https://github.com/btklab" target="_blank">https://github.com/btklab</a>
+）を開く。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>i btklab.txt -Doc
+</span></span></code></pre></div><p><code>-All</code>(<code>-a</code>)オプションを指定した場合、「既定のブラウザ」でテキストファイルに書かれたすべてのリンクを開く。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>i btklab.txt -All
+</span></span></code></pre></div><p>Webリンクのほか、ファイルやディレクトリのフルパスも指定できる。ダブルクオートはあってもなくてもよい。
+テキストファイル<code>pub-documents.txt</code>を作成し、以下のように記述する。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>&#34;C:/Users/Public/Documents&#34;
+</span></span></code></pre></div><p>以下のコマンドで、パスに指定したディレクトリがエクスプローラーで開く。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>i pub-documents.txt
+</span></span></code></pre></div><p>起動するアプリは、Webリンクの場合は「<strong>既定のブラウザ</strong>」、ディレクトリの場合は「<strong>エクスプローラ</strong>」、ファイルの場合は拡張子に応じた「<strong>既定のアプリ</strong>」である。他、引数にWindowsショートカットファイル（<code>.lnk</code>ファイル）を指定した場合は、ショートカットファイルを起動する。これにより、リンク集フォルダにテキストファイルリンクとWindowsのショートカットファイルを混在させても、統一的に<a href="https://github.com/btklab/pwsh-sketches/blob/main/src/Invoke-Link_function.ps1" target="_blank">Invoke-Link</a>
+コマンドで起動できる。</p>
+<h3 id="looking-back">4. ふりかえり</h3>
+<p>今回紹介した<a href="https://github.com/btklab/pwsh-sketches/blob/main/src/Invoke-Link_function.ps1" target="_blank">Invoke-Link</a>
+コマンドは、ぼくの日常的な作業を効率化するために作ったもので、その狙いは以下の4点に集約される。</p>
+<ol>
+<li>起動の迅速さと利便性を保ちつつ、</li>
+<li>テキストファイルでリンク情報を管理し、</li>
+<li>複数のリンクを一括で管理・起動できること、</li>
+<li>さらに環境依存を排し、移植性を高めること。</li>
+</ol>
+<p>これらの課題はおおよそ満たされ、<a href="https://github.com/btklab/pwsh-sketches/blob/main/src/Invoke-Link_function.ps1" target="_blank">Invoke-Link</a>
+コマンドは現在、ぼくの使用頻度の高いコマンドの一つとなっている。</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">課題　</th>
+          <th style="text-align: left">結果　</th>
+          <th style="text-align: left">評価</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>起動の迅速さと利便性の維持</strong></td>
+          <td style="text-align: left">カレントディレクトリから移動せずにアプリやファイルを起動可能</td>
+          <td style="text-align: left">✅</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>テキストファイル形式の採用</strong></td>
+          <td style="text-align: left">テキストファイルでリンク情報を管理し、Gitでのバージョン管理が可能</td>
+          <td style="text-align: left">✅</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>複数リンクの一括管理</strong></td>
+          <td style="text-align: left">1つのテキストファイルに複数のリンクを記載し、必要に応じて一括で起動可能</td>
+          <td style="text-align: left">✅</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>環境依存性の排除と移植性の向上</strong></td>
+          <td style="text-align: left">テキストファイルとPowerShellの組み合わせでクロスプラットフォーム化</td>
+          <td style="text-align: left">✅</td>
+      </tr>
+  </tbody>
+</table>
+<h4 id="リンクファイルの配置について">リンクファイルの配置について</h4>
+<p>では具体的に、ぼくの環境でのリンクファイルの管理方法を紹介しよう。
+ぼくの作業のホームディレクトリは以下のとおりだ。</p>
+<ul>
+<li>See &gt; <a href="../../getting-started/think-environment-directory-structure/index.html">Think-Environment &ldquo;Directory Structure&rdquo;</a>
+</li>
+</ul>
+<pre tabindex="0"><code class="language-plainttext" data-lang="plainttext">C:\Users\btklab
+├───cms
+│   └───drafts        &lt;-- my working directory!
+</code></pre><p>作業ディレクトリ<code>drafts</code>の直下に<code>work</code>というサブディレクトリを作り、そこにリンクファイルを格納している（<code>work</code>の名前に深い意味はない。単に入力しやすいと考えただけだ。<code>link</code>などでもよさそうだ）：</p>
+<pre tabindex="0"><code class="language-plainttext" data-lang="plainttext">C:\Users\btklab
+├───cms
+│   └────drafts       &lt;-- my working directory!
+│          └────work  &lt;-- link file stock directory!
+│               │─amazon.txt
+│               │─bing.txt
+│               │─chrome.txt
+│               │─copilot.txt
+│               │─e-tax.txt
+│               │─firefox.txt
+│               │─gemini.txt
+│               │─gmail.txt
+│               │─google.txt
+│               │─googlecalendar.txt
+│               │─googledrive.txt
+│               │─jetro.txt
+│               │─kagisearch.txt
+│               │─kuroneko.txt
+│               │─netflix.txt
+│               │─outlook.txt
+│               │─onedrive.txt
+│               │─oxford-dictionary.txt
+│               │─...
+│               │─thunderbird.txt
+│               │─youtube.txt
+│               └─github.txt
+</code></pre><p>このフォルダには、WebサイトのURL、ローカルファイルの絶対パス、アプリの実行ファイルパス、Windowsショートカット(<code>.lnk</code>)、PowerShellスクリプト（<code>.ps1</code>）など、200を超えるリンクファイルがある。たくさんあるけれど、その中でも特によく使うのは、約10個程度だ。</p>
+<h4 id="リンクファイル命名のポイント思考の流れにすなおにしたがうこと">リンクファイル命名のポイント：思考の流れにすなおにしたがうこと</h4>
+<p>リンクファイルの命名でぼくが優先しているのは、「<strong>思いついたそのままの名前と順序でファイル名を作ること</strong>」だ。
+例えば、Outlookを起動したいときは素直に<code>outlook.txt</code>と名付ける。
+これにより、思考の流れをそのままコマンドに反映できる。</p>
+<ul>
+<li>「Outlookを開きたいな」→ <code>i ./work/outlook.txt</code></li>
+</ul>
+<p>一方で、ol.txt のような省略名を使う選択肢もあるが、これには注意が必要だ。
+省略名の場合、思考の流れが次のように<strong>ひと手間増える</strong>。</p>
+<ul>
+<li>「Outlookを開きたいな」→「省略名なんだっけ？」→「たしか<code>ol</code>だった」→ <code>i ./work/ol.txt</code></li>
+</ul>
+<p>短縮名は入力の手数が減るという点において効率的といえるが、「思考→入力」の途中で「名前を思い出す」ための余計なステップが発生してしまう。ぼくにとっては、この思考の流れの自然さを妨げないことのほうが、入力効率よりもずっと重要だ。</p>
+<h4 id="コマンド命名とオプション設計の考え方">コマンド命名とオプション設計の考え方</h4>
+<p>こうした「<strong>思考の順序に沿った命名やオプションの指定</strong>」は、<a href="https://github.com/btklab/pwsh-sketches/blob/main/src/Invoke-Link_function.ps1" target="_blank">Invoke-Link</a>
+に限らず、ぼくがCLIコマンドを設計するときの基本原則にしている。コマンドを覚えなくとも直感的に使えるようにすることが、作業のストレスを減らし、長期的な生産性向上につながる。</p>
+<h2 id="terms">用語</h2>
+<p>読者の理解と学習をより深めるための、リンクやショートカットを活用した効率化の観点でのいくつかの技術用語：</p>
+<dl>
+<dt>CLI（コマンドラインインターフェース）</dt>
+<dd>
+<p>文字でコンピューターに指示を出す方法。マウスでアイコンをクリックするGUI（グラフィカルユーザーインターフェース）とは異なり、キーボードで命令（コマンド）を入力して、ファイルを開いたり、プログラムを実行したりする。このブログで紹介するのは主にCLIを用いた方法。</p>
+</dd>
+<dt><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_aliases" target="_blank">別名（エイリアス：Aliases）</a>
+</dt>
+<dd>
+<p>PowerShellやその他のシェルで、頻繁に使うコマンドやスクリプトに短縮名（エイリアス）を設定する仕組み。今回の「<a href="https://github.com/btklab/pwsh-sketches/blob/main/src/Invoke-Link_function.ps1" target="_blank">Invoke-Link</a>
+」で「<code>i</code>」というエイリアスを設定した理由は、当スクリプトが日常的にたくさん手入力されることが予想されたため。</p>
+</dd>
+<dt>シンボリックリンク：Symbolic Link</dt>
+<dd>
+<p>Windowsのショートカットファイル）（<code>.lnk</code>）はシンボリックリンクの一種。オペレーティングシステムのファイルシステム内で、あるファイルやディレクトリへの参照（ポインタ）を作成する機能。</p>
+</dd>
+<dt>Workflow Automation</dt>
+<dd>
+<p>当記事で扱った内容の分類は、日常の手動作業をスクリプトや自動化ツールで効率化する考え方。リンクやショートカット、別名を駆使して、アプリ起動やファイルアクセスの操作を自動化・迅速化する手法。</p>
+</dd>
+<dt><a href="https://github.com/btklab/pwsh-sketches" target="_blank">pwsh-sketches</a>
+ &ndash; 実験的なCLI用PowerShellスクリプト集（GitHubリポジトリ）</dt>
+<dd>
+<p><a href="https://github.com/btklab/pwsh-sketches/blob/main/src/Invoke-Link_function.ps1" target="_blank">Invoke-Link</a>
+: テキストファイルに書かれたリンクを既定のアプリケーションで起動するCLI用PowerShellスクリプト。ぼくが<a href="https://github.com/btklab/pwsh-sketches" target="_blank">pwsh-sketches</a>
+の中でもっともよく使うコマンドの一つ。</p>
+</dd>
+</dl>
+<h2 id="links">関連リンク</h2>
+<ul>
+<li><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_aliases" target="_blank">Microsoft.Learn &ndash; about_Aliases</a>
+</li>
+</ul>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="../../../ja/tags/noun/software/index.html" rel="tag">Noun / Software</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="../../../ja/tags/name/powershell/index.html" rel="tag">Name / PowerShell</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="../../../ja/tags/name/pwsh-sketches/index.html" rel="tag">Name / pwsh-sketches</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="../../../ja/tags/verb/launch/index.html" rel="tag">Verb / Launch</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="../../../ja/tags/type/launcher/index.html" rel="tag">Type / Launcher</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="../../../ja/solve-the-problem/launch-software_run_anything_from_a_plain_text_link/index.html" rel="prev">
+			<span class="pager__subtitle">«&thinsp;前の投稿</span>
+			<p class="pager__title">Launch-Software &#34;プレーンテキストリンクを用いた汎用ランチャーの実装&#34;</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="../../../ja/solve-the-problem/launch-software_invoke_gitbash_via_powershell/index.html" rel="next">
+			<span class="pager__subtitle">次の投稿&thinsp;»</span>
+			<p class="pager__title">Launch-Software &#34;Windows上でLinuxコマンドを実行する&#34;</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			<aside class="sidebar"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+		<input class="widget-search__field" type="search" placeholder="検索…" value="" name="q" aria-label="検索…">
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="https://btklab.github.io/">
+	</form>
+</div>
+<div class="widget-languages widget">
+	<h4 class="widget__title">言語</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget-languages__link widget__link" href="../../../ja/index.html">
+					<span class="widget-languages__link-btn widget__link-btn btn">JA</span>
+					<span class="widget-languages__link-text widget__link-text">Japanese</span>
+				</a>
+			</li>
+			<li class="widget__item">
+				<a class="widget-languages__link widget__link" href="../../../en/index.html">
+					<span class="widget-languages__link-btn widget__link-btn btn">EN</span>
+					<span class="widget-languages__link-text widget__link-text">English</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</div><div class="widget-archives widget">
+	<h4 class="widget__title">このサイトについて</h4>
+	<div class="widget__content">
+		<div class="authorbox clearfix">
+			<figure class="authorbox__avatar">
+				<img alt="btklab avatar" src="../../../img/logo_an_owl_hood_boy2.png" class="avatar" height="90" width="90">
+			</figure>
+			
+			<div class="authorbox__description">
+				集めて、つないで、探ってみる — PowerShellを、Python・R・Graphvizといったバラバラな技術を連携させる「グルー（接着剤）」として活用し、仕事をこなします。実行環境は主にWindows、ときどきLinux。
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="widget-social widget">
+	<h4 class="widget-social__title widget__title">ソーシャル</h4>
+	<div class="widget-social__content widget__content">
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="GitHub" rel="noopener noreferrer" href="https://github.com/btklab" target="_blank">
+				<svg class="widget-social__link-icon icon icon-github" width="24" height="24" viewBox="0 0 384 374"><path d="m192 0c-106.1 0-192 85.8-192 191.7 0 84.7 55 156.6 131.3 181.9 9.6 1.8 13.1-4.2 13.1-9.2 0-4.6-.2-16.6-.3-32.6-53.4 11.6-64.7-25.7-64.7-25.7-8.7-22.1-21.3-28-21.3-28-17.4-11.9 1.3-11.6 1.3-11.6 19.3 1.4 29.4 19.8 29.4 19.8 17.1 29.3 44.9 20.8 55.9 15.9 1.7-12.4 6.7-20.8 12.2-25.6-42.6-4.8-87.5-21.3-87.5-94.8 0-20.9 7.5-38 19.8-51.4-2-4.9-8.6-24.3 1.9-50.7 0 0 16.1-5.2 52.8 19.7 15.3-4.2 31.7-6.4 48.1-6.5 16.3.1 32.7 2.2 48.1 6.5 36.7-24.8 52.8-19.7 52.8-19.7 10.5 26.4 3.9 45.9 1.9 50.7 12.3 13.4 19.7 30.5 19.7 51.4 0 73.7-44.9 89.9-87.7 94.6 6.9 5.9 13 17.6 13 35.5 0 25.6-.2 46.3-.2 52.6 0 5.1 3.5 11.1 13.2 9.2 76.2-25.5 131.2-97.3 131.2-182 0-105.9-86-191.7-192-191.7z"/></svg>
+				<span>GitHub</span>
+			</a>
+		</div>
+		
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="RSS" href="https://btklab.github.io/index.xml">
+				<span>RSS</span>
+			</a>
+		</div>
+	</div>
+</div>
+<div class="widget-recent widget">
+	<h4 class="widget__title">最近の投稿</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="../../../ja/solve-the-problem/launch-software_invoke_gitbash_via_powershell/index.html">Launch-Software &#34;Windows上でLinuxコマンドを実行する&#34;</a></li>
+			<li class="widget__item"><a class="widget__link" href="../../../ja/getting-started/install-software_graphviz/index.html">Install-Software &#34;Graphviz&#34;</a></li>
+			<li class="widget__item"><a class="widget__link" href="../../../ja/getting-started/install-software_plantuml/index.html">Install-Software &#34;PlantUML&#34;</a></li>
+			<li class="widget__item"><a class="widget__link" href="../../../ja/solve-the-problem/launch-software_execute_git_bash_commands_on_windows/index.html">Launch-Software &#34;プレーンテキストリンクを用いた汎用ランチャーの実装&#34;</a></li>
+			<li class="widget__item"><a class="widget__link" href="../../../ja/solve-the-problem/launch-software_run_anything_from_a_plain_text_link/index.html">Launch-Software &#34;プレーンテキストリンクを用いた汎用ランチャーの実装&#34;</a></li>
+			<li class="widget__item"><a class="widget__link" href="../../../ja/getting-started/install-software-python/index.html">Install-Software &#34;Python&#34;</a></li>
+			<li class="widget__item"><a class="widget__link" href="../../../ja/getting-started/install-software-pwsh-sketches/index.html">Install-Software &#34;pwsh-sketches&#34;</a></li>
+			<li class="widget__item"><a class="widget__link" href="../../../ja/getting-started/think-environment-directory-structure/index.html">Think-Environment &#34;Directory Structure&#34;</a></li>
+			<li class="widget__item"><a class="widget__link" href="../../../ja/getting-started/install-software-git/index.html">Install-Software &#34;Git&#34;</a></li>
+			<li class="widget__item"><a class="widget__link" href="../../../ja/getting-started/learn-software-powershell-basic/index.html">Learn-Software &#34;PowerShell&#34; -Basic</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">カテゴリ</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+                
+                
+				<a class="widget__link" href="../../../ja/categories/getting-started/index.html">Getting Started</a></li>
+			<li class="widget__item">
+                
+                
+				<a class="widget__link" href="../../../ja/categories/solve-the-problem/index.html">Solve the Problem</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+    <h4 class="widget__title">タグ</h4>
+    <div class="widget__content">
+        <ul class="widget__list">
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/name/excel/index.html">Name / Excel</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">1</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/name/git/index.html">Name / Git</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">3</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/name/github/index.html">Name / GitHub</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">1</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/name/graphviz/index.html">Name / Graphviz</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">1</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/name/linux/index.html">Name / Linux</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">1</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/name/plantuml/index.html">Name / PlantUML</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">1</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/name/powershell/index.html">Name / PowerShell</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">7</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/name/pwsh-sketches/index.html">Name / Pwsh-Sketches</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">4</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/name/python/index.html">Name / Python</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">1</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/name/windows-terminal/index.html">Name / Windows Terminal</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">1</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/name/winget/index.html">Name / WinGet</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">6</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/noun/environment/index.html">Noun / Environment</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">1</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/noun/software/index.html">Noun / Software</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">14</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/opt/basic/index.html">Opt / Basic</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">2</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/type/datavisualization/index.html">Type / DataVisualization</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">2</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/type/launcher/index.html">Type / Launcher</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">3</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/verb/install/index.html">Verb / Install</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">8</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/verb/launch/index.html">Verb / Launch</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">4</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/verb/learn/index.html">Verb / Learn</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">2</span>
+                </li>
+            <li class="widget__item">
+                <a class="widget__link" href="../../../ja/tags/verb/think/index.html">Verb / Think</a>&nbsp;
+                <span class="widget__counter widget__counter--bubble">1</span>
+                </li>
+        </ul>
+    </div>
+</div>
+<div class="widget-archives widget">
+	  <h4 class="widget__title">アーカイブ</h4>
+	  <div class="widget__content">
+		<ul class="widget__list">
+                <li class="widget__item">
+                    <a class="widget__link" href="../../../ja/archives/2025-02/index.html">2025-02</a>&nbsp;
+                    <span class="widget__counter widget__counter--bubble">7</span>
+                    </li>
+                <li class="widget__item">
+                    <a class="widget__link" href="../../../ja/archives/2025-03/index.html">2025-03</a>&nbsp;
+                    <span class="widget__counter widget__counter--bubble">3</span>
+                    </li>
+                <li class="widget__item">
+                    <a class="widget__link" href="../../../ja/archives/2025-04/index.html">2025-04</a>&nbsp;
+                    <span class="widget__counter widget__counter--bubble">4</span>
+                    </li>
+                <li class="widget__item">
+                    <a class="widget__link" href="../../../ja/archives/2025-06/index.html">2025-06</a>&nbsp;
+                    <span class="widget__counter widget__counter--bubble">1</span>
+                    </li>
+            
+            <li><a href="../../../ja/archives/index.html">&lt;&lt;</a></li>
+        </ul>
+    </div>
+</div>
+
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2025 Btklab&#39;s Experience via PowerShell on Windows.
+			<span class="footer__copyright-credits">このサイトは <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> と <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> テーマ、それから、 <a href="https://posit.co/downloads/" rel="nofollow noopener" target="_blank">RStudio IDE</a> と <a href="https://pkgs.rstudio.com/blogdown/" rel="nofollow noopener" target="_blank">blogdown</a> パッケージ を用いて生成されています。</span>
+		</div>
+	</div>
+	<script src="https://btklab.github.io/lightbox2/js/lightbox-plus-jquery.min.js"></script>
+</footer>
+	</div>
+<script async defer src="../../../js/menu.js"></script>
+</body>
+</html>

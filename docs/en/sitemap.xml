@@ -2,21 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://btklab.github.io/en/archives/2025-04/</loc>
-    <lastmod>2025-06-15T00:00:00+00:00</lastmod>
+    <loc>https://btklab.github.io/en/archives/2025-06/</loc>
+    <lastmod>2025-06-16T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja-jp"
-                href="https://btklab.github.io/ja/archives/2025-04/"
+                href="https://btklab.github.io/ja/archives/2025-06/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://btklab.github.io/en/archives/2025-04/"
+                href="https://btklab.github.io/en/archives/2025-06/"
                 />
   </url><url>
     <loc>https://btklab.github.io/en/archives/</loc>
-    <lastmod>2025-06-15T00:00:00+00:00</lastmod>
+    <lastmod>2025-06-16T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja-jp"
@@ -29,7 +29,7 @@
                 />
   </url><url>
     <loc>https://btklab.github.io/en/</loc>
-    <lastmod>2025-06-15T00:00:00+00:00</lastmod>
+    <lastmod>2025-06-16T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja-jp"
@@ -42,7 +42,7 @@
                 />
   </url><url>
     <loc>https://btklab.github.io/en/categories/</loc>
-    <lastmod>2025-06-15T00:00:00+00:00</lastmod>
+    <lastmod>2025-06-16T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja-jp"
@@ -52,6 +52,162 @@
                 rel="alternate"
                 hreflang="en-us"
                 href="https://btklab.github.io/en/categories/"
+                />
+  </url><url>
+    <loc>https://btklab.github.io/en/solve-the-problem/launch-software_execute_git_bash_commands_on_windows/</loc>
+    <lastmod>2025-06-16T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja-jp"
+                href="https://btklab.github.io/ja/solve-the-problem/launch-software_execute_git_bash_commands_on_windows/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://btklab.github.io/en/solve-the-problem/launch-software_execute_git_bash_commands_on_windows/"
+                />
+  </url><url>
+    <loc>https://btklab.github.io/en/tags/name/git/</loc>
+    <lastmod>2025-06-16T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja-jp"
+                href="https://btklab.github.io/ja/tags/name/git/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://btklab.github.io/en/tags/name/git/"
+                />
+  </url><url>
+    <loc>https://btklab.github.io/en/tags/name/linux/</loc>
+    <lastmod>2025-06-16T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja-jp"
+                href="https://btklab.github.io/ja/tags/name/linux/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://btklab.github.io/en/tags/name/linux/"
+                />
+  </url><url>
+    <loc>https://btklab.github.io/en/tags/name/powershell/</loc>
+    <lastmod>2025-06-16T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja-jp"
+                href="https://btklab.github.io/ja/tags/name/powershell/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://btklab.github.io/en/tags/name/powershell/"
+                />
+  </url><url>
+    <loc>https://btklab.github.io/en/tags/name/pwsh-sketches/</loc>
+    <lastmod>2025-06-16T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja-jp"
+                href="https://btklab.github.io/ja/tags/name/pwsh-sketches/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://btklab.github.io/en/tags/name/pwsh-sketches/"
+                />
+  </url><url>
+    <loc>https://btklab.github.io/en/tags/noun/software/</loc>
+    <lastmod>2025-06-16T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja-jp"
+                href="https://btklab.github.io/ja/tags/noun/software/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://btklab.github.io/en/tags/noun/software/"
+                />
+  </url><url>
+    <loc>https://btklab.github.io/en/categories/solve-the-problem/</loc>
+    <lastmod>2025-06-16T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja-jp"
+                href="https://btklab.github.io/ja/categories/solve-the-problem/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://btklab.github.io/en/categories/solve-the-problem/"
+                />
+  </url><url>
+    <loc>https://btklab.github.io/en/solve-the-problem/</loc>
+    <lastmod>2025-06-16T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja-jp"
+                href="https://btklab.github.io/ja/solve-the-problem/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://btklab.github.io/en/solve-the-problem/"
+                />
+  </url><url>
+    <loc>https://btklab.github.io/en/tags/</loc>
+    <lastmod>2025-06-16T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja-jp"
+                href="https://btklab.github.io/ja/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://btklab.github.io/en/tags/"
+                />
+  </url><url>
+    <loc>https://btklab.github.io/en/tags/type/launcher/</loc>
+    <lastmod>2025-06-16T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja-jp"
+                href="https://btklab.github.io/ja/tags/type/launcher/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://btklab.github.io/en/tags/type/launcher/"
+                />
+  </url><url>
+    <loc>https://btklab.github.io/en/tags/verb/launch/</loc>
+    <lastmod>2025-06-16T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja-jp"
+                href="https://btklab.github.io/ja/tags/verb/launch/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://btklab.github.io/en/tags/verb/launch/"
+                />
+  </url><url>
+    <loc>https://btklab.github.io/en/archives/2025-04/</loc>
+    <lastmod>2025-06-15T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja-jp"
+                href="https://btklab.github.io/ja/archives/2025-04/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://btklab.github.io/en/archives/2025-04/"
                 />
   </url><url>
     <loc>https://btklab.github.io/en/categories/getting-started/</loc>
@@ -145,32 +301,6 @@
                 href="https://btklab.github.io/en/tags/name/winget/"
                 />
   </url><url>
-    <loc>https://btklab.github.io/en/tags/noun/software/</loc>
-    <lastmod>2025-06-15T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja-jp"
-                href="https://btklab.github.io/ja/tags/noun/software/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="https://btklab.github.io/en/tags/noun/software/"
-                />
-  </url><url>
-    <loc>https://btklab.github.io/en/tags/</loc>
-    <lastmod>2025-06-15T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja-jp"
-                href="https://btklab.github.io/ja/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="https://btklab.github.io/en/tags/"
-                />
-  </url><url>
     <loc>https://btklab.github.io/en/tags/type/datavisualization/</loc>
     <lastmod>2025-04-21T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -208,84 +338,6 @@
                 rel="alternate"
                 hreflang="en-us"
                 href="https://btklab.github.io/en/solve-the-problem/launch-software_run_anything_from_a_plain_text_link/"
-                />
-  </url><url>
-    <loc>https://btklab.github.io/en/tags/name/powershell/</loc>
-    <lastmod>2025-06-15T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja-jp"
-                href="https://btklab.github.io/ja/tags/name/powershell/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="https://btklab.github.io/en/tags/name/powershell/"
-                />
-  </url><url>
-    <loc>https://btklab.github.io/en/tags/name/pwsh-sketches/</loc>
-    <lastmod>2025-06-15T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja-jp"
-                href="https://btklab.github.io/ja/tags/name/pwsh-sketches/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="https://btklab.github.io/en/tags/name/pwsh-sketches/"
-                />
-  </url><url>
-    <loc>https://btklab.github.io/en/categories/solve-the-problem/</loc>
-    <lastmod>2025-06-15T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja-jp"
-                href="https://btklab.github.io/ja/categories/solve-the-problem/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="https://btklab.github.io/en/categories/solve-the-problem/"
-                />
-  </url><url>
-    <loc>https://btklab.github.io/en/solve-the-problem/</loc>
-    <lastmod>2025-06-15T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja-jp"
-                href="https://btklab.github.io/ja/solve-the-problem/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="https://btklab.github.io/en/solve-the-problem/"
-                />
-  </url><url>
-    <loc>https://btklab.github.io/en/tags/type/launcher/</loc>
-    <lastmod>2025-06-15T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja-jp"
-                href="https://btklab.github.io/ja/tags/type/launcher/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="https://btklab.github.io/en/tags/type/launcher/"
-                />
-  </url><url>
-    <loc>https://btklab.github.io/en/tags/verb/launch/</loc>
-    <lastmod>2025-06-15T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja-jp"
-                href="https://btklab.github.io/ja/tags/verb/launch/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="https://btklab.github.io/en/tags/verb/launch/"
                 />
   </url><url>
     <loc>https://btklab.github.io/en/archives/2025-03/</loc>
@@ -338,19 +390,6 @@
                 rel="alternate"
                 hreflang="en-us"
                 href="https://btklab.github.io/en/getting-started/install-software-pwsh-sketches/"
-                />
-  </url><url>
-    <loc>https://btklab.github.io/en/tags/name/git/</loc>
-    <lastmod>2025-04-20T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja-jp"
-                href="https://btklab.github.io/ja/tags/name/git/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="https://btklab.github.io/en/tags/name/git/"
                 />
   </url><url>
     <loc>https://btklab.github.io/en/tags/name/github/</loc>

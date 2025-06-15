@@ -6,8 +6,15 @@
     <description>Recent content in Name/Pwsh-Sketches on Btklab&#39;s Experience via PowerShell on Windows</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 15 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Jun 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://btklab.github.io/en/tags/name/pwsh-sketches/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Launch-Software &#34;Execute Linux Commands on Windows&#34;</title>
+      <link>https://btklab.github.io/en/solve-the-problem/launch-software_execute_git_bash_commands_on_windows/</link>
+      <pubDate>Sun, 15 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://btklab.github.io/en/solve-the-problem/launch-software_execute_git_bash_commands_on_windows/</guid>
+      <description>&lt;h2 id=&#34;intro&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Summary&lt;/strong&gt;: This article introduces &amp;ldquo;&lt;a href=&#34;https://github.com/btklab/pwsh-sketches/blob/main/src/Invoke-GitBash_function.ps1&#34; target=&#34;_blank&#34;&gt;Invoke-GitBash&lt;/a&gt;&#xD;&#xA; (Alias: &lt;code&gt;gitbash&lt;/code&gt;)&amp;rdquo;, a PowerShell script designed to directly execute Git Bash commands (such as &lt;code&gt;diff&lt;/code&gt;, &lt;code&gt;sed&lt;/code&gt;, &lt;code&gt;grep&lt;/code&gt;, &lt;code&gt;awk&lt;/code&gt;, &lt;code&gt;xxd&lt;/code&gt;, &lt;code&gt;file&lt;/code&gt;) within PowerShell. This script caters to the need for easily utilizing Linux commands in a Windows environment.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;Do you ever find yourself working in a Windows environment and wishing you had access to Linux commands? I certainly do. Linux commands like &lt;code&gt;sed&lt;/code&gt; and &lt;code&gt;grep&lt;/code&gt; are incredibly useful for text processing, &lt;code&gt;diff&lt;/code&gt; is invaluable for comparing file differences, and &lt;code&gt;awk&lt;/code&gt; is powerful for data manipulation. While these frequently used commands are simple and single-purpose, implementing them from scratch as PowerShell scripts can be surprisingly complex and time-consuming—if not impossible.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Launch-Software &#34;Run Anything from a Plain Text Link&#34;</title>
       <link>https://btklab.github.io/en/solve-the-problem/launch-software_run_anything_from_a_plain_text_link/</link>
