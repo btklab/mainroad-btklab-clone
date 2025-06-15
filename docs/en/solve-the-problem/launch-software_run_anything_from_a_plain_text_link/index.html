@@ -14,7 +14,7 @@
   <meta property="og:type" content="article">
     <meta property="article:section" content="solve-the-problem">
     <meta property="article:published_time" content="2025-04-19T00:00:00+00:00">
-    <meta property="article:modified_time" content="2025-05-08T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-06-15T00:00:00+00:00">
     <meta property="article:tag" content="Noun/Software">
     <meta property="article:tag" content="Name/PowerShell">
     <meta property="article:tag" content="Name/Pwsh-Sketches">
@@ -128,7 +128,7 @@
 			<div class="post__meta meta">
 <div class="meta__item-datetime meta__item">
 	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2025-04-19T00:00:00Z">2025-04-19</time>
-	<time class="meta__text" datetime="2025-05-08T00:00:00Z">(Last Modified: 2025-05-08)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text">
+	<time class="meta__text" datetime="2025-06-15T00:00:00Z">(Last Modified: 2025-06-15)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text">
                 
                 <a class="meta__link" href="../../../en/categories/solve-the-problem/index.html" rel="category">Solve the Problem</a>
     </span>
@@ -182,7 +182,7 @@
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">Category　</th>
+          <th style="text-align: left">Category</th>
           <th style="text-align: left">Benefits</th>
           <th style="text-align: left">Approach</th>
       </tr>
@@ -301,39 +301,86 @@
 <p>Additionally, if a Windows shortcut file (<code>.lnk</code> file) is specified as an argument, that shortcut file will be launched. This enables you to mix text file links and Windows shortcut files in your link collection folder, and launch them uniformly using the <a href="https://github.com/btklab/pwsh-sketches/blob/main/src/Invoke-Link_function.ps1" target="_blank">Invoke-Link</a>
  command.</p>
 <h3 id="looking-back">4. Looking Back</h3>
-<p>The planned requirements have largely been met. The <a href="https://github.com/btklab/pwsh-sketches/blob/main/src/Invoke-Link_function.ps1" target="_blank">Invoke-Link</a>
- command is convenient for my daily tasks and has become one of my most frequently used commands.</p>
+<p>The <a href="https://github.com/btklab/pwsh-sketches/blob/main/src/Invoke-Link_function.ps1" target="_blank">Invoke-Link</a>
+ command I introduced here was created to streamline my daily tasks. Its main goals can be summarized as follows:</p>
+<ol>
+<li>Maintaining <strong>quick startup and convenience</strong>,</li>
+<li>Managing link information using <strong>plain text files</strong>,</li>
+<li>Allowing <strong>batch management and launching of multiple links</strong>,</li>
+<li>And improving <strong>portability by eliminating environment dependencies</strong>.</li>
+</ol>
+<p>All of these objectives have been largely achieved, and <a href="https://github.com/btklab/pwsh-sketches/blob/main/src/Invoke-Link_function.ps1" target="_blank">Invoke-Link</a>
+ has become one of my frequently used commands.</p>
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">Challenge</th>
+          <th style="text-align: left">Objective</th>
           <th style="text-align: left">Result</th>
           <th style="text-align: left">Evaluation</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left"><strong>Maintaining Quick Launch &amp; Convenience</strong></td>
-          <td style="text-align: left">Applications and files can be launched without leaving the current directory.</td>
+          <td style="text-align: left">Maintaining quick startup and convenience</td>
+          <td style="text-align: left">Able to launch apps and files without changing the current directory</td>
           <td style="text-align: left">✅</td>
       </tr>
       <tr>
-          <td style="text-align: left"><strong>Adopting a Text File Format</strong></td>
-          <td style="text-align: left">Link information is managed using a text file, making version control with Git possible</td>
+          <td style="text-align: left">Using plain text files</td>
+          <td style="text-align: left">Managing link information with text files enables version control with Git</td>
           <td style="text-align: left">✅</td>
       </tr>
       <tr>
-          <td style="text-align: left"><strong>Batch Management of Multiple Links</strong></td>
-          <td style="text-align: left">Multiple links can be recorded in a single text file and launched collectively as needed.</td>
+          <td style="text-align: left">Batch management of multiple links</td>
+          <td style="text-align: left">Multiple links are stored in a single text file and can be launched collectively</td>
           <td style="text-align: left">✅</td>
       </tr>
       <tr>
-          <td style="text-align: left"><strong>Eliminating Platform Dependency &amp; Enhancing Portability</strong></td>
-          <td style="text-align: left">Combining text files with PowerShell achieves cross-platform operation.</td>
+          <td style="text-align: left">Eliminating environment dependencies and improving portability</td>
+          <td style="text-align: left">Combination of text files and PowerShell allows cross-platform use</td>
           <td style="text-align: left">✅</td>
       </tr>
   </tbody>
 </table>
+<h4 id="about-link-file-organization">About Link File Organization</h4>
+<p>Now, let me explain how I manage link files in my environment.
+My home directory for shell work is as follows:</p>
+<ul>
+<li>See &gt; <a href="../../getting-started/think-environment-directory-structure/index.html">Think-Environment &ldquo;Directory Structure&rdquo;</a>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>C:\Users\btklab
+</span></span><span style="display:flex;"><span>├───cms
+</span></span><span style="display:flex;"><span>│   └───drafts        &lt;-- working directory
+</span></span></code></pre></div><p>Inside the working directory, I created a subdirectory named <code>work</code> to store the link files.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>C:\Users\btklab
+</span></span><span style="display:flex;"><span>├───cms
+</span></span><span style="display:flex;"><span>│   └───drafts
+</span></span><span style="display:flex;"><span>│         └───work    &lt;-- link file storage
+</span></span><span style="display:flex;"><span>│              ├─ amazon.txt
+</span></span><span style="display:flex;"><span>│              ├─ bing.txt
+</span></span><span style="display:flex;"><span>│              ├─ chrome.txt
+</span></span><span style="display:flex;"><span>│              ├─ outlook.txt
+</span></span><span style="display:flex;"><span>│              └─ youtube.txt
+</span></span></code></pre></div><p>This folder contains over 200 link files, including website URLs, absolute paths to local files, application executable paths, Windows shortcuts(<code>.lnk</code>), and PowerShell scripts (<code>.ps1</code>). Among them, I usually use about 10 frequently.</p>
+<h4 id="naming-strategy-prioritizing-thought-flow">Naming Strategy: Prioritizing Thought Flow</h4>
+<p>A key point when naming link files is to start with &ldquo;<strong>the full name that naturally comes to mind</strong>.&rdquo;
+For example, for launching the Outlook app, I name the file straightforwardly as <code>outlook.txt</code>.</p>
+<p>This allows me to reflect my thought process directly in the command.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>i ./work/outlook.txt
+</span></span></code></pre></div><p>There is also the option of using abbreviations like <code>ol.txt</code>, but caution is needed.
+Using abbreviations changes the thought flow as follows:</p>
+<ol>
+<li>Think: &ldquo;I want to open Outlook.&rdquo;</li>
+<li>Think: &ldquo;What was the abbreviation again?&rdquo;</li>
+<li>Think: &ldquo;Oh, it’s <code>ol</code>.&rdquo;</li>
+<li>Then input: <code>i ./work/ol.txt</code></li>
+</ol>
+<p>Although abbreviations reduce typing, they introduce an extra step to recall the abbreviation during the thought process.
+For me, maintaining the natural flow of thought is far more important than reducing keystrokes.</p>
+<h4 id="importance-of-thought-aligned-command-design">Importance of Thought-Aligned Command Design</h4>
+<p>This approach of naming and specifying options according to the user&rsquo;s thought order is a fundamental design principle not only for <a href="https://github.com/btklab/pwsh-sketches/blob/main/src/Invoke-Link_function.ps1" target="_blank">Invoke-Link</a>
+ but for all my CLI command design. Instead of memorizing commands, making them intuitive to use reduces stress and improves long-term productivity.</p>
 <h2 id="terms">Terms</h2>
 <p>Here are some technical terms to deepen your understanding of efficiency through the use of links and shortcuts:</p>
 <dl>

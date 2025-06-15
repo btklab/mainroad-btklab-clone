@@ -14,7 +14,7 @@
   <meta property="og:type" content="article">
     <meta property="article:section" content="solve-the-problem">
     <meta property="article:published_time" content="2025-04-19T00:00:00+00:00">
-    <meta property="article:modified_time" content="2025-05-08T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-06-15T00:00:00+00:00">
     <meta property="article:tag" content="Noun/Software">
     <meta property="article:tag" content="Name/PowerShell">
     <meta property="article:tag" content="Name/Pwsh-Sketches">
@@ -128,7 +128,7 @@
 			<div class="post__meta meta">
 <div class="meta__item-datetime meta__item">
 	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2025-04-19T00:00:00Z">2025-04-19</time>
-	<time class="meta__text" datetime="2025-05-08T00:00:00Z">(最終更新: 2025-05-08)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text">
+	<time class="meta__text" datetime="2025-06-15T00:00:00Z">(最終更新: 2025-06-15)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text">
                 
                 <a class="meta__link" href="../../../ja/categories/solve-the-problem/index.html" rel="category">Solve the Problem</a>
     </span>
@@ -151,7 +151,7 @@
         <li><a href="#understanding-the-problem">1. 問題を理解する</a></li>
         <li><a href="#devising-a-plan">2. 計画をたてる</a></li>
         <li><a href="#carrying-out-the-plan">3. 計画を実行する</a></li>
-        <li><a href="#looking-back">4. ふりかえる</a></li>
+        <li><a href="#looking-back">4. ふりかえり</a></li>
       </ul>
     </li>
     <li><a href="#terms">用語</a></li>
@@ -298,10 +298,17 @@ Windowsのショートカットファイル（<code>.lnk</code>）について�
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>i pub-documents.txt
 </span></span></code></pre></div><p>起動するアプリは、Webリンクの場合は「<strong>既定のブラウザ</strong>」、ディレクトリの場合は「<strong>エクスプローラ</strong>」、ファイルの場合は拡張子に応じた「<strong>既定のアプリ</strong>」である。他、引数にWindowsショートカットファイル（<code>.lnk</code>ファイル）を指定した場合は、ショートカットファイルを起動する。これにより、リンク集フォルダにテキストファイルリンクとWindowsのショートカットファイルを混在させても、統一的に<a href="https://github.com/btklab/pwsh-sketches/blob/main/src/Invoke-Link_function.ps1" target="_blank">Invoke-Link</a>
 コマンドで起動できる。</p>
-<h3 id="looking-back">4. ふりかえる</h3>
-<p>計画したニーズはおおよそ満たされた。
-この<a href="https://github.com/btklab/pwsh-sketches/blob/main/src/Invoke-Link_function.ps1" target="_blank">Invoke-Link</a>
-コマンドはぼくの日常的な作業には使い勝手がよく、使用頻度の高いコマンドの一つだ。</p>
+<h3 id="looking-back">4. ふりかえり</h3>
+<p>今回紹介した<a href="https://github.com/btklab/pwsh-sketches/blob/main/src/Invoke-Link_function.ps1" target="_blank">Invoke-Link</a>
+コマンドは、ぼくの日常的な作業を効率化するために作ったもので、その狙いは以下の4点に集約される。</p>
+<ol>
+<li>起動の迅速さと利便性を保ちつつ、</li>
+<li>テキストファイルでリンク情報を管理し、</li>
+<li>複数のリンクを一括で管理・起動できること、</li>
+<li>さらに環境依存を排し、移植性を高めること。</li>
+</ol>
+<p>これらの課題はおおよそ満たされ、<a href="https://github.com/btklab/pwsh-sketches/blob/main/src/Invoke-Link_function.ps1" target="_blank">Invoke-Link</a>
+コマンドは現在、ぼくの使用頻度の高いコマンドの一つとなっている。</p>
 <table>
   <thead>
       <tr>
@@ -333,6 +340,60 @@ Windowsのショートカットファイル（<code>.lnk</code>）について�
       </tr>
   </tbody>
 </table>
+<h4 id="リンクファイルの配置について">リンクファイルの配置について</h4>
+<p>では具体的に、ぼくの環境でのリンクファイルの管理方法を紹介しよう。
+ぼくの作業のホームディレクトリは以下のとおりだ。</p>
+<ul>
+<li>See &gt; <a href="../../getting-started/think-environment-directory-structure/index.html">Think-Environment &ldquo;Directory Structure&rdquo;</a>
+</li>
+</ul>
+<pre tabindex="0"><code class="language-plainttext" data-lang="plainttext">C:\Users\btklab
+├───cms
+│   └───drafts        &lt;-- my working directory!
+</code></pre><p>作業ディレクトリ<code>drafts</code>の直下に<code>work</code>というサブディレクトリを作り、そこにリンクファイルを格納している（<code>work</code>の名前に深い意味はない。単に入力しやすいと考えただけだ。<code>link</code>などでもよさそうだ）：</p>
+<pre tabindex="0"><code class="language-plainttext" data-lang="plainttext">C:\Users\btklab
+├───cms
+│   └────drafts       &lt;-- my working directory!
+│          └────work  &lt;-- link file stock directory!
+│               │─amazon.txt
+│               │─bing.txt
+│               │─chrome.txt
+│               │─copilot.txt
+│               │─e-tax.txt
+│               │─firefox.txt
+│               │─gemini.txt
+│               │─gmail.txt
+│               │─google.txt
+│               │─googlecalendar.txt
+│               │─googledrive.txt
+│               │─jetro.txt
+│               │─kagisearch.txt
+│               │─kuroneko.txt
+│               │─netflix.txt
+│               │─outlook.txt
+│               │─onedrive.txt
+│               │─oxford-dictionary.txt
+│               │─...
+│               │─thunderbird.txt
+│               │─youtube.txt
+│               └─github.txt
+</code></pre><p>このフォルダには、WebサイトのURL、ローカルファイルの絶対パス、アプリの実行ファイルパス、Windowsショートカット(<code>.lnk</code>)、PowerShellスクリプト（<code>.ps1</code>）など、200を超えるリンクファイルがある。たくさんあるけれど、その中でも特によく使うのは、約10個程度だ。</p>
+<h4 id="リンクファイル命名のポイント思考の流れにすなおにしたがうこと">リンクファイル命名のポイント：思考の流れにすなおにしたがうこと</h4>
+<p>リンクファイルの命名でぼくが優先しているのは、「<strong>思いついたそのままの名前と順序でファイル名を作ること</strong>」だ。
+例えば、Outlookを起動したいときは素直に<code>outlook.txt</code>と名付ける。
+これにより、思考の流れをそのままコマンドに反映できる。</p>
+<ul>
+<li>「Outlookを開きたいな」→ <code>i ./work/outlook.txt</code></li>
+</ul>
+<p>一方で、ol.txt のような省略名を使う選択肢もあるが、これには注意が必要だ。
+省略名の場合、思考の流れが次のように<strong>ひと手間増える</strong>。</p>
+<ul>
+<li>「Outlookを開きたいな」→「省略名なんだっけ？」→「たしか<code>ol</code>だった」→ <code>i ./work/ol.txt</code></li>
+</ul>
+<p>短縮名は入力の手数が減るという点において効率的といえるが、「思考→入力」の途中で「名前を思い出す」ための余計なステップが発生してしまう。ぼくにとっては、この思考の流れの自然さを妨げないことのほうが、入力効率よりもずっと重要だ。</p>
+<h4 id="コマンド命名とオプション設計の考え方">コマンド命名とオプション設計の考え方</h4>
+<p>こうした「<strong>思考の順序に沿った命名やオプションの指定</strong>」は、<a href="https://github.com/btklab/pwsh-sketches/blob/main/src/Invoke-Link_function.ps1" target="_blank">Invoke-Link</a>
+に限らず、ぼくがCLIコマンドを設計するときの基本原則にしている。コマンドを覚えなくとも直感的に使えるようにすることが、作業のストレスを減らし、長期的な生産性向上につながる。</p>
 <h2 id="terms">用語</h2>
 <p>読者の理解と学習をより深めるための、リンクやショートカットを活用した効率化の観点でのいくつかの技術用語：</p>
 <dl>
