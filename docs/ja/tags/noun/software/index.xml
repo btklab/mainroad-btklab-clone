@@ -6,8 +6,15 @@
     <description>Recent content in Noun/Software on Btklab&#39;s Experience via PowerShell on Windows</description>
     <generator>Hugo</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sun, 15 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Jun 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://btklab.github.io/ja/tags/noun/software/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Launch-Software &#34;Windows上でLinuxコマンドを実行する&#34;</title>
+      <link>https://btklab.github.io/ja/solve-the-problem/launch-software_invoke_gitbash_via_powershell/</link>
+      <pubDate>Sun, 15 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://btklab.github.io/ja/solve-the-problem/launch-software_invoke_gitbash_via_powershell/</guid>
+      <description>&lt;h2 id=&#34;intro&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Summary&lt;/strong&gt;: PowerShell上でGit Bashのコマンド群（&lt;code&gt;diff&lt;/code&gt;, &lt;code&gt;sed&lt;/code&gt;, &lt;code&gt;grep&lt;/code&gt;, &lt;code&gt;awk&lt;/code&gt;, &lt;code&gt;xxd&lt;/code&gt;, &lt;code&gt;file&lt;/code&gt;など）を実行するためのPowerShellスクリプト「&lt;a href=&#34;https://github.com/btklab/pwsh-sketches/blob/main/src/Invoke-GitBash_function.ps1&#34; target=&#34;_blank&#34;&gt;Invoke-GitBash&lt;/a&gt;&#xD;&#xA;」(Alias: &lt;code&gt;gitbash&lt;/code&gt;)を紹介する。Windows環境でLinuxコマンドを気軽に利用したい、というニーズに応えてくれるだろう。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Install-Software &#34;Graphviz&#34;</title>
       <link>https://btklab.github.io/ja/getting-started/install-software_graphviz/</link>
@@ -21,6 +28,13 @@
       <pubDate>Sun, 20 Apr 2025 00:00:00 +0000</pubDate>
       <guid>https://btklab.github.io/ja/getting-started/install-software_plantuml/</guid>
       <description>&lt;h2 id=&#34;intro&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;p&gt;Windows上にネットワーク図描画ツール「&lt;a href=&#34;https://plantuml.com/&#34; target=&#34;_blank&#34;&gt;PlantUML&lt;/a&gt;&#xD;&#xA;」をインストールする。当記事ではCLI（コマンドラインインターフェース）から実行するための環境構築について説明する。&lt;a href=&#34;https://code.visualstudio.com/&#34; target=&#34;_blank&#34;&gt;VS Code&lt;/a&gt;&#xD;&#xA;拡張機能としての&lt;a href=&#34;https://plantuml.com/&#34; target=&#34;_blank&#34;&gt;PlantUML&lt;/a&gt;&#xD;&#xA;については&lt;strong&gt;説明しない&lt;/strong&gt;。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Launch-Software &#34;プレーンテキストリンクを用いた汎用ランチャーの実装&#34;</title>
+      <link>https://btklab.github.io/ja/solve-the-problem/launch-software_execute_git_bash_commands_on_windows/</link>
+      <pubDate>Sat, 19 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://btklab.github.io/ja/solve-the-problem/launch-software_execute_git_bash_commands_on_windows/</guid>
+      <description>&lt;h2 id=&#34;intro&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Summary&lt;/strong&gt;: テキストに書かれたリンクからアプリを起動するCLI用PowerShellスクリプト「&lt;a href=&#34;https://github.com/btklab/pwsh-sketches/blob/main/src/Invoke-Link_function.ps1&#34; target=&#34;_blank&#34;&gt;Invoke-Link&lt;/a&gt;&#xD;&#xA; (Alias:&lt;code&gt;i&lt;/code&gt;)」を作った話。&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;Windowsのショートカットファイルは便利だ。よく使うアプリケーションやWebリンク、ファイルパスを登録しておけば素早くアクセスできる。ショートカットファイルはデスクトップや任意のフォルダにどこでも気軽に配置できる。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Launch-Software &#34;プレーンテキストリンクを用いた汎用ランチャーの実装&#34;</title>
@@ -63,20 +77,6 @@
       <pubDate>Sat, 15 Feb 2025 00:00:00 +0000</pubDate>
       <guid>https://btklab.github.io/ja/getting-started/launch-software-powershell/</guid>
       <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;p&gt;PowerShellを起動してコマンド入力が可能な状態にする。標準ユーザとして起動する場合と、管理者として起動する場合の方法を示す。&#xA;当記事では「スタートメニューから開く」ケースを紹介するが、開き方は他にもある。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Install-Software &#34;Windows Terminal&#34;</title>
-      <link>https://btklab.github.io/ja/getting-started/install-software-windowsterminal/</link>
-      <pubDate>Fri, 14 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://btklab.github.io/ja/getting-started/install-software-windowsterminal/</guid>
-      <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;p&gt;Windows OS上に&lt;a href=&#34;winterm&#34;&gt;Windows Terminal&lt;/a&gt;&#xD;&#xA;をインストールする。&lt;/p&gt;&#xA;&lt;h2 id=&#34;前提条件&#34;&gt;前提条件&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;✓ &lt;a href=&#34;../install-software-powershell/index.html&#34;&gt;PowerShellのインストール&lt;/a&gt;&#xD;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;✓ &lt;a href=&#34;../install-software-winget/index.html&#34;&gt;WinGet&lt;/a&gt;&#xD;&#xA;のインストール&lt;/li&gt;&#xA;&lt;li&gt;✓ 検証した環境は&lt;a href=&#34;../../getting-started/index.html&#34;&gt;こちら&lt;/a&gt;&#xD;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;インストール&#34;&gt;インストール&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;kbd&gt;START MENU&lt;/kbd&gt; → &lt;code&gt;cmd&lt;/code&gt;または&lt;code&gt;pwsh&lt;/code&gt;と入力&lt;/li&gt;&#xA;&lt;li&gt;「管理者として開く」をクリック&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;最新バージョンの確認：&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Learn-Software &#34;Excel&#34; -Basic</title>
-      <link>https://btklab.github.io/ja/getting-started/learn-software-excel-basic/</link>
-      <pubDate>Wed, 05 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://btklab.github.io/ja/getting-started/learn-software-excel-basic/</guid>
-      <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;p&gt;「Microsoft Excel」の基礎知識。関数、テーブル、ピボットテーブルで仕事をパズル化しよう。&lt;/p&gt;&#xA;&lt;h2 id=&#34;前提条件&#34;&gt;前提条件&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;✓ 「&lt;a href=&#34;https://www.microsoft.com/ja-jp/microsoft-365/excel&#34; target=&#34;_blank&#34;&gt;Microsoft Excel&lt;/a&gt;&#xD;&#xA;」のインストール、またはクラウドストレージ「Microsoft OneDrive」経由でのWeb版Excelの利用&lt;/li&gt;&#xA;&lt;li&gt;✓ 検証した環境は&lt;a href=&#34;../../getting-started/index.html&#34;&gt;こちら&lt;/a&gt;&#xD;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;公式ヘルプ&#34;&gt;公式ヘルプ&lt;/h2&gt;&#xA;&lt;p&gt;Microsoft Excelの公式ヘルプには、シンプルな例が示されている。実際に手を動かしながらヘルプを読むことは、それだけで質のよい学習になる。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

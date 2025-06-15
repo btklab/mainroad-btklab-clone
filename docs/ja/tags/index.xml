@@ -6,8 +6,57 @@
     <description>Recent content in Tags on Btklab&#39;s Experience via PowerShell on Windows</description>
     <generator>Hugo</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sun, 15 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Jun 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://btklab.github.io/ja/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Name/Git</title>
+      <link>https://btklab.github.io/ja/tags/name/git/</link>
+      <pubDate>Sun, 15 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://btklab.github.io/ja/tags/name/git/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Name/Linux</title>
+      <link>https://btklab.github.io/ja/tags/name/linux/</link>
+      <pubDate>Sun, 15 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://btklab.github.io/ja/tags/name/linux/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Name/PowerShell</title>
+      <link>https://btklab.github.io/ja/tags/name/powershell/</link>
+      <pubDate>Sun, 15 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://btklab.github.io/ja/tags/name/powershell/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Name/Pwsh-Sketches</title>
+      <link>https://btklab.github.io/ja/tags/name/pwsh-sketches/</link>
+      <pubDate>Sun, 15 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://btklab.github.io/ja/tags/name/pwsh-sketches/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Noun/Software</title>
+      <link>https://btklab.github.io/ja/tags/noun/software/</link>
+      <pubDate>Sun, 15 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://btklab.github.io/ja/tags/noun/software/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Type/Launcher</title>
+      <link>https://btklab.github.io/ja/tags/type/launcher/</link>
+      <pubDate>Sun, 15 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://btklab.github.io/ja/tags/type/launcher/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Verb/Launch</title>
+      <link>https://btklab.github.io/ja/tags/verb/launch/</link>
+      <pubDate>Sun, 15 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://btklab.github.io/ja/tags/verb/launch/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Name/Graphviz</title>
       <link>https://btklab.github.io/ja/tags/name/graphviz/</link>
@@ -27,55 +76,6 @@
       <link>https://btklab.github.io/ja/tags/name/winget/</link>
       <pubDate>Sun, 20 Apr 2025 00:00:00 +0000</pubDate>
       <guid>https://btklab.github.io/ja/tags/name/winget/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Noun/Software</title>
-      <link>https://btklab.github.io/ja/tags/noun/software/</link>
-      <pubDate>Sun, 20 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://btklab.github.io/ja/tags/noun/software/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Type/DataVisualization</title>
-      <link>https://btklab.github.io/ja/tags/type/datavisualization/</link>
-      <pubDate>Sun, 20 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://btklab.github.io/ja/tags/type/datavisualization/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Verb/Install</title>
-      <link>https://btklab.github.io/ja/tags/verb/install/</link>
-      <pubDate>Sun, 20 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://btklab.github.io/ja/tags/verb/install/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Name/PowerShell</title>
-      <link>https://btklab.github.io/ja/tags/name/powershell/</link>
-      <pubDate>Sat, 19 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://btklab.github.io/ja/tags/name/powershell/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Name/Pwsh-Sketches</title>
-      <link>https://btklab.github.io/ja/tags/name/pwsh-sketches/</link>
-      <pubDate>Sat, 19 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://btklab.github.io/ja/tags/name/pwsh-sketches/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Type/Launcher</title>
-      <link>https://btklab.github.io/ja/tags/type/launcher/</link>
-      <pubDate>Sat, 19 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://btklab.github.io/ja/tags/type/launcher/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Verb/Launch</title>
-      <link>https://btklab.github.io/ja/tags/verb/launch/</link>
-      <pubDate>Sat, 19 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://btklab.github.io/ja/tags/verb/launch/</guid>
       <description></description>
     </item>
   </channel>
