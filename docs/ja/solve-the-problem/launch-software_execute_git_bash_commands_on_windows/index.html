@@ -14,7 +14,7 @@
   <meta property="og:type" content="article">
     <meta property="article:section" content="solve-the-problem">
     <meta property="article:published_time" content="2025-06-15T00:00:00+00:00">
-    <meta property="article:modified_time" content="2025-06-16T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-06-28T00:00:00+00:00">
     <meta property="article:tag" content="Noun/Software">
     <meta property="article:tag" content="Name/PowerShell">
     <meta property="article:tag" content="Name/Pwsh-Sketches">
@@ -129,7 +129,7 @@
 			<div class="post__meta meta">
 <div class="meta__item-datetime meta__item">
 	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2025-06-15T00:00:00Z">2025-06-15</time>
-	<time class="meta__text" datetime="2025-06-16T00:00:00Z">(最終更新: 2025-06-16)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text">
+	<time class="meta__text" datetime="2025-06-28T00:00:00Z">(最終更新: 2025-06-28)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text">
                 
                 <a class="meta__link" href="../../../ja/categories/solve-the-problem/index.html" rel="category">Solve the Problem</a>
     </span>
@@ -165,8 +165,8 @@
 <blockquote>
 <p><strong>Summary</strong>: PowerShell上でGit Bashのコマンド群（<code>diff</code>, <code>sed</code>, <code>grep</code>, <code>awk</code>, <code>xxd</code>, <code>file</code>など）を実行するためのPowerShellスクリプト「<a href="https://github.com/btklab/pwsh-sketches/blob/main/src/Invoke-GitBash_function.ps1" target="_blank">Invoke-GitBash</a>
 」(Alias: <code>gitbash</code>)を紹介する。Windows環境でLinuxコマンドを気軽に利用したい、というニーズに応えてくれるだろう。</p></blockquote>
-<p>Windows環境で開発や作業をしていると、時としてLinux系のコマンドを使いたくなること、ないだろうか？　ぼくはある。Linux系のコマンドとはたとえば、テキスト処理に便利な<code>sed</code>や<code>grep</code>、ファイルの差分比較に重宝する<code>diff</code>、データ加工に強力な<code>awk</code>などだ。これら日々の業務でよく使うコマンドはどれも、単機能でシンプルなデザインである一方、自前でPowerShellスクリプトとして実装するには案外複雑で、手間がかかる。というか、無理だ。</p>
-<p>Windows環境でLinux系のコマンドを使う方法はいくつかある。今回は、Git for Windowsをインストールした際に同梱されるLinuxコマンド群を用いることにした。要件はシンプルだ。PowerShellからシェルを切り替えることなくGit Bashのコマンドを直接実行できるようにすること。それから、パイプラインからの入出力を経由してPowerShellの強力な機能とGit Bashのコマンドを組み合わせて使えるようにすることの2点だ。</p>
+<p>Windows環境で開発や作業をしていると、時としてLinux系のコマンドを使いたくなること、ないだろうか？　ぼくはある。Linux系のコマンドとはたとえば、テキスト処理に便利な<code>sed</code>や<code>grep</code>、ファイルの差分比較に重宝する<code>diff</code>、データ加工に強力な<code>awk</code>などだ。これら日々の業務でよく使うコマンドはどれも、単機能でシンプルなデザインである一方、自前でPowerShellスクリプトとして実装するには案外複雑で、手間がかかる。というか、（ぼくには）無理だ。</p>
+<p>Windows環境でLinux系のコマンドを使う方法はいくつかある。今回は、Git for Windowsをインストールした際に同梱されるLinuxコマンド群を用いることにした。要件はシンプルだ。まずPowerShellからシェルを切り替えることなくGit Bashのコマンドを直接実行できるようにすること。それから、パイプラインからの入出力を経由してPowerShellの強力な機能とGit Bashのコマンドを組み合わせて使えるようにすることの2点だ。</p>
 <p>以上が、PowerShellスクリプト「<a href="https://github.com/btklab/pwsh-sketches/blob/main/src/Invoke-GitBash_function.ps1" target="_blank">Invoke-GitBash</a>
 」を作った動機だ。このスクリプトはGit for Windowsをインストールした際に同梱されるGit Bashのコマンド群をPowerShellから直接実行できるようにする。これにより、Windows環境にいながら、<code>diff</code>や<code>grep</code>や<code>sed</code>といった強力なLinuxコマンドを気軽に活用できるようになる。</p>
 <h2 id="prerequisites">前提条件</h2>
