@@ -1,0 +1,55 @@
+/* === Font Imports === */
+@import url("https://fonts.googleapis.com/css?family=Fraunces&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Commissioner&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Zen+Kaku+Gothic+New&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Fira+Code&display=swap");
+
+/* === Font Families === */
+:root {
+  --font-family-jp: "Zen Kaku Gothic New", sans-serif;
+  --font-family-base: "Commissioner", "Zen Kaku Gothic New", sans-serif;
+  --font-family-monospace: "Fira Code", monospace;
+  --headings-font-family: "Fraunces", "Commissioner", "Zen Kaku Gothic New", sans-serif;
+  --navbar-font-family: "Commissioner", sans-serif;
+  --toc-font-family: "Commissioner", sans-serif;
+  --footer-font-family: "Commissioner", sans-serif;
+}
+
+/* === Global Font Usage === */
+body {
+  font-family: var(--font-family-base);
+  font-weight: 300;
+  font-size: 0.9em;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--headings-font-family);
+  font-weight: 600;
+}
+
+nav, .navbar {
+  font-family: var(--navbar-font-family);
+  font-weight: 400;
+}
+
+.toc {
+  font-family: var(--toc-font-family);
+  font-size: 0.9em;
+  font-weight: 300;
+}
+
+footer {
+  font-family: var(--footer-font-family);
+  font-size: 0.8em;
+}
+
+code, pre {
+  font-family: var(--font-family-monospace);
+  font-size: 0.9em;
+}
+
+/* Optional fine-tuning for Japanese text */
+html[lang="ja"] body {
+  font-family: var(--font-family-jp);
+}
