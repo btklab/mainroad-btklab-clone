@@ -96,7 +96,7 @@
 			</a>
 		</li>
 		<li class="menu__item">
-			<a class="menu__link" href="../../../ja/contact/index.html">
+			<a class="menu__link" href="https://contact.btklab.com/">
 				
 				<span class="menu__text">お問い合わせ</span>
 				
@@ -239,7 +239,7 @@
 <li>インストール完了</li>
 </ol>
 <p>↓ インストール後のディレクトリ構造（例）</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>home
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>home
 </span></span><span style="display:flex;"><span>└─cms
 </span></span><span style="display:flex;"><span>  ├─bin
 </span></span><span style="display:flex;"><span>  │  └─pwsh-sketches  &lt;-- GitHubからクローンしたリポジトリ
@@ -251,7 +251,7 @@
 </blockquote>
 <p>クローンしたリポジトリに移動してファイルとフォルダが格納されていることを確認する。
 まずクローンしたリポジトリに移動する。<code>cd</code>か<code>pushd</code>コマンドを使う：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>pushd ~/cms/bin/pwsh-sketches
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>pushd ~/cms/bin/pwsh-sketches
 </span></span></code></pre></div><p>ちなみにパスの入力は<strong>TAB補完</strong>を使うと素早く正確に行える。
 複数候補がある場合は<kbd>TAB</kbd>, <kbd>TAB</kbd>, &hellip;で候補が順次表示される：</p>
 <ul>
@@ -260,10 +260,10 @@
 <li><code>~/cms/bin/pw</code><kbd>&lt;TAB&gt;</kbd>を押すと残りが補完される</li>
 </ul>
 <p>次に、<code>ls</code>コマンドでリポジトリのファイルやフォルダが正しくクローンされているかをみる：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e">## at ~/cms/bin/pwsh-sketches</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e">## at ~/cms/bin/pwsh-sketches</span>
 </span></span><span style="display:flex;"><span>ls
 </span></span></code></pre></div><p>出力：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>    Directory<span style="color:#960050;background-color:#1e0010">:</span> C:/Users/btklab/cms/bin/pwsh-sketches
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>    Directory<span style="color:#960050;background-color:#1e0010">:</span> C:/Users/btklab/cms/bin/pwsh-sketches
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>Mode         LastWriteTime  Length Name
 </span></span><span style="display:flex;"><span>----         -------------  ------ ----
@@ -281,7 +281,7 @@
 </span></span><span style="display:flex;"><span>-a---  <span style="color:#ae81ff">2025</span>/<span style="color:#ae81ff">03</span>/<span style="color:#ae81ff">02</span>    <span style="color:#ae81ff">22</span><span style="color:#960050;background-color:#1e0010">:</span><span style="color:#ae81ff">49</span>    <span style="color:#ae81ff">7580</span> operator.ps1
 </span></span><span style="display:flex;"><span>-a---  <span style="color:#ae81ff">2025</span>/<span style="color:#ae81ff">03</span>/<span style="color:#ae81ff">02</span>    <span style="color:#ae81ff">22</span><span style="color:#960050;background-color:#1e0010">:</span><span style="color:#ae81ff">50</span>  <span style="color:#ae81ff">387678</span> README.md
 </span></span></code></pre></div><p>もとのディレクトリに戻る</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>popd
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>popd
 </span></span></code></pre></div><p>ためしにひとつコマンドを実行してみる。
 その前に注意点：</p>
 <ul>
@@ -310,13 +310,13 @@
 <li>ぼくはPowerShellを他のプログラミング言語との<strong>グルー言語</strong>（糊付け言語）として用いているので、どの文字コードを使うかは使用する言語すべてで明示して統一するようにしている</li>
 <li>ただし、もし君が使用しているPowerShellがWindows PowerShell (PowerShell 5)である場合、この操作は必要</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e"># リポジトリに移動する</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e"># リポジトリに移動する</span>
 </span></span><span style="display:flex;"><span>pushd ~/cms/bin/pwsh-sketches
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># 文字コードをUTF-8に変更するソースをドットで読み込む</span>
 </span></span><span style="display:flex;"><span>. ./operator-minimum.ps1
 </span></span></code></pre></div><p><code>operator-minimum.ps1</code>の中身は以下のとおり：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e"># for windows only</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e"># for windows only</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> ($IsWindows){
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">## set encode to utf8</span>
 </span></span><span style="display:flex;"><span>    chcp <span style="color:#ae81ff">65001</span>
@@ -337,17 +337,17 @@
 </ul>
 <p>試しにやってみよう。以下は、<a href="https://github.com/btklab/pwsh-sketches/blob/main/src/grep_function.ps1" target="_blank">grep</a>
 というコマンドをドットソースで読み込む例：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e">## Case.1 pwsh-sketchesのルートディレクトリから実行する場合</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e">## Case.1 pwsh-sketchesのルートディレクトリから実行する場合</span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">## 注意：ファイル名の前にドット（.）と空白がある！</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">## at ~/cms/bin/pwsh-sketches</span>
 </span></span><span style="display:flex;"><span>. ./src/grep_function.ps1
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e">## Case.2 他のディレクトリから実行する場合</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e">## Case.2 他のディレクトリから実行する場合</span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">## 注意：ファイル名の前にドット（.）と空白がある！</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">## at ~</span>
 </span></span><span style="display:flex;"><span>. ~/cms/bin/pwsh-sketches/src/grep_function.ps1
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e">## Case.3 作業ディレクトリ&#34;drafts&#34;から実行する場合</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e">## Case.3 作業ディレクトリ&#34;drafts&#34;から実行する場合</span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">## 相対パスで指定する</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">## at ~/cms/drafts</span>
@@ -357,7 +357,7 @@
 <li>from <a href="../think-environment-directory-structure/index.html">作成：作業ディレクトリ</a>
 </li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>home
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>home
 </span></span><span style="display:flex;"><span>└─cms
 </span></span><span style="display:flex;"><span>  ├─bin
 </span></span><span style="display:flex;"><span>  │  └─pwsh-sketches &lt;-- Repository cloned from GitHub
@@ -369,43 +369,43 @@
 </span></span></code></pre></div><p><code>grep</code>コマンドは、パイプラインを通ってきた「テキスト」（テキストオブジェクト）の各行に対して、指定したパターン（正規表現）にマッチする行のみを返すフィルタコマンド。簡単にいうと、<code>grep</code>は「テキストの中から特定の文字列を検索する」コマンドである。</p>
 <p>早速使ってみよう。まず<code>grep</code>コマンドへの入力として、<code>22</code>から<code>26</code>までの数字を列挙する（参考:<a href="https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_operators#range-operator-" target="_blank">Microsoft.Learn &ndash; 範囲演算子 <code>..</code> from <code>about_Operators</code></a>
 ）：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#ae81ff">22</span>.<span style="color:#ae81ff">.26</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#ae81ff">22</span>.<span style="color:#ae81ff">.26</span>
 </span></span></code></pre></div><p>出力：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#ae81ff">22</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#ae81ff">22</span>
 </span></span><span style="display:flex;"><span><span style="color:#ae81ff">23</span>
 </span></span><span style="display:flex;"><span><span style="color:#ae81ff">24</span>
 </span></span><span style="display:flex;"><span><span style="color:#ae81ff">25</span>
 </span></span><span style="display:flex;"><span><span style="color:#ae81ff">26</span>
 </span></span></code></pre></div><p>この出力をパイプライン（<code>|</code>）を用いて<code>grep</code>コマンドに渡す：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#ae81ff">22</span>.<span style="color:#ae81ff">.26</span> | grep <span style="color:#ae81ff">3</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#ae81ff">22</span>.<span style="color:#ae81ff">.26</span> | grep <span style="color:#ae81ff">3</span>
 </span></span></code></pre></div><p>出力。<code>3</code>を含む行のみが出力される：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#ae81ff">23</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#ae81ff">23</span>
 </span></span></code></pre></div><blockquote>
 <p><strong>Key point</strong>: <code>pwsh-sketches</code>における<code>grep</code>関数は、PowerShellコマンドレット&rdquo;<a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/select-string" target="_blank">Select-String</a>
 &ldquo;のラッパーコマンド。オプションの挙動はLinuxにおける&rdquo;<a href="https://www.gnu.org/software/grep/" target="_blank">grep</a>
 &ldquo;コマンドを元にしたもの。</p>
 </blockquote>
 <p>なお、<code>grep</code>コマンドのヘルプは以下のように取得する：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>Get-Help grep
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>Get-Help grep
 </span></span></code></pre></div><p><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/get-help" target="_blank">Get-Help</a>
 コマンドの別名<code>man</code>を用いてもよい：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>man grep
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>man grep
 </span></span></code></pre></div><h2 id="install-bulk">インストール：一括</h2>
 <blockquote>
 <p><strong>Key point</strong>: 一括インストールすれば、すべての関数をいちどに読み込める。個別の関数名を意識する必要はなくなるが、最小インストールよりも読み込みに時間がかかる。</p>
 </blockquote>
 <p><code>pwsh-sketches</code>の関数ファイルは、前セクションのようにひとつずつ読み込んでもよいが、<strong>一度にぜんぶ読み込む</strong>こともできる。以下は、<code>pwsh-sketches</code>の関数ファイルをリポジトリのルートにある<code>operator.ps1</code>を用いて一度に読み込む例である。このケースも、読み込んだ関数群は現在のセッションを閉じる（＝ウィンドウを閉じる、<code>exit</code>コマンドを実行する、新規のセッションを開始する）などで初期化される。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e">## Case.1 pwsh-sketchesのルートディレクトリから実行する場合</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e">## Case.1 pwsh-sketchesのルートディレクトリから実行する場合</span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">## 注意：ファイル名の前にドット（.）と空白がある！</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">## at ~/cms/bin/pwsh-sketches</span>
 </span></span><span style="display:flex;"><span>. ./operator.ps1
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e">## Case.2 他のディレクトリから実行する場合</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e">## Case.2 他のディレクトリから実行する場合</span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">## 注意：ファイル名の前にドット（.）と空白がある！</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">## at ~</span>
 </span></span><span style="display:flex;"><span>. ~/cms/bin/pwsh-sketches/operator.ps1
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e">## Case.3 作業ディレクトリ&#34;drafts&#34;から実行する場合</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e">## Case.3 作業ディレクトリ&#34;drafts&#34;から実行する場合</span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">## 相対パスで指定する</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">## at ~/cms/drafts</span>
@@ -415,7 +415,7 @@
 <li>from <a href="../think-environment-directory-structure/index.html">作成：作業ディレクトリ</a>
 </li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>home
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>home
 </span></span><span style="display:flex;"><span>└─cms
 </span></span><span style="display:flex;"><span>  ├─bin
 </span></span><span style="display:flex;"><span>  │  └─pwsh-sketches  &lt;-- Repository cloned from GitHub
@@ -425,9 +425,9 @@
 </span></span><span style="display:flex;"><span>     └─here_you_are
 </span></span></code></pre></div><p><strong>Note</strong>：<code>pwsh-sketches</code>の関数の中には別名（エイリアス）が設定されているものもある。<code>operator.ps1</code>を読み込むと、そのエイリアスも同時に読み込まれるのだが、もしすでに同名のエイリアスが存在している場合、<code>operator.ps1</code>の読み込み途中にエラーメッセージが表示される。その場合は、<code>pwsh-sketches</code>の関数ファイルを特定しエイリアスの名前を変更するか、エイリアスを削除するなどの対応が必要である。</p>
 <p><code>pwsh-sketches</code>のインストールを確認する。<code>pwsh-sketches</code>で読み込んだ関数をリストアップするコマンド<code>man2</code>を実行してみる：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>man2
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>man2
 </span></span></code></pre></div><p>出力：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>Add-ForEach              Get-Last              Unique-Object  getfirst    pwsync
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>Add-ForEach              Get-Last              Unique-Object  getfirst    pwsync
 </span></span><span style="display:flex;"><span>Add-ID                   Get-OGP               Unzip-Archive  getlast     retu
 </span></span><span style="display:flex;"><span>Add-LineBreakEndOfFile   Get-Ticket            addb           grep        rev2
 </span></span><span style="display:flex;"><span>Add-LineBreak            GetValueFrom-Key      addl           gyo         rev

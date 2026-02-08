@@ -95,7 +95,7 @@
 			</a>
 		</li>
 		<li class="menu__item">
-			<a class="menu__link" href="../../../ja/contact/index.html">
+			<a class="menu__link" href="https://contact.btklab.com/">
 				
 				<span class="menu__text">お問い合わせ</span>
 				
@@ -189,25 +189,25 @@
 <li>「管理者として実行」をクリック</li>
 </ol>
 <p>最新バージョンの確認：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>winget search --id Graphviz.Graphviz -e
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>Name     Id                Version Source
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>winget search --id Graphviz.Graphviz -e
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>Name     Id                Version Source
 </span></span><span style="display:flex;"><span>------------------------------------------
 </span></span><span style="display:flex;"><span>Graphviz Graphviz.Graphviz 12.2.1  winget
 </span></span></code></pre></div><p><a href="https://graphviz.org/" target="_blank">Graphviz</a>
 のインストール。確認した<code>ID</code>と<code>ソース</code>を以下のように指定する：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>winget install --id Graphviz.Graphviz --source winget -e
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>winget install --id Graphviz.Graphviz --source winget -e
 </span></span></code></pre></div><p>システム環境変数に以下のパスを通す。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span><span style="color:#e6db74">&#34;C:\Program Files\Graphviz\bin&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span><span style="color:#e6db74">&#34;C:\Program Files\Graphviz\bin&#34;</span>
 </span></span></code></pre></div><p>検証。PowerShellをいったん閉じ、<strong>管理者権限</strong>で再起動する。
 以下のコマンドでシステム環境変数にパスがとおっていることを確認する：</p>
 <h2 id="verification">検証</h2>
 <p>PowerShellをいったん閉じ、<strong>管理者権限</strong>で再起動する。
 以下のコマンドでインストールを検証する。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>dot -V
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>dot -V
 </span></span></code></pre></div><p>出力</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>dot - graphviz version 12.2.1 (20241206.2353)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>dot - graphviz version 12.2.1 (20241206.2353)
 </span></span></code></pre></div><p>続いて、以下のコマンドでプラグインを設定する（利用可能なプラグイン情報を<code>$prefix/lib/graphviz/config</code>に書き込む）。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>dot -c
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>dot -c
 </span></span></code></pre></div><p>インストール完了。以降はユーザ権限のPowerShell上で<code>dot</code>コマンドが使用できる。</p>
 <h2 id="サンプルコード">サンプルコード</h2>
 <p>基本的なグラフ（ネットワーク図）を生成して視覚化してみる。</p>
@@ -235,7 +235,7 @@
 によるノード（グラフの要素）レイアウトの自動計算を体感してもらうために、頭の中だけでは想像しにくい、少し複雑な関係性にした。</p>
 <h3 id="2-dotコマンドを用いたグラフの生成">2. dotコマンドを用いたグラフの生成</h3>
 <p>次に、<code>dot</code>コマンドでグラフを生成する。ユーザ権限でPowerShellを開き、以下を実行：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>dot -Tpng -O a.dot
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>dot -Tpng -O a.dot
 </span></span></code></pre></div><p>このコマンドは<code>a.dot</code>を入力として、PNG形式の画像ファイル（<code>a.dot.png</code>）を生成する。</p>
 <h3 id="3-生成されたグラフの確認">3. 生成されたグラフの確認</h3>
 <p>実行後、生成された<code>a.dot.png</code>ファイルを開いてグラフが正しく描画されていることを確認する。</p>

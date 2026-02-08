@@ -96,7 +96,7 @@
 			</a>
 		</li>
 		<li class="menu__item">
-			<a class="menu__link" href="../../../en/contact/index.html">
+			<a class="menu__link" href="https://contact.btklab.com/">
 				
 				<span class="menu__text">Contact</span>
 				
@@ -276,34 +276,34 @@
  (Alias: <code>gitbash</code>)&rdquo; in practice.
 The basic usage is to follow <code>Invoke-GitBash</code> with the Git Bash command you want to execute (like a subcommand) and its arguments.</p>
 <p><strong>Example 1: Displaying a file list with the <code>ls</code> command</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>Invoke-GitBash ls -la
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>Invoke-GitBash ls -la
 </span></span></code></pre></div><p>This yields the same result as running <code>ls</code> in Git Bash.
 You can also use the alias, as shown below. I&rsquo;ll use the alias for the rest of the examples.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>gitbash ls -la
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>gitbash ls -la
 </span></span></code></pre></div><p><strong>Example 2: Displaying file differences with the <code>diff</code> command</strong></p>
 <p>Create <code>file1.txt</code> and <code>file2.txt</code>.</p>
 <p><code>file1.txt</code>:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>line 1
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>line 1
 </span></span><span style="display:flex;"><span>line 2
 </span></span><span style="display:flex;"><span>line 3
 </span></span></code></pre></div><p><code>file2.txt</code>:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>line 1
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>line 1
 </span></span><span style="display:flex;"><span>line A
 </span></span><span style="display:flex;"><span>line 3
 </span></span><span style="display:flex;"><span>line 4
 </span></span></code></pre></div><p>Display the differences with the following command:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>gitbash diff file1.txt file2.txt
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>gitbash diff file1.txt file2.txt
 </span></span></code></pre></div><p>Output:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>2c2
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>2c2
 </span></span><span style="display:flex;"><span>&lt; line 2
 </span></span><span style="display:flex;"><span>---
 </span></span><span style="display:flex;"><span>&gt; line A
 </span></span><span style="display:flex;"><span>3a4
 </span></span><span style="display:flex;"><span>&gt; line 4
 </span></span></code></pre></div><p>You can also specify arguments. For example, to display differences with the <code>-u</code> option, do the following:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>gitbash diff file1.txt file2.txt -u
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>gitbash diff file1.txt file2.txt -u
 </span></span></code></pre></div><p>Output:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>--- file1.txt       2025-06-16 05:49:10.790945100 +0900
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>--- file1.txt       2025-06-16 05:49:10.790945100 +0900
 </span></span><span style="display:flex;"><span>+++ file2.txt       2025-06-16 05:49:19.351187500 +0900
 </span></span><span style="display:flex;"><span>@@ -1,3 +1,4 @@
 </span></span><span style="display:flex;"><span> line 1
@@ -312,13 +312,13 @@ You can also use the alias, as shown below. I&rsquo;ll use the alias for the res
 </span></span><span style="display:flex;"><span> line 3
 </span></span><span style="display:flex;"><span>+line 4
 </span></span></code></pre></div><p>However, be aware that Git Bash command arguments can sometimes conflict with PowerShell arguments.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>gitbash diff file1.txt file2.txt -p
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>gitbash diff file1.txt file2.txt -p
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>Invoke-GitBash<span style="color:#960050;background-color:#1e0010">:</span> Parameter cannot be processed because the parameter name <span style="color:#e6db74">&#39;p&#39;</span> is ambiguous. Possible matches include<span style="color:#960050;background-color:#1e0010">:</span> -ProgressAction -PipelineVariable.
 </span></span></code></pre></div><p>In this case, you need to enclose the arguments in double quotes to avoid conflict with PowerShell arguments.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>gitbash diff file1.txt file2.txt <span style="color:#e6db74">&#34;-p&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>gitbash diff file1.txt file2.txt <span style="color:#e6db74">&#34;-p&#34;</span>
 </span></span></code></pre></div><p>Output:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>*** file1.txt       Mon Jun 16 05:49:10 2025
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>*** file1.txt       Mon Jun 16 05:49:10 2025
 </span></span><span style="display:flex;"><span>--- file2.txt       Mon Jun 16 05:49:19 2025
 </span></span><span style="display:flex;"><span>***************
 </span></span><span style="display:flex;"><span>*** 1,3 ****
@@ -333,71 +333,71 @@ You can also use the alias, as shown below. I&rsquo;ll use the alias for the res
 </span></span></code></pre></div><p><strong>Example 3: Searching for strings with the <code>grep</code> command</strong></p>
 <p>Create a file named <code>a.txt</code> with the following content:</p>
 <p><code>a.txt</code>:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>apple
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>apple
 </span></span><span style="display:flex;"><span>banana
 </span></span><span style="display:flex;"><span>cherry
 </span></span><span style="display:flex;"><span>apple pie
 </span></span></code></pre></div><p>Search for lines containing <code>apple</code>:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>gitbash grep apple a.txt
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>gitbash grep apple a.txt
 </span></span></code></pre></div><p>Output:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>apple
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>apple
 </span></span><span style="display:flex;"><span>apple pie
 </span></span></code></pre></div><p><strong>Example 4: Text replacement with the <code>sed</code> command</strong></p>
 <p>Replace &ldquo;hello&rdquo; with &ldquo;world&rdquo; in <code>a.txt</code> and display the result (note that the original file is not modified).</p>
 <p><code>a.txt</code>:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>hello world
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>hello world
 </span></span><span style="display:flex;"><span>hello powershell
 </span></span></code></pre></div><p>Execute the following command:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>gitbash sed <span style="color:#e6db74">&#39;s/hello/world/g&#39;</span> a.txt
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>gitbash sed <span style="color:#e6db74">&#39;s/hello/world/g&#39;</span> a.txt
 </span></span></code></pre></div><p>Output:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>world world
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>world world
 </span></span><span style="display:flex;"><span>world powershell
 </span></span></code></pre></div><p>You can also chain pipelines. The output is the same as above.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>gitbash cat a.txt | gitbash sed <span style="color:#e6db74">&#39;s;hello;world;&#39;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>gitbash cat a.txt | gitbash sed <span style="color:#e6db74">&#39;s;hello;world;&#39;</span>
 </span></span></code></pre></div><p>The output of PowerShell commands can also be passed via a pipeline.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>Get-Content a.txt | gitbash sed <span style="color:#e6db74">&#39;s;hello;world;&#39;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>Get-Content a.txt | gitbash sed <span style="color:#e6db74">&#39;s;hello;world;&#39;</span>
 </span></span></code></pre></div><p><strong>Example 5: Processing data with the <code>awk</code> command</strong></p>
 <p>Create a file named <code>data.txt</code> with the following content:</p>
 <p><code>data.txt</code>:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csv" data-lang="csv"><span style="display:flex;"><span><span style="color:#e6db74">Name</span>,<span style="color:#e6db74">Age</span>,<span style="color:#e6db74">City</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-csv" data-lang="csv"><span style="display:flex;"><span><span style="color:#e6db74">Name</span>,<span style="color:#e6db74">Age</span>,<span style="color:#e6db74">City</span>
 </span></span><span style="display:flex;"><span><span style="color:#e6db74">Alice</span>,<span style="color:#e6db74">30</span>,<span style="color:#e6db74">New York</span>
 </span></span><span style="display:flex;"><span><span style="color:#e6db74">Bob</span>,<span style="color:#e6db74">24</span>,<span style="color:#e6db74">London</span>
 </span></span><span style="display:flex;"><span><span style="color:#e6db74">Charlie</span>,<span style="color:#e6db74">35</span>,<span style="color:#e6db74">Paris</span>
 </span></span></code></pre></div><p>Let&rsquo;s display only the second column (Age) separated by commas.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>gitbash awk <span style="color:#f92672">-F</span>, <span style="color:#e6db74">&#39;{print $2}&#39;</span> data.txt
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>gitbash awk <span style="color:#f92672">-F</span>, <span style="color:#e6db74">&#39;{print $2}&#39;</span> data.txt
 </span></span></code></pre></div><p>Output:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>ParserError:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>ParserError:
 </span></span><span style="display:flex;"><span>Line |
 </span></span><span style="display:flex;"><span>   1 |  gitbash awk -F, &#39;{print $2}&#39; data.txt
 </span></span><span style="display:flex;"><span>     |              ~
 </span></span><span style="display:flex;"><span>     | Missing argument in parameter list.
 </span></span></code></pre></div><p>Oh, an error! The comma in the <code>-F,</code> argument conflicts with PowerShell&rsquo;s array separator. To avoid this, you need to enclose the argument in quotes. This isn&rsquo;t intuitive, but it&rsquo;s a known behavior you just have to accept.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>gitbash awk <span style="color:#e6db74">&#34;-F,&#34;</span> <span style="color:#e6db74">&#39;{print $2}&#39;</span> data.txt
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>gitbash awk <span style="color:#e6db74">&#34;-F,&#34;</span> <span style="color:#e6db74">&#39;{print $2}&#39;</span> data.txt
 </span></span></code></pre></div><p>Output:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>Age
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>Age
 </span></span><span style="display:flex;"><span>30
 </span></span><span style="display:flex;"><span>24
 </span></span><span style="display:flex;"><span>35
 </span></span></code></pre></div><p>Alternatively, you can convert the comma-separated data to space-separated data beforehand (for simple CSV data, at least). This way, it can be used much like the Linux <code>awk</code> command (apart from the slight inconvenience of typing <code>gitbash</code> every time).</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>Get-Content data.txt | gitbash sed <span style="color:#e6db74">&#39;s;,; ;g&#39;</span> | gitbash awk <span style="color:#e6db74">&#39;{print $2}&#39;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>Get-Content data.txt | gitbash sed <span style="color:#e6db74">&#39;s;,; ;g&#39;</span> | gitbash awk <span style="color:#e6db74">&#39;{print $2}&#39;</span>
 </span></span></code></pre></div><p>Output:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>Age
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>Age
 </span></span><span style="display:flex;"><span>30
 </span></span><span style="display:flex;"><span>24
 </span></span><span style="display:flex;"><span>35
 </span></span></code></pre></div><p><strong>Example 6: Displaying a binary dump with the <code>xxd</code> command</strong></p>
 <p>Dump any binary file (e.g., <code>image.jpg</code> or <code>test.bin</code>).</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>gitbash xxd your_binary_file.bin | Select-Object -First <span style="color:#ae81ff">10</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>gitbash xxd your_binary_file.bin | Select-Object -First <span style="color:#ae81ff">10</span>
 </span></span></code></pre></div><p><em><code>Select-Object -First 10</code> is a PowerShell command that displays only the first 10 lines to prevent excessive output.</em></p>
 <p><strong>Example 7: Identifying file types with the <code>file</code> command</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>gitbash file *.*
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>gitbash file *.*
 </span></span><span style="display:flex;"><span>gitbash file your_document.pdf
 </span></span><span style="display:flex;"><span>gitbash file your_script.sh
 </span></span></code></pre></div><p>By using <a href="https://github.com/btklab/pwsh-sketches/blob/main/src/Invoke-GitBash_function.ps1" target="_blank">Invoke-GitBash</a>
  (Alias: <code>gitbash</code>), you can seamlessly use the powerful GNU command set included with Git Bash directly from your PowerShell prompt. You can check the list of available commands by running <code>gitbash</code> alone or <code>gitbash show</code>. Here&rsquo;s the output from my environment:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>gitbash show
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>gitbash show
 </span></span></code></pre></div><p>Output:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>&#39;[.exe&#39;                      gpg-connect-agent.exe        rview.exe
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>&#39;[.exe&#39;                      gpg-connect-agent.exe        rview.exe
 </span></span><span style="display:flex;"><span> addgnupghome                gpg-error.exe                rvim.exe
 </span></span><span style="display:flex;"><span> applygnupgdefaults          gpg-wks-client.exe           scp.exe
 </span></span><span style="display:flex;"><span> arch.exe                    gpg-wks-server.exe           sdiff.exe

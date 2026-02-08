@@ -95,7 +95,7 @@
 			</a>
 		</li>
 		<li class="menu__item">
-			<a class="menu__link" href="../../../ja/contact/index.html">
+			<a class="menu__link" href="https://contact.btklab.com/">
 				
 				<span class="menu__text">お問い合わせ</span>
 				
@@ -286,22 +286,22 @@ Windowsのショートカットファイル（<code>.lnk</code>）について�
 」を実際に使ってみよう。
 まず最初にWebリンクを既定のブラウザで起動してみる。</p>
 <p>テキストファイル<code>btklab.txt</code>を作成し、以下の2行を記述する。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>https://btklab.com
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>https://btklab.com
 </span></span><span style="display:flex;"><span>https://github.com/btklab
 </span></span></code></pre></div><p>以下のコマンドで、テキストファイルに記載されたリンクを実行する。
 この場合はテキストの一番最初に書かれたリンク（<a href="https://btklab.com" target="_blank">https://btklab.com</a>
 ）のみ「既定のブラウザ」で開く。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>i btklab.txt
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>i btklab.txt
 </span></span></code></pre></div><p><code>-Doc</code>オプションで、2番目以降のリンク（<a href="https://github.com/btklab" target="_blank">https://github.com/btklab</a>
 ）を開く。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>i btklab.txt -Doc
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>i btklab.txt -Doc
 </span></span></code></pre></div><p><code>-All</code>(<code>-a</code>)オプションを指定した場合、「既定のブラウザ」でテキストファイルに書かれたすべてのリンクを開く。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>i btklab.txt -All
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>i btklab.txt -All
 </span></span></code></pre></div><p>Webリンクのほか、ファイルやディレクトリのフルパスも指定できる。ダブルクオートはあってもなくてもよい。
 テキストファイル<code>pub-documents.txt</code>を作成し、以下のように記述する。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>&#34;C:/Users/Public/Documents&#34;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>&#34;C:/Users/Public/Documents&#34;
 </span></span></code></pre></div><p>以下のコマンドで、パスに指定したディレクトリがエクスプローラーで開く。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>i pub-documents.txt
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>i pub-documents.txt
 </span></span></code></pre></div><p>起動するアプリは、Webリンクの場合は「<strong>既定のブラウザ</strong>」、ディレクトリの場合は「<strong>エクスプローラ</strong>」、ファイルの場合は拡張子に応じた「<strong>既定のアプリ</strong>」である。他、引数にWindowsショートカットファイル（<code>.lnk</code>ファイル）を指定した場合は、ショートカットファイルを起動する。これにより、リンク集フォルダにテキストファイルリンクとWindowsのショートカットファイルを混在させても、統一的に<a href="https://github.com/btklab/pwsh-sketches/blob/main/src/Invoke-Link_function.ps1" target="_blank">Invoke-Link</a>
 コマンドで起動できる。</p>
 <h3 id="looking-back">4. ふりかえり</h3>
