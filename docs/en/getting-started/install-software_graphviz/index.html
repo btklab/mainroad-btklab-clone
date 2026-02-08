@@ -95,7 +95,7 @@
 			</a>
 		</li>
 		<li class="menu__item">
-			<a class="menu__link" href="../../../en/contact/index.html">
+			<a class="menu__link" href="https://contact.btklab.com/">
 				
 				<span class="menu__text">Contact</span>
 				
@@ -190,22 +190,22 @@
 </ol>
 <p>Verify the latest version of <a href="https://graphviz.org/" target="_blank">Graphviz</a>
 :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>winget search --id Graphviz.Graphviz -e
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>Name     Id                Version Source
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>winget search --id Graphviz.Graphviz -e
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>Name     Id                Version Source
 </span></span><span style="display:flex;"><span>------------------------------------------
 </span></span><span style="display:flex;"><span>Graphviz Graphviz.Graphviz 12.2.1  winget
 </span></span></code></pre></div><p>Install <a href="https://graphviz.org/" target="_blank">Graphviz</a>
 . Specify the verified <code>ID</code> and <code>Source</code> as follows:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>winget install --id Graphviz.Graphviz --source winget -e
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>winget install --id Graphviz.Graphviz --source winget -e
 </span></span></code></pre></div><p>Add the following path to <strong>the system environment variables PATH</strong>:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span><span style="color:#e6db74">&#34;C:\Program Files\Graphviz\bin&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span><span style="color:#e6db74">&#34;C:\Program Files\Graphviz\bin&#34;</span>
 </span></span></code></pre></div><h2 id="verification">Verification</h2>
 <p>Close PowerShell and restart it <strong>with administrator privileges</strong>. Verify the installation with the following command:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>dot -V
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>dot -V
 </span></span></code></pre></div><p>Output:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>dot - graphviz version 12.2.1 (20241206.2353)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>dot - graphviz version 12.2.1 (20241206.2353)
 </span></span></code></pre></div><p>Next, configure the plugins by running the following command (writes plugin information to <code>$prefix/lib/graphviz/config</code>):</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>dot -c
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>dot -c
 </span></span></code></pre></div><p>Installation complete. Now you can use the <code>dot</code> command in PowerShell with <strong>user privileges</strong>.</p>
 <h2 id="sample-code">Sample Code</h2>
 <p>Generate and visualize a basic graph (network diagram).</p>
@@ -233,7 +233,7 @@
  automatically calculates the layout of nodes (graph elements), the relationships have been designed to be just complex enough that they&rsquo;re hard to visualize solely in your head.</p>
 <h3 id="2-generate-the-graph-using-the-dot-command">2. Generate the Graph Using the <code>dot</code> Command</h3>
 <p>Next, open PowerShell with user privileges and execute the following command:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>dot -Tpng -O a.dot
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>dot -Tpng -O a.dot
 </span></span></code></pre></div><p>This command takes <code>a.dot</code> as input and generates a PNG format image file (<code>a.dot.png</code>).</p>
 <h3 id="3-verify-the-output">3. Verify the Output</h3>
 <p>After execution, open the generated <code>a.dot.png</code> file to confirm that the graph is correctly rendered.</p>

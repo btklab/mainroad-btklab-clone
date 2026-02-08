@@ -94,7 +94,7 @@
 			</a>
 		</li>
 		<li class="menu__item">
-			<a class="menu__link" href="../../../ja/contact/index.html">
+			<a class="menu__link" href="https://contact.btklab.com/">
 				
 				<span class="menu__text">お問い合わせ</span>
 				
@@ -188,8 +188,8 @@
 <li>「管理者として実行」をクリック</li>
 </ol>
 <p>最新バージョンの確認：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>winget search Python.Python.3
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>Name        Id                 Version Source
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>winget search Python.Python.3
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>Name        Id                 Version Source
 </span></span><span style="display:flex;"><span>----------------------------------------------
 </span></span><span style="display:flex;"><span>Python 3.0  Python.Python.3.0  3.0.1   winget
 </span></span><span style="display:flex;"><span>Python 3.1  Python.Python.3.1  3.1.4   winget
@@ -199,7 +199,7 @@
 </span></span><span style="display:flex;"><span>Python 3.13 Python.Python.3.13 3.13.2  winget
 </span></span><span style="display:flex;"><span>...
 </span></span></code></pre></div><p>インストール。確認した<code>ID</code>と<code>ソース</code>を以下のように指定する：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>winget install --id Python.Python.3.12 --source winget -e
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>winget install --id Python.Python.3.12 --source winget -e
 </span></span></code></pre></div><h2 id="verification">確認</h2>
 <h3 id="パスの確認">パスの確認</h3>
 <p>以下の手順で「ユーザ環境変数」に<a href="https://www.python.org/" target="_blank">Python</a>
@@ -224,7 +224,7 @@
 </ul>
 </li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>C:\Users\btklab\AppData\Local\Programs\Python\Python312\Scripts\
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>C:\Users\btklab\AppData\Local\Programs\Python\Python312\Scripts\
 </span></span><span style="display:flex;"><span>C:\Users\btklab\AppData\Local\Programs\Python\Python312\
 </span></span><span style="display:flex;"><span>C:\Users\btklab\AppData\Local\Programs\Python\Launcher\
 </span></span></code></pre></div>
@@ -245,11 +245,11 @@
 <li>シェルをいったん閉じて、再度開く</li>
 <li>シェルで<code>python --version</code>と入力する</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>python --version
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>python --version
 </span></span></code></pre></div><p>Output:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>Python 3.12.9
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>Python 3.12.9
 </span></span></code></pre></div><p>以下は失敗例。原因としては、<code>Python</code>のダウンロードが失敗した、パスが通っていない、などが考えられる：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings &gt; Manage App Execution Aliases.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings &gt; Manage App Execution Aliases.
 </span></span></code></pre></div><h2 id="terms">用語</h2>
 
 <figure style="float:right; margin:1em 1em 0 1em;" >
