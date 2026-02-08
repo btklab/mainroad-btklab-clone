@@ -22,6 +22,11 @@
     <meta property="article:tag" content="Name/Linux">
     <meta property="article:tag" content="Verb/Launch">
 
+		
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Launch-Software &#34;Windows上でLinuxコマンドを実行する&#34;">
+  <meta name="twitter:description" content="PowerShellからGit Bashコマンドを直接実行する">
+
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -45,7 +50,7 @@
 					<img class="logo__img" src="../../../img/logo_an_owl_hood_boy.png">
 				</div><div class="logo__item logo__text">
 					<div class="logo__title">BtkLab&#39;s PowerShell Notes</div>
-					<div class="logo__tagline">Data in Motion: Crafting Tasks with Pipeline</div>
+					<div class="logo__tagline">Data in Motion: Crafting Tasks with Pipeline 🚀</div>
 				</div>
 		</a>
 	</div>
@@ -164,7 +169,8 @@
 			<h2 id="intro">はじめに</h2>
 <blockquote>
 <p><strong>Summary</strong>: PowerShell上でGit Bashのコマンド群（<code>diff</code>, <code>sed</code>, <code>grep</code>, <code>awk</code>, <code>xxd</code>, <code>file</code>など）を実行するためのPowerShellスクリプト「<a href="https://github.com/btklab/pwsh-sketches/blob/main/src/Invoke-GitBash_function.ps1" target="_blank">Invoke-GitBash</a>
-」(Alias: <code>gitbash</code>)を紹介する。Windows環境でLinuxコマンドを気軽に利用したい、というニーズに応えてくれるだろう。</p></blockquote>
+」(Alias: <code>gitbash</code>)を紹介する。Windows環境でLinuxコマンドを気軽に利用したい、というニーズに応えてくれるだろう。</p>
+</blockquote>
 <p>Windows環境で開発や作業をしていると、時としてLinux系のコマンドを使いたくなること、ないだろうか？　ぼくはある。Linux系のコマンドとはたとえば、テキスト処理に便利な<code>sed</code>や<code>grep</code>、ファイルの差分比較に重宝する<code>diff</code>、データ加工に強力な<code>awk</code>などだ。これら日々の業務でよく使うコマンドはどれも、単機能でシンプルなデザインである一方、自前でPowerShellスクリプトとして実装するには案外複雑で、手間がかかる。というか、（ぼくには）無理だ。</p>
 <p>Windows環境でLinux系のコマンドを使う方法はいくつかある。今回は、Git for Windowsをインストールした際に同梱されるLinuxコマンド群を用いることにした。要件はシンプルだ。まずPowerShellからシェルを切り替えることなくGit Bashのコマンドを直接実行できるようにすること。それから、パイプラインからの入出力を経由してPowerShellの強力な機能とGit Bashのコマンドを組み合わせて使えるようにすることの2点だ。</p>
 <p>以上が、PowerShellスクリプト「<a href="https://github.com/btklab/pwsh-sketches/blob/main/src/Invoke-GitBash_function.ps1" target="_blank">Invoke-GitBash</a>
@@ -812,7 +818,7 @@
 	<div class="container footer__container flex">
 		
 		<div class="footer__copyright">
-			&copy; 2025 BtkLab&#39;s PowerShell Notes.
+			&copy; 2026 BtkLab&#39;s PowerShell Notes.
 			<span class="footer__copyright-credits">このサイトは <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> と <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> テーマ、それから、 <a href="https://posit.co/downloads/" rel="nofollow noopener" target="_blank">RStudio IDE</a> と <a href="https://pkgs.rstudio.com/blogdown/" rel="nofollow noopener" target="_blank">blogdown</a> パッケージ を用いて生成されています。</span>
 		</div>
 	</div>

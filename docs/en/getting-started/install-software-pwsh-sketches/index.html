@@ -22,6 +22,11 @@
     <meta property="article:tag" content="Name/Git">
     <meta property="article:tag" content="Name/GitHub">
 
+		
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Install-Software &#34;pwsh-sketches&#34;">
+  <meta name="twitter:description" content="Install the &#34;pwsh-sketches&#34;, my PowerShell scripts via GitHub.">
+
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -45,7 +50,7 @@
 					<img class="logo__img" src="../../../img/logo_an_owl_hood_boy.png">
 				</div><div class="logo__item logo__text">
 					<div class="logo__title">BtkLab&#39;s PowerShell Notes</div>
-					<div class="logo__tagline">Data in Motion: Crafting Tasks with Pipeline</div>
+					<div class="logo__tagline">Data in Motion: Crafting Tasks with Pipeline 🚀</div>
 				</div>
 		</a>
 	</div>
@@ -174,7 +179,8 @@
  and can be installed on your PC using the version control system <a href="https://git-scm.com/" target="_blank">Git</a>
 .</p>
 <blockquote>
-<p><strong>Key point</strong>: One of the interesting things about the shell is that you can easily craft useful tools tailored to your own work and level.</p></blockquote>
+<p><strong>Key point</strong>: One of the interesting things about the shell is that you can easily craft useful tools tailored to your own work and level.</p>
+</blockquote>
 <h2 id="disclaimer">Disclaimer</h2>
 <p>&ldquo;<a href="https://github.com/btklab/pwsh-sketches" target="_blank">pwsh-sketches</a>
 &rdquo; is an experimental set of PowerShell scripts for prototyping and exploring ideas. Note that while those scripts have been tested by the author to work, they are not intended for production use and may be unstable or incomplete.</p>
@@ -191,7 +197,8 @@
 <li>btklab/pwsh-sketches: <a href="https://github.com/btklab/pwsh-sketches" target="_blank">https://github.com/btklab/pwsh-sketches</a>
 </li>
 </ul>
-<footer>-- <cite>Example of a copyright notice for "The MIT License"</cite></footer></blockquote>
+<footer>-- <cite>Example of a copyright notice for "The MIT License"</cite></footer>
+</blockquote>
 <h2 id="prerequisites">Prerequisites</h2>
 <ul>
 <li>✓ <a href="../install-software-powershell/index.html">Install PowerShell</a>
@@ -240,7 +247,8 @@
 </span></span><span style="display:flex;"><span>  └─drafts
 </span></span></code></pre></div><h2 id="install-minimum">Installation: Minimum</h2>
 <blockquote>
-<p><strong>Key point</strong>: With minimal installation, you can load only the functions you want (via <strong>dot-source</strong>).</p></blockquote>
+<p><strong>Key point</strong>: With minimal installation, you can load only the functions you want (via <strong>dot-source</strong>).</p>
+</blockquote>
 <p>Move into the cloned repository and ensure that the files and folders are in place.
 First, Move into the cloned repository using the <code>cd</code> or <code>pushd</code> command:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e"># Move into the cloned repository</span>
@@ -376,7 +384,8 @@ Before that, some points to note:</p>
 </span></span></code></pre></div><blockquote>
 <p><strong>Key point</strong>: The <code>grep</code> function in <code>pwsh-sketches</code> is a wrapper command for the PowerShell cmdlet &ldquo;<a href="https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/select-string" target="_blank">Select-String</a>
 &rdquo;. The behavior of its options is based on the Linux &ldquo;<a href="https://www.gnu.org/software/grep/" target="_blank">grep</a>
-&rdquo; command.</p></blockquote>
+&rdquo; command.</p>
+</blockquote>
 <p>You can get help for the <code>grep</code> command as follows:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>Get-Help grep
 </span></span></code></pre></div><p>You can also use the alias <code>man</code> for the <a href="https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/get-help" target="_blank">Get-Help</a>
@@ -384,7 +393,8 @@ Before that, some points to note:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>man grep
 </span></span></code></pre></div><h2 id="install-bulk">Installation: Bulk</h2>
 <blockquote>
-<p><strong>Key point</strong>: Bulk installation loads all functions <strong>at once</strong>, eliminating the need to be aware of individual function names, but it takes longer to load than minimal installation.</p></blockquote>
+<p><strong>Key point</strong>: Bulk installation loads all functions <strong>at once</strong>, eliminating the need to be aware of individual function names, but it takes longer to load than minimal installation.</p>
+</blockquote>
 <p>Function files in <code>pwsh-sketches</code> can be loaded all at once. The following is an example of loading <code>pwsh-sketches</code> function files all at once using <code>operator.ps1</code> in the repository root. Again, the loaded functions are initialized by closing the current session (i.e. closing a window, executing an <code>exit</code> command, starting a new session, etc.).</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e">## Case.1 Running from the Root Directory of pwsh-sketches</span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">## Note: There is a dot (.) and a space before the file name!</span>
@@ -756,7 +766,7 @@ Before that, some points to note:</p>
 	<div class="container footer__container flex">
 		
 		<div class="footer__copyright">
-			&copy; 2025 BtkLab&#39;s PowerShell Notes.
+			&copy; 2026 BtkLab&#39;s PowerShell Notes.
 			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme, <a href="https://posit.co/downloads/" rel="nofollow noopener" target="_blank">RStudio IDE</a> and <a href="https://pkgs.rstudio.com/blogdown/" rel="nofollow noopener" target="_blank">blogdown</a> package.</span>
 		</div>
 	</div>
