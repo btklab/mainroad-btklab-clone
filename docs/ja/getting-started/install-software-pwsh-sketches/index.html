@@ -22,6 +22,11 @@
     <meta property="article:tag" content="Name/Git">
     <meta property="article:tag" content="Name/GitHub">
 
+		
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Install-Software &#34;pwsh-sketches&#34;">
+  <meta name="twitter:description" content="自家製スクリプト&#34;pwsh-sketches&#34;をGitHub経由でインストール。">
+
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -45,7 +50,7 @@
 					<img class="logo__img" src="../../../img/logo_an_owl_hood_boy.png">
 				</div><div class="logo__item logo__text">
 					<div class="logo__title">BtkLab&#39;s PowerShell Notes</div>
-					<div class="logo__tagline">Data in Motion: Crafting Tasks with Pipeline</div>
+					<div class="logo__tagline">Data in Motion: Crafting Tasks with Pipeline 🚀</div>
 				</div>
 		</a>
 	</div>
@@ -174,7 +179,8 @@
 上に設置しており、そこからバージョン管理システム「<a href="https://git-scm.com/" target="_blank">Git</a>
 」を用いてPCにインストールする。</p>
 <blockquote>
-<p><strong>Key point</strong>: シェルの面白い点のひとつは、自分の作業やレベルに合った便利ツールを簡単に工作（クラフト）できるところ。</p></blockquote>
+<p><strong>Key point</strong>: シェルの面白い点のひとつは、自分の作業やレベルに合った便利ツールを簡単に工作（クラフト）できるところ。</p>
+</blockquote>
 <h2 id="disclaimer">免責事項</h2>
 <p>&ldquo;<a href="https://github.com/btklab/pwsh-sketches" target="_blank">pwsh-sketches</a>
 &ldquo;は、プロトタイピングやアイデア探求のための実験的なPowerShellスクリプトセット。それらスクリプトは筆者が実際に動作確認したものではあるが、本番での使用を意図したものではなく、不安定であったり、不完全であったりする点に注意する。</p>
@@ -191,7 +197,8 @@
 <li>btklab/pwsh-sketches: <a href="https://github.com/btklab/pwsh-sketches" target="_blank">https://github.com/btklab/pwsh-sketches</a>
 </li>
 </ul>
-<footer>-- <cite>The MIT Licenseの著作権表示例</cite></footer></blockquote>
+<footer>-- <cite>The MIT Licenseの著作権表示例</cite></footer>
+</blockquote>
 <h2 id="prerequisites">前提条件</h2>
 <ul>
 <li>✓ <a href="../install-software-powershell/index.html">PowerShellのインストール</a>
@@ -240,7 +247,8 @@
 </span></span><span style="display:flex;"><span>  └─drafts
 </span></span></code></pre></div><h2 id="install-minimum">インストール：最小</h2>
 <blockquote>
-<p><strong>Key point</strong>: 最小インストールすれば、好きな関数だけを（<strong>ドットソースで</strong>）読み込むことができる。</p></blockquote>
+<p><strong>Key point</strong>: 最小インストールすれば、好きな関数だけを（<strong>ドットソースで</strong>）読み込むことができる。</p>
+</blockquote>
 <p>クローンしたリポジトリに移動してファイルとフォルダが格納されていることを確認する。
 まずクローンしたリポジトリに移動する。<code>cd</code>か<code>pushd</code>コマンドを使う：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>pushd ~/cms/bin/pwsh-sketches
@@ -375,7 +383,8 @@
 </span></span></code></pre></div><blockquote>
 <p><strong>Key point</strong>: <code>pwsh-sketches</code>における<code>grep</code>関数は、PowerShellコマンドレット&rdquo;<a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.utility/select-string" target="_blank">Select-String</a>
 &ldquo;のラッパーコマンド。オプションの挙動はLinuxにおける&rdquo;<a href="https://www.gnu.org/software/grep/" target="_blank">grep</a>
-&ldquo;コマンドを元にしたもの。</p></blockquote>
+&ldquo;コマンドを元にしたもの。</p>
+</blockquote>
 <p>なお、<code>grep</code>コマンドのヘルプは以下のように取得する：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>Get-Help grep
 </span></span></code></pre></div><p><a href="https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/get-help" target="_blank">Get-Help</a>
@@ -383,7 +392,8 @@
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>man grep
 </span></span></code></pre></div><h2 id="install-bulk">インストール：一括</h2>
 <blockquote>
-<p><strong>Key point</strong>: 一括インストールすれば、すべての関数をいちどに読み込める。個別の関数名を意識する必要はなくなるが、最小インストールよりも読み込みに時間がかかる。</p></blockquote>
+<p><strong>Key point</strong>: 一括インストールすれば、すべての関数をいちどに読み込める。個別の関数名を意識する必要はなくなるが、最小インストールよりも読み込みに時間がかかる。</p>
+</blockquote>
 <p><code>pwsh-sketches</code>の関数ファイルは、前セクションのようにひとつずつ読み込んでもよいが、<strong>一度にぜんぶ読み込む</strong>こともできる。以下は、<code>pwsh-sketches</code>の関数ファイルをリポジトリのルートにある<code>operator.ps1</code>を用いて一度に読み込む例である。このケースも、読み込んだ関数群は現在のセッションを閉じる（＝ウィンドウを閉じる、<code>exit</code>コマンドを実行する、新規のセッションを開始する）などで初期化される。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e">## Case.1 pwsh-sketchesのルートディレクトリから実行する場合</span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">## 注意：ファイル名の前にドット（.）と空白がある！</span>
@@ -755,7 +765,7 @@
 	<div class="container footer__container flex">
 		
 		<div class="footer__copyright">
-			&copy; 2025 BtkLab&#39;s PowerShell Notes.
+			&copy; 2026 BtkLab&#39;s PowerShell Notes.
 			<span class="footer__copyright-credits">このサイトは <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> と <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> テーマ、それから、 <a href="https://posit.co/downloads/" rel="nofollow noopener" target="_blank">RStudio IDE</a> と <a href="https://pkgs.rstudio.com/blogdown/" rel="nofollow noopener" target="_blank">blogdown</a> パッケージ を用いて生成されています。</span>
 		</div>
 	</div>
